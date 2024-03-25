@@ -4,6 +4,6 @@
 
 ## Table of Contents
 1. [Environment](#environment)
-2. [Executing the Web Application](#executing the web application)
-3. [Executing Unit Tests](#executing unit tests)
+2. [Executing the Web Application](#executing-the-web-application)
+3. [Executing Unit Tests](#executing-unit-tests)
    
