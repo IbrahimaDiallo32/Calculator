@@ -1,18 +1,23 @@
 @page "/calculator"
 @rendermode InteractiveServer
 
-<h1>Add Two Numbers</h1>
+<h1>Calculator</h1>
 
-    <label for = "inputA">Input A</label>
-    <label for = "inputB">Input B</label>
+<label for = "inputA">Input A</label>
+<label for = "inputB"> Input B</label>
 <div>
     <input type="number" @bind= "inputA" placeholder="0"> 
     <input type="number" @bind= "inputB" placeholder="0"> 
         
 </div>
 
-<button @onclick="AddNumbers" background-color = "#EBEBEB" color = "#000000">A + B</button>
-
+<div>
+    <button @onclick= "AddNumbers" background-color = "#EBEBEB" color = "#000000">A + B</button>
+</div>
+<div>
+    <button @onclick= "SubtractNumbers">A - B</button>
+</div>
+<button @onclick= "MultiplyNumbers">A * B</button>
 
 @if (result.HasValue)
 {
@@ -29,6 +34,30 @@
         if (inputA.HasValue && inputB.HasValue)
         {
             result = inputA + inputB;
+        }
+        else
+        {
+            result = null;
+        }
+    }
+
+    private void SubtractNumbers()
+    {
+        if (inputA.HasValue && inputB.HasValue)
+        {
+            result = inputA - inputB;
+        }
+        else
+        {
+            result = null;
+        }
+    }
+
+    private void MultiplyNumbers()
+    {
+        if (inputA.HasValue && inputB.HasValue)
+        {
+            result = inputA * inputB;
         }
         else
         {
