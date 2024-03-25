@@ -8,5 +8,6 @@
 3. [Executing Unit Tests](#executing-unit-tests)
 4. [Reviewing Unit Test Coverage](#reviewing-unit-test-coverage)
 5. [Executing End-To-End Tests](#Executing-End-To-End-Tests)
-6. [](#)
+6. [Static Analysis](#static-analysis)
+7. [Final Video Presentation](#Final-Video-Presentation)
    
