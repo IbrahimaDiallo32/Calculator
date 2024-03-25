@@ -11,3 +11,6 @@
 6. [Static Analysis](#static-analysis)
 7. [Final Video Presentation](#Final-Video-Presentation)
    
+## Team Members
+1. Diwakar Rai
+2. Ibrahima Diallo
