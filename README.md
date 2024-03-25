@@ -6,4 +6,7 @@
 1. [Environment](#environment)
 2. [Executing the Web Application](#executing-the-web-application)
 3. [Executing Unit Tests](#executing-unit-tests)
+4. [Reviewing Unit Test Coverage](#reviewing-unit-test-coverage)
+5. [Executing End-To-End Tests](#Executing End-To-End Tests)
+6. [](#)
    
