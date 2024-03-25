@@ -1,26 +1,38 @@
 @page "/calculator"
-@InteractiveServer
+@rendermode InteractiveServer
 
-@*This line of code allows me to use the class Caclator engine and all its properties in this class counter.*@
-@inject CalculatorEngine Http
+<h1>Add Two Numbers</h1>
 
-<h3>Calculator</h3>
-
-<button background-color = "#EBEBEB"; color = "#000000">A + B</button>
-
-<form>
     <label for = "inputA">Input A</label>
-    <div>
-        <input type="text" id = "inputA" name = "inputA" placeholder="0"> </input>
-    </div>
-    
-</form>
+    <label for = "inputB">Input B</label>
+<div>
+    <input type="number" @bind= "inputA" placeholder="0"> 
+    <input type="number" @bind= "inputB" placeholder="0"> 
+        
+</div>
+
+<button @onclick="AddNumbers" background-color = "#EBEBEB" color = "#000000">A + B</button>
 
 
-
-
+@if (result.HasValue)
+{
+    <h3>Result: @result</h3>
+}
 
 @code {
-    
-    
+    int? inputA { get; set; }
+    int? inputB { get; set; }
+    int? result { get; set; }
+
+    private void AddNumbers()
+    {
+        if (inputA.HasValue && inputB.HasValue)
+        {
+            result = inputA + inputB;
+        }
+        else
+        {
+            result = null;
+        }
+    }
 }
