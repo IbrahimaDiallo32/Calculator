@@ -14,3 +14,12 @@
 ## Team Members
 1. Diwakar Rai
 2. Ibrahima Diallo
+
+## Environment
+-adasdfadfa
+
+## Executing the Web Application 
+- adfadfadfasdfa
+
+## Executing Unit Tests
+-adfa dfasdf
