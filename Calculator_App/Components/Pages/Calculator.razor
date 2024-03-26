@@ -17,17 +17,27 @@
 <div>
     <button @onclick= "SubtractNumbers">A - B</button>
 </div>
-<button @onclick= "MultiplyNumbers">A * B</button>
+<div>
+    <button @onclick= "MultiplyNumbers">A * B</button>
+</div>
+<button @onclick= "DivideNumbers">A / B</button>
+
 
 @if (result.HasValue)
 {
     <h3>Result: @result</h3>
 }
+@if (error.Equals(true))
+{
+    <h3>Result: error</h3>
+}
+
 
 @code {
     int? inputA { get; set; }
     int? inputB { get; set; }
     int? result { get; set; }
+    bool error { get; set; }
 
     private void AddNumbers()
     {
@@ -58,6 +68,22 @@
         if (inputA.HasValue && inputB.HasValue)
         {
             result = inputA * inputB;
+        }
+        else
+        {
+            result = null;
+        }
+    }
+
+    private void DivideNumbers()
+    { 
+        if (inputB.Equals(0))
+        {
+            error = true;
+        }
+        if (inputA.HasValue && inputB.HasValue && !error)
+        {
+            result = inputA / inputB;
         }
         else
         {
