@@ -14,53 +14,69 @@
 <div>
     <button @onclick= "AddNumbers" background-color = "#EBEBEB" color = "#000000">A + B</button>
 </div>
+
 <div>
     <button @onclick= "SubtractNumbers">A - B</button>
 </div>
 <div>
     <button @onclick= "MultiplyNumbers">A * B</button>
 </div>
-<button @onclick= "DivideNumbers">A / B</button>
+<div>
+    <button @onclick= "DivideNumbers">A / B</button>
+</div>
+<div>
+    <button @onclick= "CompareTwoNumbers">A == B</button>
+</div>
+
 
 
 @if (result.HasValue)
 {
     <h3>Result: @result</h3>
 }
-@if (error.Equals(true))
+@if (error)
 {
     <h3>Not a number</h3>
+}
+@if (invalidInput)
+{
+    <h3>Invalid Input, Numbers Only</h3>
 }
 
 
 @code {
-    float? inputA { get; set; }
-    float? inputB { get; set; }
+    string? inputA { get; set; }
+    string? inputB { get; set; }
     float? result { get; set; }
     bool error { get; set; }
     bool invalidInput { get; set; }
+   
+    
+    //This method will return true if both user inputs are able to be parsed to float values 
+    private bool IsValidInput()
+    {
+        if (float.TryParse(inputA, out float temp1) && float.TryParse(inputB, out float temp2))
+        {
+            return true;
+        }
+        return false;
+    }
 
-    //Method to add numbers
     private void AddNumbers()
     {
-        if (!inputA.Equals(typeof(int)) || !inputA.Equals(typeof(float)))
+        //checking for invalid input
+        if (!IsValidInput())
         {
             invalidInput = true;
-            return;
-        }
-        if(!inputB.Equals(typeof(int)) || !inputB.Equals(typeof(float)))
-        {
-            invalidInput = true;
-            return;
-        }
-        //If inputs have valid values complete the operation
-        if (inputA.HasValue && inputB.HasValue)
-        {
-            result = inputA + inputB;
+            result = null;
         }
         else
         {
-            result = null;
+            invalidInput = false;
+            //parsing inputs to temporary variables to perform operation 
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            result = x + y;
         }
     }
 
@@ -68,51 +84,85 @@
     private void SubtractNumbers()
     {
         //If inputs have values complete the operation
-        if (inputA.HasValue && inputB.HasValue)
-        {
-            result = inputA - inputB;
-        }
-        //if either input is empty the result will be null
-        else
+        if (!IsValidInput())
         {
             result = null;
+            invalidInput = true;
+        }
+        
+        else
+        {
+            invalidInput = false;
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            result = x - y;
         }
     }
 
     private void MultiplyNumbers()
     {
-        //If inputs have values complete the operation
-        if (inputA.HasValue && inputB.HasValue)
-        {
-            result = inputA * inputB;
-        }
-        //if either input is empty the result will be null
-        else
+        if (!IsValidInput())
         {
             result = null;
+            invalidInput = true;
+        }
+        
+        else
+        {
+            invalidInput = false;
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            result = x * y;
         }
     }
 
     //Method to divide numbers catching division by 0 here.
     private void DivideNumbers()
-    { 
-        //Immediately catch division by 0 error and set error boolean to 0
-        if (inputB == 0) 
+    {
+        if (!IsValidInput())
         {
-            error = true;
-        }
-        else if (inputB != 0)
-        {
-            error = false;
-        }
-        //If both inputs have values and there is no error the operation can be completed
-        if (inputA.HasValue && inputB.HasValue && !error)
-        {
-            result = inputA / inputB;
+            result = null;
+            invalidInput = true;
         }
         else
         {
+            invalidInput = false;
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            
+            //catch division by 0 error and set error boolean to true
+            if (y == 0.0)
+            {
+                error = true;
+                result = null;
+            }
+            else
+            {
+                error = false;
+                result = x / y;
+            }
+        }
+    }
+    private void CompareTwoNumbers()
+    {
+        if (!IsValidInput())
+        {
             result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            invalidInput = false;
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            if (Math.Round(x, 8) == Math.Round(y, 8))
+            {
+                result = 1;
+            }
+            else
+            {
+                result = 0;
+            }
         }
     }
 }
