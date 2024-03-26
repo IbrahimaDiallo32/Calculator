@@ -6,8 +6,8 @@
 <label for = "inputA">Input A</label>
 <label for = "inputB"> Input B</label>
 <div>
-    <input type="number" @bind= "inputA" placeholder="0"> 
-    <input type="number" @bind= "inputB" placeholder="0"> 
+    <input type="text" @bind= "inputA" placeholder="0"> 
+    <input type="text" @bind= "inputB" placeholder="0"> 
         
 </div>
 
@@ -29,18 +29,31 @@
 }
 @if (error.Equals(true))
 {
-    <h3>Result: error</h3>
+    <h3>Not a number</h3>
 }
 
 
 @code {
-    int? inputA { get; set; }
-    int? inputB { get; set; }
-    int? result { get; set; }
+    float? inputA { get; set; }
+    float? inputB { get; set; }
+    float? result { get; set; }
     bool error { get; set; }
+    bool invalidInput { get; set; }
 
+    //Method to add numbers
     private void AddNumbers()
     {
+        if (!inputA.Equals(typeof(int)) || !inputA.Equals(typeof(float)))
+        {
+            invalidInput = true;
+            return;
+        }
+        if(!inputB.Equals(typeof(int)) || !inputB.Equals(typeof(float)))
+        {
+            invalidInput = true;
+            return;
+        }
+        //If inputs have valid values complete the operation
         if (inputA.HasValue && inputB.HasValue)
         {
             result = inputA + inputB;
@@ -51,12 +64,15 @@
         }
     }
 
+    //Method to subtract numbers
     private void SubtractNumbers()
     {
+        //If inputs have values complete the operation
         if (inputA.HasValue && inputB.HasValue)
         {
             result = inputA - inputB;
         }
+        //if either input is empty the result will be null
         else
         {
             result = null;
@@ -65,22 +81,31 @@
 
     private void MultiplyNumbers()
     {
+        //If inputs have values complete the operation
         if (inputA.HasValue && inputB.HasValue)
         {
             result = inputA * inputB;
         }
+        //if either input is empty the result will be null
         else
         {
             result = null;
         }
     }
 
+    //Method to divide numbers catching division by 0 here.
     private void DivideNumbers()
     { 
-        if (inputB.Equals(0))
+        //Immediately catch division by 0 error and set error boolean to 0
+        if (inputB == 0) 
         {
             error = true;
         }
+        else if (inputB != 0)
+        {
+            error = false;
+        }
+        //If both inputs have values and there is no error the operation can be completed
         if (inputA.HasValue && inputB.HasValue && !error)
         {
             result = inputA / inputB;
