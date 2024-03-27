@@ -23,3 +23,11 @@
 
 ## Executing Unit Tests
 -adfa dfasdf
+
+## Executing Unit Test Coverage
+-asfadkjlglsfkgs 
+
+## Executing End-to-End Tests
+-fa dfadfadjfadf
+## Final Video Presentation
+-asdfahjkldfag
