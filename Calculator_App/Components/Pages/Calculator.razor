@@ -1,4 +1,5 @@
 @page "/calculator"
+@using System.Reflection
 @rendermode InteractiveServer
 
 <h1>Calculator</h1>
@@ -26,6 +27,12 @@
 </div>
 <div>
     <button @onclick= "CompareTwoNumbers">A == B</button>
+</div>
+<div>
+    <button @onclick ="RaisePower">A ^ B</button>
+</div>
+<div>
+    <button @onclick = "LogOfNumber">A log B</button>
 </div>
 
 
@@ -163,6 +170,40 @@
             {
                 result = 0;
             }
+        }
+    }
+
+    private void RaisePower()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            invalidInput = false;
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            double temp = Math.Pow(x, y);
+            result = (float)temp;
+        }
+    }
+
+    private void LogOfNumber()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            invalidInput = false;
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            double temp = Math.Log(x, y);
+            result = (float)temp;
         }
     }
 }
