@@ -2,6 +2,7 @@
 @using System.Reflection
 @rendermode InteractiveServer
 
+
 <h1>Calculator</h1>
 
 <label for = "inputA">Input A</label>
@@ -33,6 +34,9 @@
 </div>
 <div>
     <button @onclick = "LogOfNumber">A log B</button>
+</div>
+<div>
+    <button @onclick = "rootOfNumber">A root B</button>
 </div>
 
 
@@ -79,6 +83,7 @@
         }
         else
         {
+            error = false;
             invalidInput = false;
             //parsing inputs to temporary variables to perform operation 
             float x = float.Parse(inputA);
@@ -99,6 +104,7 @@
         
         else
         {
+            error = false;
             invalidInput = false;
             float x = float.Parse(inputA);
             float y = float.Parse(inputB);
@@ -116,6 +122,7 @@
         
         else
         {
+            error = false;
             invalidInput = false;
             float x = float.Parse(inputA);
             float y = float.Parse(inputB);
@@ -159,6 +166,7 @@
         }
         else
         {
+            error = false;
             invalidInput = false;
             float x = float.Parse(inputA);
             float y = float.Parse(inputB);
@@ -182,6 +190,7 @@
         }
         else
         {
+            error = false;
             invalidInput = false;
             float x = float.Parse(inputA);
             float y = float.Parse(inputB);
@@ -199,11 +208,47 @@
         }
         else
         {
-            invalidInput = false;
             float x = float.Parse(inputA);
             float y = float.Parse(inputB);
-            double temp = Math.Log(x, y);
-            result = (float)temp;
+            if(x <= 0 || y == 0)
+            {
+                error = true;
+                result = null;
+            }
+            else
+            {
+                error = false;
+                invalidInput = false;
+                double temp = Math.Log(x, y);
+                result = (float)temp;
+            }
+        }
+    }
+
+    public void rootOfNumber()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            float x = float.Parse(inputA);
+            float y = float.Parse(inputB);
+            if (y == 0)
+            {
+                error = true;
+                result = null;
+            }
+            else
+            {
+                error = false;
+                invalidInput = false;
+                //this raises 'A' to the Y or "n'th" root.
+                double temp = Math.Pow(x, (1 / y));
+                result = (float)temp;
+            }
         }
     }
 }
