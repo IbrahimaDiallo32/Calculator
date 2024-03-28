@@ -4,6 +4,7 @@
 
 
 <h1>Calculator</h1>
+<h2><button @onclick= "clearInputs">Clear</button></h2>
 
 <label for = "inputA">Input A</label>
 <label for = "inputB"> Input B</label>
@@ -14,20 +15,25 @@
 </div>
 
 <div>
-    <button @onclick= "AddNumbers" background-color = "#EBEBEB" color = "#000000">A + B</button>
+    <button @onclick= "AddNumbers">A + B</button>
+    <button @onclick = "FactorialOfInput">A!</button>
 </div>
 
 <div>
     <button @onclick= "SubtractNumbers">A - B</button>
+    <button @onclick = "SinOfNumber">sin A</button>
 </div>
 <div>
     <button @onclick= "MultiplyNumbers">A * B</button>
+    <button @onclick = "CosOfNumber">cos A</button>
 </div>
 <div>
     <button @onclick= "DivideNumbers">A / B</button>
+    <button @onclick = "TanOfNUmber">tan A</button>
 </div>
 <div>
     <button @onclick= "CompareTwoNumbers">A == B</button>
+    <button @onclick= "ReciprocalOfNumber">1 / A</button>
 </div>
 <div>
     <button @onclick ="RaisePower">A ^ B</button>
@@ -36,10 +42,10 @@
     <button @onclick = "LogOfNumber">A log B</button>
 </div>
 <div>
-    <button @onclick = "rootOfNumber">A root B</button>
+    <button @onclick = "RootOfNumber">A root B</button>
 </div>
 
-
+<style>button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000}</style>
 
 @if (result.HasValue)
 {
@@ -58,23 +64,25 @@
 @code {
     string? inputA { get; set; }
     string? inputB { get; set; }
-    float? result { get; set; }
+    double? result { get; set; }
     bool error { get; set; }
     bool invalidInput { get; set; }
-   
-    
-    //This method will return true if both user inputs are able to be parsed to float values 
+
+
+    //This method will return true if both user inputs are able to be parsed to double values 
     private bool IsValidInput()
     {
-        if (float.TryParse(inputA, out float temp1) && float.TryParse(inputB, out float temp2))
+        if (double.TryParse(inputA, out double temp1) || double.TryParse(inputB, out double temp2))
         {
             return true;
         }
+
         return false;
     }
 
     private void AddNumbers()
     {
+        //preq-ENGINE-3
         //checking for invalid input
         if (!IsValidInput())
         {
@@ -86,8 +94,8 @@
             error = false;
             invalidInput = false;
             //parsing inputs to temporary variables to perform operation 
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
             result = x + y;
         }
     }
@@ -101,13 +109,13 @@
             result = null;
             invalidInput = true;
         }
-        
+
         else
         {
             error = false;
             invalidInput = false;
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
             result = x - y;
         }
     }
@@ -119,13 +127,13 @@
             result = null;
             invalidInput = true;
         }
-        
+
         else
         {
             error = false;
             invalidInput = false;
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
             result = x * y;
         }
     }
@@ -141,9 +149,9 @@
         else
         {
             invalidInput = false;
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
-            
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
+
             //catch division by 0 error and set error boolean to true
             if (y == 0.0)
             {
@@ -157,6 +165,7 @@
             }
         }
     }
+
     private void CompareTwoNumbers()
     {
         if (!IsValidInput())
@@ -168,8 +177,8 @@
         {
             error = false;
             invalidInput = false;
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
             if (Math.Round(x, 8) == Math.Round(y, 8))
             {
                 result = 1;
@@ -192,10 +201,9 @@
         {
             error = false;
             invalidInput = false;
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
-            double temp = Math.Pow(x, y);
-            result = (float)temp;
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
+            result = Math.Pow(x, y);
         }
     }
 
@@ -208,9 +216,9 @@
         }
         else
         {
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
-            if(x <= 0 || y == 0)
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
+            if (x <= 0 || y == 0)
             {
                 error = true;
                 result = null;
@@ -219,13 +227,12 @@
             {
                 error = false;
                 invalidInput = false;
-                double temp = Math.Log(x, y);
-                result = (float)temp;
+                result = Math.Log(x, y);
             }
         }
     }
 
-    public void rootOfNumber()
+    public void RootOfNumber()
     {
         if (!IsValidInput())
         {
@@ -234,8 +241,8 @@
         }
         else
         {
-            float x = float.Parse(inputA);
-            float y = float.Parse(inputB);
+            double x = double.Parse(inputA);
+            double y = double.Parse(inputB);
             if (y == 0)
             {
                 error = true;
@@ -246,9 +253,119 @@
                 error = false;
                 invalidInput = false;
                 //this raises 'A' to the Y or "n'th" root.
-                double temp = Math.Pow(x, (1 / y));
-                result = (float)temp;
+                result = Math.Pow(x, (1 / y));
             }
         }
+    }
+
+    public double FactorialOfDouble(double temp)
+    {
+        if (temp < 0)
+        {
+            return -1;
+        }
+
+        if (temp >= 0 && temp <= 1)
+        {
+            return 1;
+        }
+
+        return temp * FactorialOfDouble(temp - 1);
+    }
+
+    private void FactorialOfInput()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            error = false;
+            invalidInput = false;
+            double x = double.Parse(inputA);
+            result = FactorialOfDouble(x);
+        }
+    }
+
+    private void SinOfNumber()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            error = false;
+            invalidInput = false;
+            double x = double.Parse(inputA);
+            result = Math.Sin(x);
+        }
+    }
+
+    private void CosOfNumber()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            error = false;
+            invalidInput = false;
+            double x = double.Parse(inputA);
+            result = Math.Cos(x);
+        }
+    }
+
+    private void TanOfNUmber()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            error = false;
+            invalidInput = false;
+            double x = double.Parse(inputA);
+            result = Math.Tan(x);
+        }
+    }
+
+    private void ReciprocalOfNumber()
+    {
+        if (!IsValidInput())
+        {
+            result = null;
+            invalidInput = true;
+        }
+        else
+        {
+            double x = double.Parse(inputA);
+            if (x == 0)
+            {
+                error = true;
+                result = null;
+            }
+            else
+            {
+                error = false;
+                invalidInput = false;
+                result = (1 / x);
+            }
+        }
+    }
+    public void clearInputs()
+    {
+        inputA = null;
+        inputB = null;
+        result = null;
+        error = false;
+        invalidInput = false;
     }
 }
