@@ -19,7 +19,7 @@
 -This application should work on Windowns 10+. 
 ### Steps to prepare your environment to execute this application: 
 1. [Install the latest JetBrain Rider](#https://www.jetbrains.com/rider/download/#section=windows)
-2. Install Git and Clone this project: 
+2. Install Git and Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
 
 ## Executing the Web Application 
 - adfadfadfasdfa
