@@ -1,4 +1,4 @@
-using Calculator_App.Components.Pages;
+using Calculator_App;
 
 namespace CalculatorTestProject1;
 
@@ -7,7 +7,7 @@ public class UnitTest2
     public void SubtractTwoNumbers()
     {
         // Arrange
-        var calculator = new Calculator(); 
+        var calculator = new CalculatorEngine(); 
         float number1 = 5.5f;
         float number2 = 3.0f;
         float expectedDifference = 2.5f;
