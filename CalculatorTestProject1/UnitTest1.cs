@@ -1,4 +1,4 @@
-using Calculator_App.Components.Pages;
+using Calculator_App;
 
 namespace CalculatorTestProject1;
 
@@ -12,7 +12,7 @@ public class CalculatorTests
     [Test]
     public void AddTwoNumbers()
     {
-        var calculator = new Calculator(); // Assuming AddTwoNumbers is a method of the Calculator class
+        var calculator = new CalculatorEngine(); // Assuming AddTwoNumbers is a method of the Calculator class
         float number1 = 2.5f;
         float number2 = 3.5f;
         float expectedSum = 6.0f;
