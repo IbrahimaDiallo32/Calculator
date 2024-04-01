@@ -1,13 +1,15 @@
+using Calculator_App;
+
 namespace CalculatorTestProject1;
 
 public class UintTest4
 {
-    private Calculator _calculator;
+    private CalculatorEngine _calculator;
 
     [SetUp]
     public void SetUp()
     {
-        _calculator = new Calculator();
+        _calculator = new CalculatorEngine();
     }
 
     [Test]
