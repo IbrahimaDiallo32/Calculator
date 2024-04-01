@@ -1,10 +1,10 @@
-using Calculator_App.Components.Pages;
+using Calculator_App;
 
 namespace CalculatorTestProject1;
 
 public class UnitTest3
 {
-        private Calculator _calculator;
+        private CalculatorEngine _calculator;
 
         public void TestInitialize()
         {
