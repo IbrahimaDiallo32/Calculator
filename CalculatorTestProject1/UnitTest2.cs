@@ -1,9 +1,11 @@
 using Calculator_App;
 
+
 namespace CalculatorTestProject1;
 
 public class UnitTest2
 {
+    [Test]
     public void SubtractTwoNumbers()
     {
         // Arrange
@@ -16,6 +18,6 @@ public class UnitTest2
         float result = calculator.SubtractTwoNumber(number1, number2);
 
         // Assert
-        Assert.AreEqual(expectedDifference, result, 0.001, "The difference between the two numbers does not match the expected value.");
+        Assert.That(expectedDifference, Is.EqualTo(result),  "The difference between the two numbers does not match the expected value.");
     }
-}
+} 
