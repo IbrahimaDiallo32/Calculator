@@ -1,14 +1,11 @@
 using Calculator_App;
 
+
 namespace CalculatorTestProject1;
 
-public class CalculatorTests
+public class CalculatorTestsProject1
 {
-    [SetUp]
-    public void Setup()
-    {
-    }
-
+   
     [Test]
     public void AddTwoNumbers()
     {
@@ -21,7 +18,7 @@ public class CalculatorTests
         float result = calculator.AddTwoNumbers(number1, number2);
 
         // Assert
-        Assert.AreEqual(expectedSum, result, 0.001, "The sum of the two numbers does not match the expected value.");
+        Assert.That(expectedSum, Is.EqualTo(result), "The sum of the two numbers does not match the expected value.");
     
     }
 }
