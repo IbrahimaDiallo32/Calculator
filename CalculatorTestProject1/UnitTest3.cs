@@ -1,17 +1,19 @@
 using Calculator_App;
+using NUnit.Framework.Legacy;
 
 namespace CalculatorTestProject1;
 
 public class UnitTest3
 {
         private CalculatorEngine _calculator;
-
+        
+        [Test]
         public void TestInitialize()
         {
             // This method runs before each test to set up any required objects or state.
-            _calculator = new Calculator();
+            _calculator = new CalculatorEngine();
         }
-
+        [Test]
         public void MultiplyTwoFloatNumbers_BothPositive_ReturnsPositive()
         {
             // Arrange
@@ -23,10 +25,10 @@ public class UnitTest3
             float result = _calculator.MultiplyTwoFloatNumbers(num1, num2);
 
             // Assert
-            Assert.AreEqual(expected, result, "Multiplying two positive numbers should return a positive result.");
+            Assert.That(expected,Is.EqualTo(result), "Multiplying two positive numbers should return a positive result.");
         }
 
-        
+        [Test]
         public void MultiplyTwoFloatNumbers_OnePositiveOneNegative_ReturnsNegative()
         {
             // Arrange
@@ -38,10 +40,10 @@ public class UnitTest3
             float result = _calculator.MultiplyTwoFloatNumbers(num1, num2);
 
             // Assert
-            Assert.AreEqual(expected, result, "Multiplying a positive number by a negative number should return a negative result.");
+            Assert.That(expected, Is.EqualTo(result), "Multiplying a positive number by a negative number should return a negative result.");
         }
 
-
+        [Test]
         public void MultiplyTwoFloatNumbers_BothNegative_ReturnsPositive()
         {
             // Arrange
@@ -53,9 +55,9 @@ public class UnitTest3
             float result = _calculator.MultiplyTwoFloatNumbers(num1, num2);
 
             // Assert
-            Assert.AreEqual(expected, result, "Multiplying two negative numbers should return a positive result.");
+            Assert.That(expected, Is.EqualTo(result), "Multiplying two negative numbers should return a positive result.");
         }
-
+        [Test]
         public void MultiplyTwoFloatNumbers_WithZero_ReturnsZero()
         {
             // Arrange
@@ -67,6 +69,7 @@ public class UnitTest3
             float result = _calculator.MultiplyTwoFloatNumbers(num1, num2);
 
             // Assert
-            Assert.AreEqual(expected, result, "Multiplying any number by zero should return zero.");
+            ClassicAssert.AreEqual(expected, result, "Multiplying any number by zero should return zero.");
         }
     }
+
