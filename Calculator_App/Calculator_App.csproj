@@ -10,4 +10,10 @@
       <Content Remove="Components\Pages\Error.razor" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Update="Components\Pages\PageLayout.html">
+        <DependentUpon>Calculator.razor</DependentUpon>
+      </None>
+    </ItemGroup>
+
 </Project>

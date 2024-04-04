@@ -15,7 +15,7 @@
 </div>
 
 <div>
-    <button @onclick= "AddNumbers">A + B</button>
+    <button id="blag" @onclick= "AddNumbers">A + B</button>
     <button @onclick = "FactorialOfInput">A!</button>
 </div>
 
@@ -40,12 +40,13 @@
 </div>
 <div>
     <button @onclick = "LogOfNumber">A log B</button>
+    
 </div>
 <div>
     <button @onclick = "RootOfNumber">A root B</button>
 </div>
 
-<style>button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000}</style>
+<style>button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000;}</style>
 
 @if (result.HasValue)
 {
@@ -72,11 +73,10 @@
     //This method will return true if both user inputs are able to be parsed to double values 
     private bool IsValidInput()
     {
-        if (double.TryParse(inputA, out double temp1) || double.TryParse(inputB, out double temp2))
+        if (double.TryParse(inputA, out double temp1) && double.TryParse(inputB, out double temp2))
         {
             return true;
         }
-
         return false;
     }
 

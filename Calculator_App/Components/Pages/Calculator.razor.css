@@ -1,4 +1,34 @@
 p {
     color: orange;
+}
+body{
+    margin: auto;
+}
+.buttons{
+    margin: auto;
+    left: 50px;
+}
+#blag{
+    background: #0d6efd;
+    margin: auto 10px 30px;
+
+}
+div{
     
+}
+section{
+    height: 90vh;
+    border: 10px;
+}
+.buttons{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    border: 10px;
+    max-width: 700px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
