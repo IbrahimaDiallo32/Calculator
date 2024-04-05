@@ -3,17 +3,15 @@
 @rendermode InteractiveServer
 
 <div class="outerContainer">
-    <div class = "innerContainer">
     
     <h1>Calculator <button @onclick= "clearInputs" id="clearButton">Clear</button></h1>
 
 
-<label for = "inputA">Input A</label>
-<label for = "inputB"> Input B</label>
+    <label for = "inputA"><b>Input A</b></label>
+    <label for = "inputB" id = "spaceIndentForText"><b>Input B</b></label>
 <div>
-    <input type="text" @bind= "inputA" placeholder="0"> 
-    <input type="text" @bind= "inputB" placeholder="0"> 
-        
+    <input type="text" class = "inputBoxes" @bind= "inputA" placeholder="0"> 
+    <input type="text" class = "inputBoxes" id = "spaceIndentForInputBox" @bind= "inputB" placeholder="0"> 
 </div>
 
 <div class = "upperInputs">
@@ -22,39 +20,38 @@
 </div>
 
 <div>
-    <button id="blag" @onclick= "AddNumbers">A + B</button>
-    <button id="blag" @onclick = "FactorialOfInput">A!</button>
+    <button class = "styleForCalculatorFunctionButtons" @onclick= "AddNumbers">A + B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick = "FactorialOfInput">A!</button>
 </div>
 
 <div class="try">
-    <button id="blag" @onclick= "SubtractNumbers">A - B</button>
-    <button id="blag" @onclick = "SinOfNumber">sin A</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick= "SubtractNumbers">A - B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick= "SinOfNumber">sin A</button>
 </div>
 <div>
-    <button id="blag" @onclick= "MultiplyNumbers">A * B</button>
-    <button id="blag" @onclick = "CosOfNumber">cos A</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick= "MultiplyNumbers">A * B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick = "CosOfNumber">cos A</button>
 </div>
 <div>
-    <button id="blag" @onclick= "DivideNumbers">A / B</button>
-    <button id="blag" @onclick = "TanOfNUmber">tan A</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick= "DivideNumbers">A / B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick = "TanOfNUmber">tan A</button>
 </div>
 <div>
-    <button id="blag" @onclick= "CompareTwoNumbers">A == B</button>
-    <button id="blag" @onclick= "ReciprocalOfNumber">1 / A</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick= "CompareTwoNumbers">A == B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick= "ReciprocalOfNumber">1 / A</button>
 </div>
 <div>
-    <button id="blag" @onclick ="RaisePower">A ^ B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick ="RaisePower">A ^ B</button>
 </div>
 <div>
-    <button id="blag" @onclick = "LogOfNumber">A log B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick = "LogOfNumber">A log B</button>
     
 </div>
 <div>
-    <button id="blag" @onclick = "RootOfNumber">A root B</button>
+    <button class="styleForCalculatorFunctionButtons" @onclick = "RootOfNumber">A root B</button>
 </div>
 
 </div>
-    </div>
 
 
 @if (result.HasValue)

@@ -1,16 +1,19 @@
-p {
-    color: orange;
+.outerContainer{
+    max-width: 480px; /*These dimensions pulled from the mokup but looks smaller max-width:480 and max-height: 600*/
+    max-height: 600px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
 }
-
 #clearButton{
     background-color: #EBEBEB;
     border-radius: 7px; width: 38%;
     font-size: 20px;
     margin-left: 75px;
 }
-#blag{
+.styleForCalculatorFunctionButtons{
     background-color: #EBEBEB;
-    margin-left: 50px;
+    margin-left: 25px;
     margin-right: 8px;
     margin-bottom: 6px;
     margin-top: 6px;
@@ -19,27 +22,19 @@ p {
 .try{
     background-color: #3a0647;
 }
-div{
-    
-}
-section{
-    height: 90vh;
-    border: 10px;
-}
 .buttons{
 border-radius: 7px; width: 42%; padding: .2%; background-color: #EBEBEB; color: #000000;
-}
-.outerContainer{
-    border: 10px;
-    max-width: 700px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
 }
 .upperInputs{
     background-color: yellow;
 }
-.innerContainer
-{
-    
+#spaceIndentForText{
+    margin-left: 200px
+}
+#spaceIndentForInputBox{
+    margin-left: 75px;
+}
+.inputBoxes{
+    border-color: black;
+    border-width: 2px;
 }
