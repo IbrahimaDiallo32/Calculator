@@ -11,9 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Update="Components\Pages\PageLayout.html">
-        <DependentUpon>Calculator.razor</DependentUpon>
-      </None>
+      <None Remove="Components\Pages\PageLayout.html" />
     </ItemGroup>
 
 </Project>

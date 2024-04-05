@@ -9,9 +9,14 @@ body{
     left: 50px;
 }
 #blag{
-    background: #0d6efd;
-    margin: auto 10px 30px;
-
+    background-color: #EBEBEB;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+.try{
+    background-color: #3a0647;
 }
 div{
     
@@ -21,9 +26,8 @@ section{
     border: 10px;
 }
 .buttons{
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000;
+     
 }
 .container{
     border: 10px;
@@ -31,4 +35,7 @@ section{
     margin: auto;
     align-items: center;
     justify-content: center;
+}
+.upperInputs{
+    background-color: yellow;
 }

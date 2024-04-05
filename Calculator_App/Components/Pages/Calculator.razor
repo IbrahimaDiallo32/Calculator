@@ -2,6 +2,7 @@
 @using System.Reflection
 @rendermode InteractiveServer
 
+<div class="container">
 
 <h1>Calculator</h1>
 <h2><button @onclick= "clearInputs">Clear</button></h2>
@@ -14,39 +15,101 @@
         
 </div>
 
-<div>
-    <button id="blag" @onclick= "AddNumbers">A + B</button>
-    <button @onclick = "FactorialOfInput">A!</button>
+<div class = "upperInputs">
+    <h3>A and B    A Only</h3>
+    
 </div>
 
 <div>
-    <button @onclick= "SubtractNumbers">A - B</button>
-    <button @onclick = "SinOfNumber">sin A</button>
+    <button id="blag" @onclick= "AddNumbers">A + B</button>
+    <button id="blag" @onclick = "FactorialOfInput">A!</button>
+</div>
+
+<div class="try">
+    <button id="blag" @onclick= "SubtractNumbers">A - B</button>
+    <button id="blag" @onclick = "SinOfNumber">sin A</button>
 </div>
 <div>
-    <button @onclick= "MultiplyNumbers">A * B</button>
-    <button @onclick = "CosOfNumber">cos A</button>
+    <button id="blag" @onclick= "MultiplyNumbers">A * B</button>
+    <button id="blag" @onclick = "CosOfNumber">cos A</button>
 </div>
 <div>
-    <button @onclick= "DivideNumbers">A / B</button>
-    <button @onclick = "TanOfNUmber">tan A</button>
+    <button id="blag" @onclick= "DivideNumbers">A / B</button>
+    <button id="blag" @onclick = "TanOfNUmber">tan A</button>
 </div>
 <div>
-    <button @onclick= "CompareTwoNumbers">A == B</button>
-    <button @onclick= "ReciprocalOfNumber">1 / A</button>
+    <button id="blag" @onclick= "CompareTwoNumbers">A == B</button>
+    <button id="blag" @onclick= "ReciprocalOfNumber">1 / A</button>
 </div>
 <div>
-    <button @onclick ="RaisePower">A ^ B</button>
+    <button id="blag" @onclick ="RaisePower">A ^ B</button>
 </div>
 <div>
-    <button @onclick = "LogOfNumber">A log B</button>
+    <button id="blag" @onclick = "LogOfNumber">A log B</button>
     
 </div>
 <div>
-    <button @onclick = "RootOfNumber">A root B</button>
+    <button id="blag" @onclick = "RootOfNumber">A root B</button>
 </div>
 
-<style>button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000;}</style>
+</div>
+<style>
+button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000;}
+.container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+</style>
+
+
+
+@*<div class="input-group">
+    <label for="inputA">Input A</label>
+    <input type="text" @bind="inputA" placeholder="0">
+</div>
+
+<div class="input-group">
+    <label for="inputB">Input B</label>
+    <input type="text" @bind="inputB" placeholder="0">
+</div>
+
+<div class="button-group">
+    <button @onclick="AddNumbers">A + B</button>
+    <button @onclick="SubtractNumbers">A - B</button>
+</div>
+
+<div class="button-group">
+    <button @onclick="MultiplyNumbers">A * B</button>
+    <button @onclick="DivideNumbers">A / B</button>
+</div>
+
+<div class="button-group">
+    <button @onclick="FactorialOfInput">A!</button>
+    <button @onclick="SinOfNumber">sin A</button>
+</div>
+
+<style>
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        margin-bottom: 10px;
+    }
+
+    button {
+        border-radius: 7px;
+        width: 100px; /* Adjust width as needed */
+        padding: 5px; /* Adjust padding as needed */
+        background-color: #EBEBEB;
+        color: #000000;
+        margin-right: 10px; /* Adjust margin as needed */
+    }
+</style>
+
+*@
 
 @if (result.HasValue)
 {
