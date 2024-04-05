@@ -1,19 +1,20 @@
 p {
     color: orange;
 }
-body{
-    margin: auto;
-}
-.buttons{
-    margin: auto;
-    left: 50px;
+
+#clearButton{
+    background-color: #EBEBEB;
+    border-radius: 7px; width: 38%;
+    font-size: 20px;
+    margin-left: 75px;
 }
 #blag{
     background-color: #EBEBEB;
-    margin-left: 8px;
+    margin-left: 50px;
     margin-right: 8px;
     margin-bottom: 6px;
     margin-top: 6px;
+    border-radius: 7px; width: 38%; padding: .2%; color: #000000;
 }
 .try{
     background-color: #3a0647;
@@ -26,10 +27,9 @@ section{
     border: 10px;
 }
 .buttons{
-border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000;
-     
+border-radius: 7px; width: 42%; padding: .2%; background-color: #EBEBEB; color: #000000;
 }
-.container{
+.outerContainer{
     border: 10px;
     max-width: 700px;
     margin: auto;
@@ -38,4 +38,8 @@ border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: 
 }
 .upperInputs{
     background-color: yellow;
+}
+.innerContainer
+{
+    
 }

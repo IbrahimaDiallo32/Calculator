@@ -2,10 +2,11 @@
 @using System.Reflection
 @rendermode InteractiveServer
 
-<div class="container">
+<div class="outerContainer">
+    <div class = "innerContainer">
+    
+    <h1>Calculator <button @onclick= "clearInputs" id="clearButton">Clear</button></h1>
 
-<h1>Calculator</h1>
-<h2><button @onclick= "clearInputs">Clear</button></h2>
 
 <label for = "inputA">Input A</label>
 <label for = "inputB"> Input B</label>
@@ -16,7 +17,7 @@
 </div>
 
 <div class = "upperInputs">
-    <h3>A and B    A Only</h3>
+    <h4>A and B    A Only</h4>
     
 </div>
 
@@ -53,63 +54,8 @@
 </div>
 
 </div>
-<style>
-button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; color: #000000;}
-.container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-    }
-</style>
+    </div>
 
-
-
-@*<div class="input-group">
-    <label for="inputA">Input A</label>
-    <input type="text" @bind="inputA" placeholder="0">
-</div>
-
-<div class="input-group">
-    <label for="inputB">Input B</label>
-    <input type="text" @bind="inputB" placeholder="0">
-</div>
-
-<div class="button-group">
-    <button @onclick="AddNumbers">A + B</button>
-    <button @onclick="SubtractNumbers">A - B</button>
-</div>
-
-<div class="button-group">
-    <button @onclick="MultiplyNumbers">A * B</button>
-    <button @onclick="DivideNumbers">A / B</button>
-</div>
-
-<div class="button-group">
-    <button @onclick="FactorialOfInput">A!</button>
-    <button @onclick="SinOfNumber">sin A</button>
-</div>
-
-<style>
-    .input-group {
-        margin-bottom: 10px;
-    }
-
-    .button-group {
-        margin-bottom: 10px;
-    }
-
-    button {
-        border-radius: 7px;
-        width: 100px; /* Adjust width as needed */
-        padding: 5px; /* Adjust padding as needed */
-        background-color: #EBEBEB;
-        color: #000000;
-        margin-right: 10px; /* Adjust margin as needed */
-    }
-</style>
-
-*@
 
 @if (result.HasValue)
 {
@@ -166,6 +112,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
     //Method to subtract numbers
     private void SubtractNumbers()
     {
+        //preq-ENGINE-4
         //If inputs have values complete the operation
         if (!IsValidInput())
         {
@@ -185,6 +132,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void MultiplyNumbers()
     {
+        //preq-ENGINE-5
         if (!IsValidInput())
         {
             result = null;
@@ -204,6 +152,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
     //Method to divide numbers catching division by 0 here.
     private void DivideNumbers()
     {
+        //preq-ENGINE-7
         if (!IsValidInput())
         {
             result = null;
@@ -231,6 +180,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void CompareTwoNumbers()
     {
+        //preq-ENGINE-8
         if (!IsValidInput())
         {
             result = null;
@@ -255,6 +205,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void RaisePower()
     {
+        //preq-ENGINE-9
         if (!IsValidInput())
         {
             result = null;
@@ -272,6 +223,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void LogOfNumber()
     {
+        //preq-ENGINE-10
         if (!IsValidInput())
         {
             result = null;
@@ -297,6 +249,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     public void RootOfNumber()
     {
+        //preq-ENGINE-11
         if (!IsValidInput())
         {
             result = null;
@@ -323,6 +276,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     public double FactorialOfDouble(double temp)
     {
+        //preq-ENGINE-12
         if (temp < 0)
         {
             return -1;
@@ -354,6 +308,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void SinOfNumber()
     {
+        //preq-ENGINE-13
         if (!IsValidInput())
         {
             result = null;
@@ -370,6 +325,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void CosOfNumber()
     {
+        //preq-ENGINE-14
         if (!IsValidInput())
         {
             result = null;
@@ -386,6 +342,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void TanOfNUmber()
     {
+        //preq-ENGINE-15
         if (!IsValidInput())
         {
             result = null;
@@ -402,6 +359,7 @@ button{border-radius: 7px; width: 18%; padding: .2%; background-color: #EBEBEB; 
 
     private void ReciprocalOfNumber()
     {
+        //preq-ENGINE-16
         if (!IsValidInput())
         {
             result = null;
