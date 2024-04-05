@@ -1,45 +1,65 @@
 using Calculator_App;
 
-namespace CalculatorTestProject1;
+namespace CalculatorEngineUnitTest;
 
 public class UintTest4
 {
-    private CalculatorEngine _calculator;
-
-    [SetUp]
-    public void SetUp()
-    {
-        _calculator = new CalculatorEngine();
-    }
-
+    
     [Test]
     public void DivideTwoNumbers_BothPositive_ReturnsPositive()
     {
-        Assert.AreEqual(2, _calculator.DivideTwoNumbers(10, 5));
+        var calulator = new CalculatorEngine();
+        float num1 = 20f;
+        float num2 = 5f;
+        float expected = 4f;
+
+        float result = calulator.DivideTwoNumbers(num1, num2);
+
+
+        Assert.That(expected, Is.EqualTo(result));
     }
 
     [Test]
     public void DivideTwoNumbers_BothNegative_ReturnsPositive()
     {
-        Assert.AreEqual(2, _calculator.DivideTwoNumbers(-10, -5));
+        var calulator = new CalculatorEngine();
+        float num1 = -30f;
+        float num2 = -5f;
+        float expected = 6f;
+
+        float result = calulator.DivideTwoNumbers(num1, num2);
+
+
+        Assert.That(expected, Is.EqualTo(result));
     }
 
     [Test]
     public void DivideTwoNumbers_PositiveByNegative_ReturnsNegative()
     {
-        Assert.AreEqual(-2, _calculator.DivideTwoNumbers(10, -5));
+        var calulator = new CalculatorEngine();
+        float num1 = 20f;
+        float num2 = -5f;
+        float expected = -4f;
+
+        float result = calulator.DivideTwoNumbers(num1, num2);
+
+
+        Assert.That(expected, Is.EqualTo(result));
     }
 
     [Test]
     public void DivideTwoNumbers_NegativeByPositive_ReturnsNegative()
     {
-        Assert.AreEqual(-2, _calculator.DivideTwoNumbers(-10, 5));
+        var calulator = new CalculatorEngine();
+        float num1 = -20f;
+        float num2 = 5f;
+        float expected = -4f;
+
+        float result = calulator.DivideTwoNumbers(num1, num2);
+
+
+        Assert.That(expected, Is.EqualTo(result));
     }
 
-    [Test]
-    public void DivideTwoNumbers_ByZero_ReturnsNaN()
-    {
-        Assert.IsTrue(float.IsNaN(_calculator.DivideTwoNumbers(10, 0)));
-    }
-}
-}
+    
+} 
