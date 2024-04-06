@@ -33,7 +33,7 @@ public class CalculatorEngine
         return Math.Round(float1, 8) == Math.Round(float2, 8);
     }
 
-    public double PowerFunction(float float1, float float2)
+    public  double  PowerFunction(float float1, float float2)
     {
         return Math.Pow(float1, float2);
     }
