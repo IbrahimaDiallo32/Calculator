@@ -11,7 +11,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Components\Pages\PageLayout.html" />
+      <PackageReference Include="NUnit" Version="4.1.0" />
     </ItemGroup>
 
 </Project>
