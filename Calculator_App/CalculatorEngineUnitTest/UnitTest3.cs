@@ -1,6 +1,4 @@
 using Calculator_App;
-
-
 namespace CalculatorTestProject1;
 
 public class UnitTest3

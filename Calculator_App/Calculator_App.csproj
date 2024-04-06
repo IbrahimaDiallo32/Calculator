@@ -8,10 +8,23 @@
 
     <ItemGroup>
       <Content Remove="Components\Pages\Error.razor" />
+      <Content Remove="CalculatorEngineUnitTest\**" />
     </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="NUnit" Version="4.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="CalculatorEngineUnitTest\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="CalculatorEngineUnitTest\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="CalculatorEngineUnitTest\**" />
     </ItemGroup>
 
 </Project>

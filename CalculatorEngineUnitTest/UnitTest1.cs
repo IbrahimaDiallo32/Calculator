@@ -1,14 +1,16 @@
 using Calculator_App;
 
-
 namespace CalculatorTestProject1;
 
 public class UnitTest1
 {
    
     [Test]
-    public void AddTwoNumbers()
+    public void Addition_TwoFloatingPointValues_ReturnsSum()
     {
+        //preq-UNIT-TEST-2
+        
+        //Arrange
         var calculator = new CalculatorEngine(); // Assuming AddTwoNumbers is a method of the Calculator class
         float number1 = 2.5f;
         float number2 = 3.5f;

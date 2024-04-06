@@ -6,8 +6,10 @@ namespace CalculatorTestProject1;
 public class UnitTest2
 {
     [Test]
-    public void SubtractTwoNumbers()
+    public void Subtraction_TwoFloatingPointValues_ReturnsDifference()
     {
+        //preq-UNIT-TEST-3
+        
         // Arrange
         var calculator = new CalculatorEngine(); 
         float number1 = 5.5f;
