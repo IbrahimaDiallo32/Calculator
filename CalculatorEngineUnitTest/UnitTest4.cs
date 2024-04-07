@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 namespace CalculatorTestProject1;
 
+//Unit Tests for Division() Function
 public class UnitTest4
 {
     
@@ -67,6 +68,7 @@ public class UnitTest4
         Assert.That(expected, Is.EqualTo(result));
     }
 
+    //Unfinished test
     [Test]
     public void Division_FloatingPointValueAndZero_ReturnsError()
     {

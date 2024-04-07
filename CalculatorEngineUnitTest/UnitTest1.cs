@@ -2,6 +2,7 @@ using Calculator_App;
 
 namespace CalculatorTestProject1;
 
+//Unit Tests for Addition() Function
 public class UnitTest1
 {
    
