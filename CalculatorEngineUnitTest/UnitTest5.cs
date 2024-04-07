@@ -30,7 +30,8 @@ public class UnitTest5
 
     [Test]
     public void CompareTwoNumbers_WithNumbersDifferingWithin8thDecimal_ReturnsTrue()
-    {
+    {    
+        var calculator = new CalculatorEngine();
         Assert.IsTrue(_calculator.CompareTwoNumbers(5.123456781f, 5.123456780f));
     }
 
