@@ -44,7 +44,8 @@ public class UnitTest5
 
     [Test]
     public void CompareTwoNumbers_WithOneNumberSignificantlyHigher_ReturnsFalse()
-    {
+    {    
+        var calculator = new CalculatorEngine();
         Assert.IsFalse(_calculator.CompareTwoNumbers(5.12345678f, 5.12345670f));
     }
 
