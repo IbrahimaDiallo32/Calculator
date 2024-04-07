@@ -18,12 +18,13 @@ public class UnitTest5
         bool result = calulator.CompareTwoNumbers(num1, num2);
 
 
-        Assert.IsTrue(result);
+        Assert.IsTrue(result); 
     }
 
     [Test]
     public void CompareTwoNumbers_WithNumbersDifferingBeyond8thDecimal_ReturnsFalse()
     {
+        var calculator = new CalculatorEngine();
         Assert.IsFalse(_calculator.CompareTwoNumbers(5.123456781f, 5.123456782f));
     }
 
