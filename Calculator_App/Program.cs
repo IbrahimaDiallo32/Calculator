@@ -1,5 +1,6 @@
 using Calculator_App;
 using Calculator_App.Components;
+using CalculatorEngine;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -44,11 +45,11 @@ public class Programs
             .ConfigureServices((_, services) =>
             {
                 // Register services here
-                services.AddSingleton<CalculatorEngine>(); // Example registration
+                services.AddSingleton<CalculatorLogic>(); // Example registration
             })
             .ConfigureWebHostDefaults(webBuilder =>
             {
-                webBuilder.UseStartup<CalculatorEngine>();
+                webBuilder.UseStartup<CalculatorLogic>();
             });
 }
 

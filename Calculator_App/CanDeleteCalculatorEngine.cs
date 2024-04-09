@@ -1,8 +1,8 @@
 namespace Calculator_App;
 
-public class CalculatorEngine
+public class CanDeleteCalculatorEngine
 {
-    public float AddTwoNumbers(float float1, float float2)
+    public float AddTwoNumbers(float float1, float float2) //these should b doubles
     {
         return
             float1 + float2;

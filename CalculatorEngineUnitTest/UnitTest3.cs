@@ -1,4 +1,4 @@
-using Calculator_App;
+using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 
@@ -7,65 +7,61 @@ public class UnitTest3
 {
 
     [Test]
-    public void Multiply_TwoPositiveFloatingPointValues_ReturnsPositive()
+    public void Multiply_TwoPositiveDoubles_ReturnsPositive()
     {
         //preq-UNIT-TEST-4
         
         // Arrange
-        var calculator = new CalculatorEngine();
-        float num1 = 5f;
-        float num2 = 10f;
-        float expected = 50f;
+        double num1 = 5;
+        double num2 = 10;
+        double expected = 50;
 
         // Act
-        float result = calculator.MultiplyTwoFloatNumbers(num1, num2);
+        double result = CalculatorLogic.MultiplyTwoNumbers(num1, num2);
 
         // Assert
         Assert.That(expected, Is.EqualTo(result), "Multiplying two positive numbers should return a positive result.");
     }
     [Test]
-    public void Multiply_OnePositiveFloatOneNegativeFloat_ReturnsNegative()
+    public void Multiply_OnePositiveDoubleOneNegativeDouble_ReturnsNegative()
     {
         // Arrange
-        var calculator = new CalculatorEngine();
-        float num1 = -5f;
-        float num2 = 10f;
-        float expected = -50f;
+        double num1 = -5;
+        double num2 = 10;
+        double expected = -50;
 
         // Act
-        float result = calculator.MultiplyTwoFloatNumbers(num1, num2);
+        double result = CalculatorLogic.MultiplyTwoNumbers(num1, num2);
 
         // Assert
         Assert.That(expected, Is.EqualTo(result), "Multiplying a positive number by a negative number should return a negative result.");
     }
 
     [Test]
-    public void Multiply_TwoNegativeFloatingPointValues_ReturnsPositive()
+    public void Multiply_TwoNegativeDoubles_ReturnsPositive()
     {
         // Arrange
-        var calculator = new CalculatorEngine();
-        float num1 = -5f;
-        float num2 = -10f;
-        float expected = 50f;
+        double num1 = -5;
+        double num2 = -10;
+        double expected = 50;
 
         // Act
-        float result = calculator.MultiplyTwoFloatNumbers(num1, num2);
+        double result = CalculatorLogic.MultiplyTwoNumbers(num1, num2);
 
         // Assert
         Assert.That(expected, Is.EqualTo(result), "Multiplying two negative numbers should return a positive result.");
     }
 
     [Test]
-    public void Multiply_OneFloatIsZero_ReturnsZero()
+    public void Multiply_OneDoubleIsZero_ReturnsZero()
     {
         // Arrange
-        var calculator = new CalculatorEngine();
-        float num1 = 0f;
-        float num2 = 10f;
-        float expected = 0f;
+        double num1 = 0;
+        double num2 = 10;
+        double expected = 0;
 
         // Act
-        float result = calculator.MultiplyTwoFloatNumbers(num1, num2);
+        double result = CalculatorLogic.MultiplyTwoNumbers(num1, num2);
 
         // Assert
         Assert.That(expected, Is.EqualTo(result), "Multiplying any number by zero should return zero.");

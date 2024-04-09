@@ -4,6 +4,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator_App", "Calculato
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngineUnitTest", "CalculatorEngineUnitTest\CalculatorEngineUnitTest.csproj", "{3517CFE1-5037-4F15-B96E-01573CBCEEB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngine", "CalculatorEngine\CalculatorEngine.csproj", "{F3236E85-05E0-4B25-B680-E81FCB230469}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{3517CFE1-5037-4F15-B96E-01573CBCEEB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3517CFE1-5037-4F15-B96E-01573CBCEEB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3517CFE1-5037-4F15-B96E-01573CBCEEB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3236E85-05E0-4B25-B680-E81FCB230469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3236E85-05E0-4B25-B680-E81FCB230469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3236E85-05E0-4B25-B680-E81FCB230469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3236E85-05E0-4B25-B680-E81FCB230469}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

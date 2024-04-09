@@ -1,10 +1,9 @@
-using Calculator_App;
+using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 
 public class UnitTest5
 {
-    private CalculatorEngine _calculator = new CalculatorEngine();
     
     [Test]
     public void CompareTwoNumbers_WithExactlySameNumbers_ReturnsTrue()
@@ -14,7 +13,7 @@ public class UnitTest5
         float num2 = 0.333333f;
         
         //Act
-        bool result = _calculator.CompareTwoNumbers(num1, num2);
+        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
         
         //Assert
         Assert.That(result, Is.EqualTo(true));
@@ -28,7 +27,7 @@ public class UnitTest5
         float num2 = 0.33333334f;
         
         //Act
-        bool result = _calculator.CompareTwoNumbers(num1, num2);
+        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
 
         //Assert
         Assert.That(result, Is.EqualTo(false));
@@ -42,7 +41,7 @@ public class UnitTest5
         float num2 = 0.333333332f;
         
         //Act
-        bool result = _calculator.CompareTwoNumbers(num1, num2);
+        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
 
         //Assert
         Assert.That(result, Is.EqualTo(true));

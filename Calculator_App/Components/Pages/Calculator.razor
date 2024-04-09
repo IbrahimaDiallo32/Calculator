@@ -1,5 +1,6 @@
-@page "/calculator"
-@using System.Reflection
+@page "/"
+@using CalculatorEngine
+
 @rendermode InteractiveServer
 
 <div class="outerContainer">
@@ -75,15 +76,10 @@
     bool error { get; set; }
     bool invalidInput { get; set; }
 
-
     //This method will return true if both user inputs are able to be parsed to double values 
     private bool IsValidInput()
     {
-        if (double.TryParse(inputA, out double temp1) && double.TryParse(inputB, out double temp2))
-        {
-            return true;
-        }
-        return false;
+        return double.TryParse(inputA, out double temp1) && double.TryParse(inputB, out double temp2);
     }
 
     private void AddNumbers()
@@ -94,37 +90,32 @@
         {
             invalidInput = true;
             result = null;
+            return;
         }
-        else
-        {
-            error = false;
-            invalidInput = false;
-            //parsing inputs to temporary variables to perform operation 
-            double x = double.Parse(inputA);
-            double y = double.Parse(inputB);
-            result = x + y;
-        }
+        error = false;
+        invalidInput = false;
+        //parsing inputs to temporary variables to perform operation 
+        double x = double.Parse(inputA);
+        double y = double.Parse(inputB);
+        result = CalculatorLogic.AddTwoNumbers(x, y);
     }
 
     //Method to subtract numbers
     private void SubtractNumbers()
     {
         //preq-ENGINE-4
-        //If inputs have values complete the operation
+        //If inputs have valid values complete the operation
         if (!IsValidInput())
         {
             result = null;
             invalidInput = true;
+            return;
         }
-
-        else
-        {
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
             result = x - y;
-        }
     }
 
     private void MultiplyNumbers()
@@ -134,16 +125,13 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-
-        else
-        {
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
-            result = x * y;
-        }
+            result = CalculatorLogic.MultiplyTwoNumbers(x, y);
     }
 
     //Method to divide numbers catching division by 0 here.
@@ -154,9 +142,8 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
             invalidInput = false;
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
@@ -170,9 +157,8 @@
             else
             {
                 error = false;
-                result = x / y;
+                result = CalculatorLogic.DivideTwoNumbers(x, y);
             }
-        }
     }
 
     private void CompareTwoNumbers()

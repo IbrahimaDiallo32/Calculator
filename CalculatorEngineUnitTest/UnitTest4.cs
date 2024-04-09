@@ -1,5 +1,4 @@
-using Calculator_App;
-using Calculator_App.Components.Pages;
+using CalculatorEngine;
 using NUnit.Framework;
 
 namespace CalculatorTestProject1;
@@ -9,60 +8,56 @@ public class UnitTest4
 {
     
     [Test]
-    public void DivideTwoNumbers_TwoPositiveFloatingPointValues_ReturnsPositive()
+    public void DivideTwoNumbers_TwoPositiveDoubles_ReturnsPositive()
     {
         ////preq-UNIT-TEST-5
         
         //Arrange
-        var calulator = new CalculatorEngine();
-        float num1 = 20f;
-        float num2 = 5f;
-        float expected = 4f;
+        double num1 = 20;
+        double num2 = 5;
+        double expected = 4;
 
-        float result = calulator.DivideTwoNumbers(num1, num2);
+        double result = CalculatorLogic.DivideTwoNumbers(num1, num2);
 
 
         Assert.That(expected, Is.EqualTo(result));
     }
 
     [Test]
-    public void DivideTwoNumbers_TwoNegativeFloatingPointValues_ReturnsPositive()
+    public void DivideTwoNumbers_TwoNegativeDoubles_ReturnsPositive()
     {
-        var calulator = new CalculatorEngine();
-        float num1 = -30f;
-        float num2 = -5f;
-        float expected = 6f;
+        double num1 = -30;
+        double num2 = -5;
+        double expected = 6;
 
-        float result = calulator.DivideTwoNumbers(num1, num2);
+        double result = CalculatorLogic.DivideTwoNumbers(num1, num2);
 
 
         Assert.That(expected, Is.EqualTo(result));
     }
 
     [Test]
-    public void DivideTwoNumbers_PositiveFloatByNegativeFloat_ReturnsNegative()
+    public void DivideTwoNumbers_PositiveDoubleByNegativeDouble_ReturnsNegative()
     {
-        var calulator = new CalculatorEngine();
-        float num1 = 20f;
-        float num2 = -5f;
-        float expected = -4f;
+        double num1 = 20;
+        double num2 = -5;
+        double expected = -4;
 
-        float result = calulator.DivideTwoNumbers(num1, num2);
+        double result = CalculatorLogic.DivideTwoNumbers(num1, num2);
 
 
         Assert.That(expected, Is.EqualTo(result));
     }
 
     [Test]
-    public void DivideTwoNumbers_NegativeFloatByPositiveFloat_ReturnsNegative()
+    public void DivideTwoNumbers_NegativeDoubleByPositiveDouble_ReturnsNegative()
     {
         //Arrange
-        var calulator = new CalculatorEngine();
-        float num1 = -20f;
-        float num2 = 5f;
-        float expected = -4f;
+        double num1 = -20;
+        double num2 = 5;
+        double expected = -4;
 
-        float result = calulator.DivideTwoNumbers(num1, num2);
+        double result = CalculatorLogic.DivideTwoNumbers(num1, num2);
 
 
         Assert.That(expected, Is.EqualTo(result));
@@ -70,16 +65,15 @@ public class UnitTest4
 
     //Unfinished test
     [Test]
-    public void Division_FloatingPointValueAndZero_ReturnsError()
+    public void Division_DoubleAndZero_ReturnsError()
     {
         //Arrange
-        CalculatorEngine calculator = new CalculatorEngine();
 
         //Act
-        float num1 = 10.0f;
-        float num2 = 0.0f;
+        double num1 = 10.0;
+        double num2 = 0.0;
         //double? result = calculator.DivideTwoNumbers(num1, num2);
-        float? expected = null;
+        double? expected = null;
         
         Exception caughtException = null;
         //Assert
@@ -90,7 +84,7 @@ public class UnitTest4
         try
         {
             // Attempt to perform division by zero
-            double? result = calculator.DivideTwoNumbers(num1, num2);
+            double? result = CalculatorLogic.DivideTwoNumbers(num1, num2);
         }
         catch (Exception ex)
         {
