@@ -1,8 +1,9 @@
-/*using Calculator_App;
+using Calculator_App;
 
 namespace CalculatorTestProject1;
 
 public class UnitTest6
+ // preq-UNIT-TEST-8
 {
     [Test]
         public void PowerFunction_WithPositiveNumbers_ReturnsCorrectResult()
@@ -11,13 +12,13 @@ public class UnitTest6
             var calculator = new CalculatorEngine();
             float baseNumber = 2f;
             float exponent = 3f;
-            double expected = Math.Pow(2, 3);
+            double expected =8;
 
             // Act
             var result = calculator.PowerFunction(baseNumber, exponent);
 
             // Assert
-            Assert.AreEqual(expected, result, 0.0001, "The power function does not calculate correctly with positive numbers.");
+            Assert.That(expected, Is.EqualTo(result), "The power function does not calculate correctly with positive numbers.");
         }
 
         [Test]
@@ -33,7 +34,7 @@ public class UnitTest6
             var result = calculator.PowerFunction(baseNumber, exponent);
 
             // Assert
-            Assert.AreEqual(expected, result, "The power function does not return zero when the base is zero and the exponent is positive.");
+            Assert.That(expected,Is.EqualTo(result), "The power function does not return zero when the base is zero and the exponent is positive.");
         }
 
         [Test]
@@ -49,7 +50,7 @@ public class UnitTest6
             var result = calculator.PowerFunction(baseNumber, exponent);
 
             // Assert
-            Assert.AreEqual(expected, result, 0.0001, "The power function does not handle negative bases with an integer exponent correctly.");
+            Assert.That(expected, Is.EqualTo(result),  "The power function does not handle negative bases with an integer exponent correctly.");
         }
 
         [Test]
@@ -65,7 +66,6 @@ public class UnitTest6
             var result = calculator.PowerFunction(baseNumber, exponent);
 
             // Assert
-            Assert.AreEqual(expected, result, "The power function does not return the base when the exponent is 1.");
+            Assert.That(expected, Is.EqualTo(result), "The power function does not return the base when the exponent is 1.");
         }
 }
-*/
