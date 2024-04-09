@@ -113,9 +113,9 @@
         }
             error = false;
             invalidInput = false;
-            double x = double.Parse(inputA);
-            double y = double.Parse(inputB);
-            result = x - y;
+            var x = double.Parse(inputA);
+            var y = double.Parse(inputB);
+            result = CalculatorLogic.SubtractTwoNumbers(x, y);
     }
 
     private void MultiplyNumbers()
@@ -169,21 +169,11 @@
             result = null;
             invalidInput = true;
         }
-        else
-        {
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
-            if (Math.Round(x, 8) == Math.Round(y, 8))
-            {
-                result = 1;
-            }
-            else
-            {
-                result = 0;
-            }
-        }
+            result = CalculatorLogic.CompareTwoNumbers(x, y);
     }
 
     private void RaisePower()
@@ -193,15 +183,13 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
-            result = Math.Pow(x, y);
-        }
+            result = CalculatorLogic.PowerFunction(x, y);
     }
 
     private void LogOfNumber()
@@ -211,83 +199,63 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
+        
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
             if (x <= 0 || y == 0)
             {
                 error = true;
                 result = null;
+                return;
             }
-            else
-            {
                 error = false;
                 invalidInput = false;
-                result = Math.Log(x, y);
-            }
-        }
+                result = CalculatorLogic.LogOfTwoDoubles(x, y);
     }
 
-    public void RootOfNumber()
+    private void RootOfNumber()
     {
         //preq-ENGINE-11
         if (!IsValidInput())
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
+        
+        double x = double.Parse(inputA);
+        double y = double.Parse(inputB);
+        if (y == 0)
         {
-            double x = double.Parse(inputA);
-            double y = double.Parse(inputB);
-            if (y == 0)
-            {
-                error = true;
-                result = null;
-            }
-            else
-            {
-                error = false;
-                invalidInput = false;
-                //this raises 'A' to the Y or "n'th" root.
-                result = Math.Pow(x, (1 / y));
-            }
+            error = true;
+            result = null;
+            return;
         }
-    }
-
-    public double FactorialOfDouble(double temp)
-    {
-        //preq-ENGINE-12
-        if (temp < 0)
-        {
-            return -1;
-        }
-
-        if (temp >= 0 && temp <= 1)
-        {
-            return 1;
-        }
-
-        return temp * FactorialOfDouble(temp - 1);
+        error = false;
+        invalidInput = false;
+        //this raises 'A' to the Y or "n'th" root.
+        result = CalculatorLogic.RootOfTwoDoubles(x, y);
+        
     }
 
     private void FactorialOfInput()
     {
+        //preq-ENGINE-12
         if (!IsValidInput())
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
-            error = false;
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            result = FactorialOfDouble(x);
-        }
+        
+        error = false;
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        result = CalculatorLogic.FactorialOfDouble(x);
     }
+    
 
     private void SinOfNumber()
     {
@@ -296,14 +264,12 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
-            error = false;
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            result = Math.Sin(x);
-        }
+        error = false;
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        result = CalculatorLogic.SinOfDouble(x);
     }
 
     private void CosOfNumber()
@@ -313,14 +279,12 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
-            error = false;
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            result = Math.Cos(x);
-        }
+        error = false;
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        result = CalculatorLogic.CosOfDouble(x);
     }
 
     private void TanOfNUmber()
@@ -330,14 +294,12 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
-            error = false;
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            result = Math.Tan(x);
-        }
+        error = false;
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        result = CalculatorLogic.TanOfDouble(x);
     }
 
     private void ReciprocalOfNumber()
@@ -347,24 +309,20 @@
         {
             result = null;
             invalidInput = true;
+            return;
         }
-        else
-        {
-            double x = double.Parse(inputA);
+         double x = double.Parse(inputA);
             if (x == 0)
             {
                 error = true;
                 result = null;
+                return;
             }
-            else
-            {
-                error = false;
-                invalidInput = false;
-                result = (1 / x);
-            }
-        }
+            error = false;
+            invalidInput = false;
+            result = CalculatorLogic.InverseOfDouble(x);
     }
-    public void clearInputs()
+    private void clearInputs()
     {
         inputA = null;
         inputB = null;
