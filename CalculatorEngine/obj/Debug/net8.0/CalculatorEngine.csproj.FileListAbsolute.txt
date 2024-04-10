@@ -1,0 +1,12 @@
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/bin/Debug/net8.0/CalculatorEngine.deps.json
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/bin/Debug/net8.0/CalculatorEngine.dll
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/bin/Debug/net8.0/CalculatorEngine.pdb
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.AssemblyInfoInputs.cache
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.AssemblyInfo.cs
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.csproj.CoreCompileInputs.cache
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.sourcelink.json
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.dll
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/refint/CalculatorEngine.dll
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.pdb
+/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/ref/CalculatorEngine.dll
