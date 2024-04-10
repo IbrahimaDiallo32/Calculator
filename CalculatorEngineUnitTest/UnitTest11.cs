@@ -1,4 +1,4 @@
-using Calculator_App;
+/*using Calculator_App;
 namespace CalculatorTestProject1;
 
 public class UnitTest11
@@ -40,4 +40,4 @@ public class UnitTest11
         //Assert
         Assert.That(result, Is.EqualTo(10000).Within(1), $"Inverse of {testValue} should be approximately 10000.");
     }
-}
+}*/

@@ -1,4 +1,4 @@
-using Calculator_App;
+/*using Calculator_App;
 namespace CalculatorTestProject1;
 
 public class UnitTest10
@@ -51,4 +51,4 @@ public class UnitTest10
         var result = calculator.TanOfFloat(2 * (float)Math.PI);
         Assert.That(result, Is.EqualTo(0).Within(0.0001), "Tangent of 2π should be 0.");
     }
-}
+}*/

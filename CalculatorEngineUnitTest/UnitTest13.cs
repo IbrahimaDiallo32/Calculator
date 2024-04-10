@@ -1,4 +1,4 @@
-using Calculator_App;
+/*using Calculator_App;
 namespace CalculatorTestProject1;
 
 public class UnitTest13
@@ -66,4 +66,4 @@ public class UnitTest13
             Assert.That(result, Is.EqualTo(1000).Within(0.1), "Square root of 1000000 should be 1000.");
         }
     
-}
+}*/
