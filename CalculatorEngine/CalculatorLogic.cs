@@ -45,15 +45,25 @@ public class CalculatorLogic
         return Math.Pow(inputA, inputB);
     }
 
-    //It is possible to have the factorial of a decimal so that case is captured in this recursive method
-    //to calculate the factorial of a double
+    //It is not required to calculate the factorial of a double so all inputs of this method will be integers.
     public static double FactorialOfDouble(double inputA) //This also needs to be changed to handle a negat
     {
         if (inputA < 0)
         {
-            return -1;
+            double answerOfNegativeFactorial = 1;
+            for (double i = inputA; i <= -1; i++)
+            {
+                answerOfNegativeFactorial *= i;
+            }
+            if(answerOfNegativeFactorial > 0 && (answerOfNegativeFactorial % 2) == 1)
+            {
+                answerOfNegativeFactorial *= -1;
+            }
+
+
+            return answerOfNegativeFactorial;
         }
-        if (inputA >= 0 && inputA <= 1)
+        if (inputA is 1 or 0)
         {
             return 1;
         }
