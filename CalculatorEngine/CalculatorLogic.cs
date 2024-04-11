@@ -55,12 +55,6 @@ public class CalculatorLogic
             {
                 answerOfNegativeFactorial *= i;
             }
-            if(answerOfNegativeFactorial > 0 && (answerOfNegativeFactorial % 2) == 1)
-            {
-                answerOfNegativeFactorial *= -1;
-            }
-
-
             return answerOfNegativeFactorial;
         }
         if (inputA is 1 or 0)

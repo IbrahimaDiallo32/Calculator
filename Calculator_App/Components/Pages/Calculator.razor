@@ -7,6 +7,21 @@
     
     <h1>Calculator <button @onclick= "clearInputs" id="clearButton">Clear</button></h1>
 
+    <div class="resultBox">
+        @if (result.HasValue)
+        {
+            
+            <h3>@inputA @inputB "=" @result  </h3>
+        }
+        @if (error)
+        {
+            <h3>Not a number</h3>
+        }
+        @if (invalidInput)
+        {
+            <h3>Invalid Input, Numbers Only</h3>
+        }
+    </div>
 
     <label for = "inputA"><b>Input A</b></label>
     <label for = "inputB" id = "spaceIndentForText"><b>Input B</b></label>
@@ -54,19 +69,6 @@
 
 </div>
 
-
-@if (result.HasValue)
-{
-    <h3>Result: @result</h3>
-}
-@if (error)
-{
-    <h3>Not a number</h3>
-}
-@if (invalidInput)
-{
-    <h3>Invalid Input, Numbers Only</h3>
-}
 
 
 @code {
