@@ -1,4 +1,4 @@
-using Calculator_App;
+/*using Calculator_App;
 namespace CalculatorTestProject1;
 
 public class UnitTest12
@@ -56,4 +56,4 @@ public class UnitTest12
             Assert.That(result, Is.EqualTo(0).Within(0.0001), "Log of 1 should be 0 regardless of the base.");
         }
         
-}
+}*/

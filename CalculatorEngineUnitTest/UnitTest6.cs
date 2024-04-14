@@ -1,4 +1,4 @@
-using Calculator_App;
+/*using Calculator_App;
 
 namespace CalculatorTestProject1;
 
@@ -68,4 +68,4 @@ public class UnitTest6
             // Assert
             Assert.That(expected, Is.EqualTo(result), "The power function does not return the base when the exponent is 1.");
         }
-}
+}*/

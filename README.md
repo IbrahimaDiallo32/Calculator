@@ -20,6 +20,7 @@
 ### Steps to prepare your environment to execute this application: 
 1. [Install the latest JetBrain Rider](#https://www.jetbrains.com/rider/download/#section=windows)
 2. Install Git and Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
+3. Open Raider and Open the cloned folder
 
 ## Executing the Web Application 
 - adfadfadfasdfa

@@ -4,6 +4,7 @@
     margin: auto;
     align-items: center;
     justify-content: center;
+    /*background-color: grey;*/
 }
 #clearButton{
     background-color: #EBEBEB;
@@ -18,6 +19,14 @@
     margin-bottom: 6px;
     margin-top: 6px;
     border-radius: 7px; width: 38%; padding: .2%; color: #000000;
+}
+.resultBox{
+    width: 500px;
+    height: 75px;
+    padding: 15px;
+    margin: 10px;
+    background-color: #FFECD7;
+    text-align: center;
 }
 .try{
     background-color: #3a0647;

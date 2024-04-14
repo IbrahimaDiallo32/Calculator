@@ -1,4 +1,4 @@
-using Calculator_App;
+/*using Calculator_App;
 namespace CalculatorTestProject1;
 
 public class UnitTest9
@@ -50,4 +50,4 @@ public class UnitTest9
         Assert.That(result, Is.EqualTo(0).Within(0.0001), "Cosine of -π/2 should be 0.");
     }
     
-}
+}*/

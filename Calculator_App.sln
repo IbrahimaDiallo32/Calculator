@@ -25,4 +25,6 @@ Global
 		{F3236E85-05E0-4B25-B680-E81FCB230469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F3236E85-05E0-4B25-B680-E81FCB230469}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
 EndGlobal
