@@ -26,7 +26,7 @@
 - adfadfadfasdfa
 
 ## Executing Unit Tests
--adfa dfasdf
+-Install following packages in the Manage NuGet Packages:
 
 ## Executing Unit Test Coverage
 -asfadkjlglsfkgs 
