@@ -27,6 +27,8 @@
 
 ## Executing Unit Tests
 -Install following packages in the Manage NuGet Packages:
+1. Nunit 4.1.0
+2. Nuni.Analyzers 4.1.0
 
 ## Executing Unit Test Coverage
 -asfadkjlglsfkgs 
