@@ -21,6 +21,9 @@
 1. [Install the latest JetBrain Rider](#https://www.jetbrains.com/rider/download/#section=windows)
 2. Install Git and Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
 3. Open Raider and Open the cloned folder
+To configure NUnit for Unit Test:
+1.  Right-click on CalculatorEngineUnitTest project folder
+2.  Click on Manage NuGet Packages
 
 ## Executing the Web Application 
 - adfadfadfasdfa
