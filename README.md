@@ -28,6 +28,9 @@ To configure NUnit for Unit Test:
    1. Nunit 4.1.0
    2. Nuni.Analyzers 4.1.0
    3. NUnit3TestAdapter 4.5.0
+
+To configure PlayWright for end-to-end testing: 
+1. 
    
 
 ## Executing the Web Application 
