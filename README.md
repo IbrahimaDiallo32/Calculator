@@ -21,12 +21,23 @@
 1. [Install the latest JetBrain Rider](#https://www.jetbrains.com/rider/download/#section=windows)
 2. Install Git and Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
 3. Open Raider and Open the cloned folder
+To configure NUnit for Unit Test:
+1.  Right-click on CalculatorEngineUnitTest project folder
+2.  Click on Manage NuGet Packages
+3. Install following packages in the Manage NuGet Packages:
+   1. Nunit 4.1.0
+   2. Nuni.Analyzers 4.1.0
+   3. NUnit3TestAdapter 4.5.0
+
+To configure PlayWright for end-to-end testing: 
+1. 
+   
 
 ## Executing the Web Application 
 - adfadfadfasdfa
 
 ## Executing Unit Tests
--adfa dfasdf
+
 
 ## Executing Unit Test Coverage
 -asfadkjlglsfkgs 
