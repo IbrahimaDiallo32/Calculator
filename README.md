@@ -24,15 +24,17 @@
 To configure NUnit for Unit Test:
 1.  Right-click on CalculatorEngineUnitTest project folder
 2.  Click on Manage NuGet Packages
+3. Install following packages in the Manage NuGet Packages:
+   1. Nunit 4.1.0
+   2. Nuni.Analyzers 4.1.0
+   3. NUnit3TestAdapter 4.5.0
+   
 
 ## Executing the Web Application 
 - adfadfadfasdfa
 
 ## Executing Unit Tests
--Install following packages in the Manage NuGet Packages:
-1. Nunit 4.1.0
-2. Nuni.Analyzers 4.1.0
-3. NUnit3TestAdapter 4.5.0
+
 
 ## Executing Unit Test Coverage
 -asfadkjlglsfkgs 
