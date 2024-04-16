@@ -10,3 +10,15 @@
 /Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/refint/CalculatorEngine.dll
 /Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/CalculatorEngine.pdb
 /Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/Debug/net8.0/ref/CalculatorEngine.dll
+C:\Users\umesh\Calculator\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.deps.json
+C:\Users\umesh\Calculator\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.dll
+C:\Users\umesh\Calculator\CalculatorEngine\bin\Debug\net8.0\CalculatorEngine.pdb
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.AssemblyInfoInputs.cache
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.AssemblyInfo.cs
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.csproj.CoreCompileInputs.cache
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.sourcelink.json
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.dll
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\refint\CalculatorEngine.dll
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\CalculatorEngine.pdb
+C:\Users\umesh\Calculator\CalculatorEngine\obj\Debug\net8.0\ref\CalculatorEngine.dll

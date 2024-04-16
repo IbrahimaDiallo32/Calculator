@@ -9,11 +9,11 @@ public class UnitTest5
     public void CompareTwoNumbers_WithExactlySameNumbers_ReturnsTrue()
     {
         //Arrange
-        float num1 = 0.333333f;
-        float num2 = 0.333333f;
+        double num1 = 0.333333f;
+        double num2 = 0.333333f;
         
         //Act
-        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
+        double result = CalculatorLogic.CompareTwoNumbers(num1, num2);
         
         //Assert
         Assert.That(result, Is.EqualTo(true));
@@ -47,7 +47,7 @@ public class UnitTest5
         Assert.That(result, Is.EqualTo(true));
     }
 
-    /*
+    
     [Test]
     public void CompareTwoNumbers_WithOneNumberSlightlyHigher_ReturnsTrue()
     {

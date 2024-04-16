@@ -62,9 +62,9 @@ public class UnitTest4
 
         Assert.That(expected, Is.EqualTo(result));
     }
-
+    }
     //Unfinished test
-    [Test]
+   /* [Test]
     public void Division_DoubleAndZero_ReturnsError()
     {
         //Arrange
@@ -96,4 +96,4 @@ public class UnitTest4
         // Assert
         Assert.That(caughtException, Is.TypeOf<DivideByZeroException>());
     }
-} 
+} */
