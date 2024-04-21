@@ -37,6 +37,8 @@ To configure PlayWright for end-to-end testing:
 - adfadfadfasdfa
 
 ## Executing Unit Tests
+1. Install Jetbrain Raider: https://www.jetbrains.com/rider/download/#section=windows 
+2. Make sure to follow the steps in the Enivroment instructions
 
 
 ## Executing Unit Test Coverage
