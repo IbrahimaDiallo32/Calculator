@@ -16,16 +16,16 @@
 2. Ibrahima Diallo
 
 ## Environment
--This application should work on Windowns 10+. 
+-This application should work on Windows 10+. 
 ### Steps to prepare your environment to execute this application: 
-1. [Install the latest JetBrain Rider](#https://www.jetbrains.com/rider/download/#section=windows)
+1. [Install the latest JetBrains Rider](#https://www.jetbrains.com/rider/download/#section=windows)
 2. Install Git on your computer: https://git-scm.com/downloads 
 3. Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
 4. Open Raider and Open the cloned folder
 To configure NUnit for Unit Test:
 1.  Right-click on CalculatorEngineUnitTest project folder
 2.  Click on Manage NuGet Packages
-3. Install following packages in the Manage NuGet Packages:
+3. Install the following packages in the Manage NuGet Packages:
    1. Nunit 4.1.0
    2. Nuni.Analyzers 4.1.0
    3. NUnit3TestAdapter 4.5.0
@@ -35,11 +35,11 @@ To configure PlayWright for end-to-end testing:
    
 
 ## Executing the Web Application 
-- adfadfadfasdfa
+1. Make sure to follow the steps in the [Environment](#environment) instructions
 
 ## Executing Unit Tests
-1. Install Jetbrain Raider: https://www.jetbrains.com/rider/download/#section=windows 
-2. Make sure to follow the steps in the Enivronment instructions
+1. Install Jetbrains Raider: https://www.jetbrains.com/rider/download/#section=windows 
+2. Make sure to follow the steps in the [Environment](#environment) instructions
 
 
 ## Executing Unit Test Coverage
