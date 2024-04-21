@@ -1,4 +1,4 @@
-/*
+
 using CalculatorEngine;
 
 namespace CalculatorTestProject1;
@@ -12,7 +12,7 @@ public class UnitTest13
             double testValue1 = 9;
 
             //Act
-            var result = CalculatorLogic.RootOfTwoDoubles(testValue1, 0);
+            var result = CalculatorLogic.RootOfTwoDoubles(testValue1, 2);
             //Assert
             Assert.That(result, Is.EqualTo(3).Within(0.0001), "Square root of 9 should be 3.");
         }
@@ -29,6 +29,7 @@ public class UnitTest13
             Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Square root of 0 should be 0.");
         }
 
+        /*
         [Test]
         public void RootOfTwoDoubles_NegativeNumber_ThrowsExceptionOrReturnsNaN()
         {
@@ -40,7 +41,7 @@ public class UnitTest13
             //Assert
             Assert.That(double.IsNaN(result),Is.EqualTo(true), "Square root of a negative number should be NaN.");
         }
-
+      
         
         [Test]
         public void RootOfTwoDoubles_VerySmallPositiveNumber_ReturnsCorrectSquareRoot()
@@ -53,7 +54,7 @@ public class UnitTest13
             //Assert
             Assert.That(result, Is.EqualTo(0.01).Within(0.0001), "Square root of 0.0001 should be 0.01.");
         }
-
+  
        
         [Test]
         public void RootOfTwoDoubles_VeryLargePositiveNumber_ReturnsCorrectSquareRoot()
@@ -65,5 +66,5 @@ public class UnitTest13
             //Assert
             Assert.That(result, Is.EqualTo(1000).Within(0.1), "Square root of 1000000 should be 1000.");
         }
-    
-} */
+    */
+} 
