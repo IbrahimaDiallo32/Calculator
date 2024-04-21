@@ -47,9 +47,9 @@ To configure PlayWright for end-to-end testing:
 
 
 ## Executing Unit Test Coverage
--asfadkjlglsfkgs 
+1.  Make sure to follow the steps in the [Environment](#environment) instructions
 
 ## Executing End-to-End Tests
--fa dfadfadjfadf
+1.  Make sure to follow the steps in the [Environment](#environment) instructions
 ## Final Video Presentation
 -asdfahjkldfag
