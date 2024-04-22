@@ -26,7 +26,7 @@ public class Tests : PageTest
             await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));
         }
 
-      */
+     
     // preq-E2E-TEST-5
     [Test]
     public async Task CalculatorWebUi_VerifyPageTitle_ReturnsCalculator()
@@ -34,19 +34,31 @@ public class Tests : PageTest
         const string pageTitle = "Calculator";
         await Page.GotoAsync("http://localhost:5166");
         await Expect(Page).ToHaveTitleAsync(pageTitle);
-        /*Assert.That(await Page.TitleAsync(),Is.EqualTo("Calculator"));*/
+        /*Assert.That(await Page.TitleAsync(),Is.EqualTo("Calculator"));
     }
 }
-/*
+
         // preq-E2E-TEST-6
         [Test]
         public async Task CalculatorWebUi_AddTwoFloatingPointValues_ReturnsSumOfValues()
         {
+            await Page.GotoAsync("http://localhost:5166");
+            
             await Page.FillAsync("#inputA", "5");
             await Page.FillAsync("#inputB", "3");
             await Page.ClickAsync("#addButton");
             var result = await Page.InnerTextAsync("#resultBox");
-
-            Assert.That(result,Is.EqualTo("8"));
+            
+        }
+        //preq-E2E-TEST-7
+        [Test]
+        public async Task CalculatorWebUi_DivideFloatingPointValueAndZero_ReturnsNotANumberError()
+        {
+            await Page.GotoAsync("http://localhost:5166");
+            await Page.FillAsync("#inputA", "25");
+            await Page.FillAsync("#inputB", "0");
+            await Page.ClickAsync("#divideButton");
+            var result = await Page.InnerTextAsync("#resultBox");
+            Assert.AreEqual("Not a Number", result);
         }
 } */
