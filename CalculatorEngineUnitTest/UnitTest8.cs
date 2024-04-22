@@ -4,8 +4,9 @@ namespace CalculatorTestProject1;
 
 public class UnitTest8
 {   
+    //preq-UNIT-TEST-16
     [Test]
-    public void SinOfFloat_Zero_ReturnsZero()
+    public void SinOfDoubles_Zero_ReturnsZero()
     {
         //Arrange
         double expected = 0;
@@ -15,7 +16,7 @@ public class UnitTest8
         Assert.That(expected,Is.EqualTo(result),"Sine of 0 should 0");
     }
     [Test]
-    public void SinOfFloat_PiOverTwo_ReturnsOne()
+    public void SinOfDoubles_PiOverTwo_ReturnsOne()
     {   
         //Arrange
         double expected = 1;
@@ -27,7 +28,7 @@ public class UnitTest8
     }
 
     [Test]
-    public void SinOfFloat_Pi_ReturnsZero()
+    public void SinOfDoubles_Pi_ReturnsZero()
     {   
         //Arrange
         double expected = 0;
@@ -38,7 +39,7 @@ public class UnitTest8
     }
 
     [Test]
-    public void SinOfFloat_ThreePiOverTwo_ReturnsMinusOne()
+    public void SinOfDoubles_ThreePiOverTwo_ReturnsMinusOne()
     {   
         //Arrange
         double expected = -1;
@@ -49,7 +50,7 @@ public class UnitTest8
     }
 
     [Test]
-    public void SinOfFloat_TwoPi_ReturnsZero()
+    public void SinOfDoubles_TwoPi_ReturnsZero()
     {   
         //Arrange
         double expected = 0;
@@ -60,7 +61,7 @@ public class UnitTest8
     }
 
     [Test]
-    public void SinOfFloat_NegativeInput_ReturnsCorrectValue()
+    public void SinOfDoubles_NegativeInput_ReturnsCorrectValue()
     {   
         //Arrange
         double expected = -1;
