@@ -10,16 +10,15 @@
     <div class="resultBox">
         @if (result.HasValue)
         {
-            
-            <h3>@inputA @inputB "=" @result  </h3>
+            <h3 id = "resultBoxForCorrectInput">@inputA @inputB "=" @result  </h3>
         }
         @if (error)
         {
-            <h3>Not a number</h3>
+            <h3>error</h3>
         }
         @if (invalidInput)
         {
-            <h3>Invalid Input, Numbers Only</h3>
+            <h5 id = "resultBoxForInvalidInput">Invalid input Numbers Only</h5>
         }
     </div>
 
@@ -31,7 +30,8 @@
 </div>
 
 <div class = "upperInputs">
-    <h4>A and B    A Only</h4>
+    <h4>A and B</h4>  
+    <h4 id = "spaceIndentForInputBox">A Only</h4>
     
 </div>
 

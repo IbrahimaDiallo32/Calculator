@@ -1,4 +1,4 @@
-/*using CalculatorEngine;
+using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 
@@ -13,10 +13,10 @@ public class UnitTest5
         float num2 = 0.333333f;
         
         //Act
-        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
+        int result = CalculatorLogic.CompareTwoNumbers(num1, num2);
         
         //Assert
-        Assert.That(result, Is.EqualTo(true));
+        Assert.That(result, Is.EqualTo(1));
     }
 
     [Test]
