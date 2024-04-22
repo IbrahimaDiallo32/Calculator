@@ -42,6 +42,10 @@ To configure PlayWright for end-to-end testing:
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2. Open your command Line interface and ensure the git is installed
 3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
+4. Navigate to the project Directory with this command: cd your-project-name
+5. Restore Dependencies with this command: dotnet restore
+6. build the project using this command: dotnet build
+7. Start your Web Application: dotnet run 
    
 
 ## Executing Unit Tests
