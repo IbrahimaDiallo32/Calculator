@@ -1,43 +1,45 @@
-/*using Calculator_App;
+
+using CalculatorEngine;
+
 namespace CalculatorTestProject1;
 
 public class UnitTest11
 {
     [Test]
-    public void InverseOfFloat_PositiveNumber_ReturnsInverse()
+    public void InverseOfDouble_PositiveNumber_ReturnsInverse()
     {   
         //Arrange 
-        var calculator = new CalculatorEngine();
-        float testValue = 2f;
+        double testValue = 2;
+        double expected = 0.5;
         
         //Act
-        var result = calculator.InverseOfFloat(testValue);
+        var result = CalculatorLogic.InverseOfDouble(testValue);
         
         //Assert
-        Assert.That(result, Is.EqualTo(0.5).Within(0.0001), $"Inverse of {testValue} should be 0.5.");
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001), $"Inverse of {testValue} should be 0.5.");
     }
 
     [Test]
-    public void InverseOfFloat_NegativeNumber_ReturnsInverse()
+    public void InverseOfDouble_NegativeNumber_ReturnsInverse()
     {   
         //Arrange
-        var calculator = new CalculatorEngine();
-        float testValue = -2f;
+        double expected = -0.5;
+        double testValue = -2;
         //Act
-        var result = calculator.InverseOfFloat(testValue);
+        var result = CalculatorLogic.InverseOfDouble(testValue);
         //Assert
-        Assert.That(result, Is.EqualTo(-0.5).Within(0.0001), $"Inverse of {testValue} should be -0.5.");
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001), $"Inverse of {testValue} should be -0.5.");
     }
 
     [Test]
-    public void InverseOfFloat_VerySmallNumber_ReturnsLargeInverse()
+    public void InverseOfDouble_VerySmallNumber_ReturnsLargeInverse()
     {
         //Arrange
-        var calculator = new CalculatorEngine();
-        float testValue = 0.0001f; 
+        double expected = 10000;
+        double testValue = 0.0001; 
         //Act
-        var result = calculator.InverseOfFloat(testValue);
+        var result = CalculatorLogic.InverseOfDouble(testValue);
         //Assert
-        Assert.That(result, Is.EqualTo(10000).Within(1), $"Inverse of {testValue} should be approximately 10000.");
+        Assert.That(result, Is.EqualTo(expected).Within(1), $"Inverse of {testValue} should be approximately 10000.");
     }
-}*/
+}

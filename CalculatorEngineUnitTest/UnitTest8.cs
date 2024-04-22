@@ -1,56 +1,73 @@
-/*using Calculator_App;
+using CalculatorEngine;
+
 namespace CalculatorTestProject1;
 
 public class UnitTest8
 {   
+    //preq-UNIT-TEST-16
     [Test]
-    public void SinOfFloat_Zero_ReturnsZero()
+    public void SinOfDoubles_Zero_ReturnsZero()
     {
-        var calculator = new CalculatorEngine();
-        var result = calculator.SinOfFloat(0f);
-        Assert.That(0,Is.EqualTo(result),"Sine of 0 should 0");
+        //Arrange
+        double expected = 0;
+        //Act
+        var result = CalculatorLogic.SinOfDouble(0f);
+        //Assert
+        Assert.That(expected,Is.EqualTo(result),"Sine of 0 should 0");
     }
     [Test]
-    public void SinOfFloat_PiOverTwo_ReturnsOne()
-    {
-        var calculator = new CalculatorEngine();
+    public void SinOfDoubles_PiOverTwo_ReturnsOne()
+    {   
+        //Arrange
+        double expected = 1;
         var actual = Math.Sin(Math.PI/2);
-        var result = calculator.SinOfFloat((float)Math.PI / 2);
-        Assert.That(result, Is.EqualTo(1).Within(0.0001), "Sine of π/2 should be 1.");
+        //Act
+        var result = CalculatorLogic.SinOfDouble((float)Math.PI / 2);
+        //Assert
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Sine of π/2 should be 1.");
     }
 
     [Test]
-    public void SinOfFloat_Pi_ReturnsZero()
-    {
-        var calculator = new CalculatorEngine();
-        var result = calculator.SinOfFloat((float)Math.PI);
-        Assert.That(result, Is.EqualTo(0).Within(0.0001),  "Sine of π should be 0.");
+    public void SinOfDoubles_Pi_ReturnsZero()
+    {   
+        //Arrange
+        double expected = 0;
+        //Act
+        var result = CalculatorLogic.SinOfDouble((double)Math.PI);
+        //Assert
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001),  "Sine of π should be 0.");
     }
 
     [Test]
-    public void SinOfFloat_ThreePiOverTwo_ReturnsMinusOne()
-    {
-        var calculator = new CalculatorEngine();
-        var result = calculator.SinOfFloat(3 * (float)Math.PI / 2);
-        Assert.That(result, Is.EqualTo(-1).Within(0.0001),  "Sine of 3π/2 should be -1.");
+    public void SinOfDoubles_ThreePiOverTwo_ReturnsMinusOne()
+    {   
+        //Arrange
+        double expected = -1;
+        //Act
+        var result = CalculatorLogic.SinOfDouble(3 * (float)Math.PI / 2);
+        //Assert
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001),  "Sine of 3π/2 should be -1.");
     }
 
     [Test]
-    public void SinOfFloat_TwoPi_ReturnsZero()
-    {
-        var calculator = new CalculatorEngine();
-        var result = calculator.SinOfFloat(2 * (float)Math.PI);
-        Assert.That(result, Is.EqualTo(0).Within(0.0001),  "Sine of 2π should be 0.");
+    public void SinOfDoubles_TwoPi_ReturnsZero()
+    {   
+        //Arrange
+        double expected = 0;
+        //Act   
+        var result = CalculatorLogic.SinOfDouble(2 * (float)Math.PI);
+        //Assert
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001),  "Sine of 2π should be 0.");
     }
 
     [Test]
-    public void SinOfFloat_NegativeInput_ReturnsCorrectValue()
-    {
-        var calculator = new CalculatorEngine();
-        var result = calculator.SinOfFloat(-(float)Math.PI / 2);
-        Assert.That(result, Is.EqualTo(-1).Within(0.001), "Sine of -π/2 should be -1.");
+    public void SinOfDoubles_NegativeInput_ReturnsCorrectValue()
+    {   
+        //Arrange
+        double expected = -1;
+        //Act
+        var result = CalculatorLogic.SinOfDouble(-(float)Math.PI / 2);
+        //Assert
+        Assert.That(result, Is.EqualTo(expected).Within(0.001), "Sine of -π/2 should be -1.");
     }
 }
-
-    
-*/

@@ -16,21 +16,54 @@
 2. Ibrahima Diallo
 
 ## Environment
--This application should work on Windowns 10+. 
+-This application should work on Windows 10+. 
 ### Steps to prepare your environment to execute this application: 
-1. [Install the latest JetBrain Rider](#https://www.jetbrains.com/rider/download/#section=windows)
-2. Install Git and Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
+1. [Install the latest JetBrains Rider](#https://www.jetbrains.com/rider/download/#section=windows)
+2. Install Git on your computer: https://git-scm.com/downloads 
+3. Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
+   -Follow these commands on your terminal:
+     git clone https://github.com/IbrahimaDiallo32/Calculator.git
+     cd myproject(name of your cloned project)
+   
+5. Open Raider and Open the cloned folder
+To configure NUnit for Unit Test:
+1.  Right-click on CalculatorEngineUnitTest project folder
+2.  Click on Manage NuGet Packages
+3. Install the following packages in the Manage NuGet Packages:
+   1. Nunit 4.1.0
+   2. Nuni.Analyzers 4.1.0
+   3. NUnit3TestAdapter 4.5.0
+
+To configure PlayWright for end-to-end testing: 
+1. gsfgsf
+   
 
 ## Executing the Web Application 
-- adfadfadfasdfa
+1. Make sure to follow the steps in the [Environment](#environment) instructions
+2. Open your command Line interface and ensure the git is installed
+3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
+4. Navigate to the project Directory with this command: cd your-project-name
+5. Restore Dependencies with this command: dotnet restore
+6. build the project using this command: dotnet build
+7. Start your Web Application: dotnet run 
+   
 
 ## Executing Unit Tests
--adfa dfasdf
+1. Install JetBrains Raider: https://www.jetbrains.com/rider/download/#section=windows 
+2. Make sure to follow the steps in the [Environment](#environment) instructions
+3. Open your command Line interface and ensure the git is installed
+3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
+4. Navigate to the project Directory with this command: cd your-project-name
+5. Restore Dependencies with this command: dotnet restore
+6. build the project using this command: dotnet build
+7. Execute the Unit Tests using these commands: dotnet test
+
 
 ## Executing Unit Test Coverage
--asfadkjlglsfkgs 
+1.  Make sure to follow the steps in the [Environment](#environment) instructions
 
 ## Executing End-to-End Tests
--fa dfadfadjfadf
+1.  Make sure to follow the steps in the [Environment](#environment) instructions
+2.  Install Playwright following these instructions: https://playwright.dev/dotnet/docs/intro
 ## Final Video Presentation
 -asdfahjkldfag

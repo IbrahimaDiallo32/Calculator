@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "L3Q/pq97VdFCskHM4E0epBqJxDc3kLPo3TZstuT9V+/FK6t5e0IAaHMZX4mSSZQeFqhGVjh4aCcgXQGKznXEag==",
+  "dgSpecHash": "REmJTxo5snFifeI4IR3OxjhOXHMAe0kNCPngLf9v39DRNzJaJ9lSUbyrhK/1rswbzqfHZF6CqNtWfZKb+E+cmg==",
   "success": true,
-  "projectFilePath": "/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/CalculatorEngine.csproj",
+  "projectFilePath": "C:\\Users\\umesh\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

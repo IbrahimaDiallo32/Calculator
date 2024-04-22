@@ -1,4 +1,4 @@
-/*using Calculator_App;
+using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 
@@ -6,47 +6,38 @@ public class UnitTest7
 {
     //preq-UNIT-TEST-14
     [Test]
-    public void FactorialOfFloat_NegativeInput_ReturnsMinusOne()
-    {
+    public void FactorialOfDouble_Zero_ReturnsOne()
+    {   
         //Arrange
-        var calculator = new CalculatorEngine();
+        double input = 0;
+        double expected = 1;
         //Act
-        var result = calculator.FactorialOfFloat(-5f);
+        var result = CalculatorLogic.FactorialOfDouble(input);
         //Assert
-        Assert.That(-1, Is.EqualTo(result), "Factorial of a negative number should return -1.");
+        Assert.That(expected, Is.EqualTo(result), "Factorial of 0 should return 1.");
     }
 
     [Test]
-    public void FactorialOfFloat_Zero_ReturnsOne()
+    public void FactorialOfDouble_One_ReturnsOne()
     {   
         //Arrange
-        var calculator = new CalculatorEngine();
+        double input = 1;
+        double expected = 1;
         //Act
-        var result = calculator.FactorialOfFloat(0f);
+        var result = CalculatorLogic.FactorialOfDouble(input);
         //Assert
-        Assert.That(1, Is.EqualTo(result), "Factorial of 0 should return 1.");
+        Assert.That(expected, Is.EqualTo(result), "Factorial of 1 should return 1.");
     }
 
     [Test]
-    public void FactorialOfFloat_One_ReturnsOne()
+    public void FactorialOfDouble_PositiveInteger_ReturnsFactorial()
     {   
         //Arrange
-        var calculator = new CalculatorEngine();
+        double input = 4;
+        double expected = 24;
         //Act
-        var result = calculator.FactorialOfFloat(1f);
+        var result = CalculatorLogic.FactorialOfDouble(input);
         //Assert
-        Assert.That(1, Is.EqualTo(result), "Factorial of 1 should return 1.");
-    }
-
-    [Test]
-    public void FactorialOfFloat_PositiveInteger_ReturnsFactorial()
-    {   
-        //Arrange
-        var calculator = new CalculatorEngine();
-        //Act
-        var result = calculator.FactorialOfFloat(4f);
-        //Assert
-        Assert.That(24, Is.EqualTo(result), "Factorial of 4 should return 24.");
+        Assert.That(expected, Is.EqualTo(result), "Factorial of 4 should return 24.");
     }
 }
- */

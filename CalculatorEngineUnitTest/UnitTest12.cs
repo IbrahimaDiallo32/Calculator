@@ -1,59 +1,62 @@
-/*using Calculator_App;
+
+using CalculatorEngine;
+
 namespace CalculatorTestProject1;
 
 public class UnitTest12
 {
     
         [Test]
-        public void LogOfTwoFloats_Base10_ReturnsCorrectLog()
+        public void LogOfTwoDoubles_Base10_ReturnsCorrectLog()
         {
            //Arrange
-           var caculator = new CalculatorEngine();
-            float value = 100f; 
-            float baseValue = 10f;
+            double value = 100; 
+            double baseValue = 10;
+            double expected = 2;
             //Act
-            var result = caculator.LogOfTwoFloats(value, baseValue);
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
             //Assert
-            Assert.That(result, Is.EqualTo(2).Within(0.0001), "Log base 10 of 100 should be 2.");
+            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base 10 of 100 should be 2.");
         }
 
         [Test]
-        public void LogOfTwoFloats_BaseE_ReturnsCorrectLog()
+        public void LogOfTwoDoubles_BaseE_ReturnsCorrectLog()
         {   
             //Arrange
-            var calculator = new CalculatorEngine();
-            float value = (float)Math.E;
-            float baseValue = (float)Math.E;
+            double value = Math.E;
+            double baseValue = Math.E;
+            double expected = 1;
             //Act
-            var result = calculator.LogOfTwoFloats(value, baseValue);
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
             //Assert
-            Assert.That(result, Is.EqualTo(1).Within(0.0001), "Log base e of e should be 1.");
+            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base e of e should be 1.");
         }
 
         [Test]
-        public void LogOfTwoFloats_BaseGreaterThanOne_ReturnsCorrectLog()
+        public void LogOfTwoDoubles_BaseGreaterThanOne_ReturnsCorrectLog()
         {   
             //Arrange
-            var calculator = new CalculatorEngine();
-            float value = 8f;
-            float baseValue = 2f;
+            
+            double value = 8;
+            double baseValue = 2;
+            double expected = 3;
             //Act
-            var result = calculator.LogOfTwoFloats(value, baseValue);
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
             //Assert
-            Assert.That(result, Is.EqualTo(3).Within(0.0001), "Log base 2 of 8 should be 3.");
+            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base 2 of 8 should be 3.");
         }
 
         [Test]
-        public void LogOfTwoFloats_ValueOne_ReturnsZero()
+        public void LogOfTwoDoubles_ValueOne_ReturnsZero()
         {
             //Arrange 
-            var calculator = new CalculatorEngine();
-            float value = 1f;
-            float baseValue = 10f; 
+            double value = 1;
+            double baseValue = 10;
+            double expected = 0;
             //Act
-            var result = calculator.LogOfTwoFloats(value, baseValue);
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
             //Assert
-            Assert.That(result, Is.EqualTo(0).Within(0.0001), "Log of 1 should be 0 regardless of the base.");
+            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log of 1 should be 0 regardless of the base.");
         }
         
-}*/
+}
