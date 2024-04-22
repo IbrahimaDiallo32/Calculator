@@ -40,6 +40,9 @@ To configure PlayWright for end-to-end testing:
 
 ## Executing the Web Application 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
+2. Open your command Line interface and ensure the git is installed
+3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
+   
 
 ## Executing Unit Tests
 1. Install JetBrains Raider: https://www.jetbrains.com/rider/download/#section=windows 
