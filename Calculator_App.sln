@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngineUnitTest", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEngine", "CalculatorEngine\CalculatorEngine.csproj", "{F3236E85-05E0-4B25-B680-E81FCB230469}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator End-To-End Tests", "Calculator End-To-End Tests\Calculator End-To-End Tests.csproj", "{E1A2A96B-1762-4703-A18B-936EE48C2C24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatorEnd-To-EndTests", "CalculatorEnd-To-EndTests\CalculatorEnd-To-EndTests.csproj", "{E1A2A96B-1762-4703-A18B-936EE48C2C24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
