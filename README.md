@@ -51,6 +51,12 @@ To configure PlayWright for end-to-end testing:
 ## Executing Unit Tests
 1. Install JetBrains Raider: https://www.jetbrains.com/rider/download/#section=windows 
 2. Make sure to follow the steps in the [Environment](#environment) instructions
+3. Open your command Line interface and ensure the git is installed
+3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
+4. Navigate to the project Directory with this command: cd your-project-name
+5. Restore Dependencies with this command: dotnet restore
+6. build the project using this command: dotnet build
+7. Execute the Unit Tests using these commands: dotnet test
 
 
 ## Executing Unit Test Coverage
