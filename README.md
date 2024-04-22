@@ -64,5 +64,6 @@ To configure PlayWright for end-to-end testing:
 
 ## Executing End-to-End Tests
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
+2.  Install Playwright following these instructions: https://playwright.dev/dotnet/docs/intro
 ## Final Video Presentation
 -asdfahjkldfag
