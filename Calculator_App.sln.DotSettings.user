@@ -1,9 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=43b55fb9_002D4aca_002D4de7_002D86d9_002D289016a979d7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=43b55fb9_002D4aca_002D4de7_002D86d9_002D289016a979d7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UnitTest3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest3&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideByZero_ThrowsDivideByZeroException&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideByZero_ReturnsNull&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_Zero_ReturnsZero&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_VerySmallPositiveNumber_ReturnsCorrectSquareRoot&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	
@@ -37,7 +40,7 @@
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest3.Multiply_OneDoubleIsZero_ReturnsZero&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8b8fe1b_002D19aa_002D458c_002Db7a4_002Dea8df3adb75e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DivideByZero_ReturnsNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8b8fe1b_002D19aa_002D458c_002Db7a4_002Dea8df3adb75e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="DivideByZero_ReturnsNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideByZero_ReturnsNull&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest5.CompareTwoNumbers_WithNumbersDifferingAt7thDecimal_ReturnsFalse&lt;/TestId&gt;
@@ -47,6 +50,7 @@
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest8&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest9&lt;/TestId&gt;
     &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest12&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_PositiveNumber_ReturnsSquareRoot&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=daf9fd8a_002Da9f7_002D4ecd_002D8ddc_002D15aac379935e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;

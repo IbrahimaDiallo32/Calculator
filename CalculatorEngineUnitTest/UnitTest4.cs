@@ -62,49 +62,19 @@ public class UnitTest4
 
 
         Assert.That(expected, Is.EqualTo(result));
-    }/*
+    }
     [Test]
-    public void DivideByZero_ReturnsNull()
+    public void Division_DivideByZero_ReturnsInfiniteError()
     {
         // Arrange
         double num1 = 10;
         double num2 = 0;
 
         // Act
-        double? result = CalculatorLogic.DivideTwoNumbers(num1, num2);
+        double result = CalculatorLogic.DivideTwoNumbers(num1, num2);
 
         // Assert
-        Assert.That(result, Is.Null);
+        Assert.That(double.IsInfinity(result),Is.EqualTo(true), "Division by 0 should result in an error.");
+
     }
-    
-    [Test]
-    public void Division_DoubleAndZero_ReturnsError()
-    {
-        //Arrange
-        double num1 = 10.0;
-        double num2 = 0.0;
-        //double? result = calculator.DivideTwoNumbers(num1, num2);
-        double? expected = null;
-        
-        Exception caughtException = null;
-        //Assert
-        
-       // Assert.That(expected, Is.EqualTo(result));
-        
-        
-        try
-        {
-            // Attempt to perform division by zero
-            double? result = CalculatorLogic.DivideTwoNumbers(num1, num2);
-        }
-        catch (Exception ex)
-        {
-            caughtException = ex;
-            Console.WriteLine(ex.Message);
-            Console.WriteLine(ex.GetType());
-        }
-
-        // Assert
-        Assert.That(caughtException, Is.TypeOf<DivideByZeroException>());
-    }*/
 } 
