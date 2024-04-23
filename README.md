@@ -59,7 +59,7 @@ To configure PlayWright for end-to-end testing:
 7. Execute the Unit Tests using these commands: dotnet test
 
 
-## Executing Unit Test Coverage
+## Reviewing Unit Test Coverage
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
 
 ## Executing End-to-End Tests
