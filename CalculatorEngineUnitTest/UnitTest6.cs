@@ -1,7 +1,7 @@
 using CalculatorEngine;
 
 namespace CalculatorTestProject1;
-
+//Unit Test for Power Function
 public class UnitTest6
  // preq-UNIT-TEST-9
 {

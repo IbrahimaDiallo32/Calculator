@@ -8,24 +8,30 @@
     "net8.0": []
   },
   "packageFolders": {
-    "/Users/ibrahimadiallo/.nuget/packages/": {}
+    "C:\\Users\\umesh\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/CalculatorEngine.csproj",
+      "projectUniqueName": "C:\\Users\\umesh\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj",
       "projectName": "CalculatorEngine",
-      "projectPath": "/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/CalculatorEngine.csproj",
-      "packagesPath": "/Users/ibrahimadiallo/.nuget/packages/",
-      "outputPath": "/Users/ibrahimadiallo/RiderProjects/Calculator_App/CalculatorEngine/obj/",
+      "projectPath": "C:\\Users\\umesh\\Calculator\\CalculatorEngine\\CalculatorEngine.csproj",
+      "packagesPath": "C:\\Users\\umesh\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\umesh\\Calculator\\CalculatorEngine\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "/Users/ibrahimadiallo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\umesh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

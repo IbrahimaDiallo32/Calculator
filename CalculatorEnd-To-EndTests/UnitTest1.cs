@@ -1,10 +1,10 @@
-namespace Calculator_End_To_End_Tests;
+/*namespace Calculator_End_To_End_Tests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
 public class Tests : PageTest
 {
-    /*
+    
         [Test]
         public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntroPage()
         {
@@ -26,19 +26,19 @@ public class Tests : PageTest
             await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));
         }
 
-     
+  
     // preq-E2E-TEST-5
     [Test]
     public async Task CalculatorWebUi_VerifyPageTitle_ReturnsCalculator()
-    {
-        const string pageTitle = "Calculator";
+    {  
         await Page.GotoAsync("http://localhost:5166");
+        const string pageTitle = "Calculator";
+      
         await Expect(Page).ToHaveTitleAsync(pageTitle);
         /*Assert.That(await Page.TitleAsync(),Is.EqualTo("Calculator"));
     }
-}
-
-        // preq-E2E-TEST-6
+}  
+// preq-E2E-TEST-6
         [Test]
         public async Task CalculatorWebUi_AddTwoFloatingPointValues_ReturnsSumOfValues()
         {
