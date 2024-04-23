@@ -1,6 +1,7 @@
-/*using CalculatorEngine;
+using CalculatorEngine;
 
 namespace CalculatorTestProject1;
+//preq-ENGINE-8
 
 public class UnitTest5
 {
@@ -8,67 +9,57 @@ public class UnitTest5
     [Test]
     public void CompareTwoNumbers_WithExactlySameNumbers_ReturnsTrue()
     {
+        //preq-ENGINE-8
         //Arrange
-        double num1 = 0.333333f;
-        double num2 = 0.333333f;
+        double num1 = 0.3333333;
+        double num2 = 0.3333333;
         
         //Act
         double result = CalculatorLogic.CompareTwoNumbers(num1, num2);
         
         //Assert
-        Assert.That(result, Is.EqualTo(true));
+        Assert.That(result, Is.EqualTo(1)); 
     }
 
     [Test]
-    public void CompareTwoNumbers_WithNumbersDifferingBeyond7thDecimal_ReturnsFalse()
+    public void CompareTwoNumbers_WithNumbersDifferingBeyond8thDecimal_ReturnssTrue()
     {
         //Arrange
-        float num1 = 0.33333333f;
-        float num2 = 0.33333334f;
+        double num1 = 0.333333331;
+        double num2 = 0.333333332;
         
         //Act
-        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
+        double result = CalculatorLogic.CompareTwoNumbers(num1, num2);
 
         //Assert
-        Assert.That(result, Is.EqualTo(false));
+        Assert.That(result, Is.EqualTo(1));
     }
 
     [Test]
-    public void CompareTwoNumbers_WithNumbersDifferingAfter7thDecimal_ReturnsTrue()
+    public void CompareTwoNumbers_WithNumbersDifferingAt8thDecimal_ReturnsFalse()
     {
         //Arrange
-        float num1 = 0.333333331f;
-        float num2 = 0.333333332f;
+        double num1 = 0.33333333;
+        double num2 = 0.33333334;
         
         //Act
-        bool result = CalculatorLogic.CompareTwoNumbers(num1, num2);
+        double result = CalculatorLogic.CompareTwoNumbers(num1, num2);
 
         //Assert
-        Assert.That(result, Is.EqualTo(true));
+        Assert.That(result, Is.EqualTo(0));
     }
-
     
-    [Test]
-    public void CompareTwoNumbers_WithOneNumberSlightlyHigher_ReturnsTrue()
-    {
-        Assert.IsTrue(_calculator.CompareTwoNumbers(5.12345678f, 5.12345679f));
-    }
-
-    [Test]
-    public void CompareTwoNumbers_WithOneNumberSignificantlyHigher_ReturnsFalse()
-    {
-        Assert.IsFalse(_calculator.CompareTwoNumbers(5.12345678f, 5.12345670f));
-    }
-
     [Test]
     public void CompareTwoNumbers_WithNegativeNumbers_ReturnsTrue()
     {
-        Assert.IsTrue(_calculator.CompareTwoNumbers(-5.12345678f, -5.12345678f));
-    }
+        //Arrange
+        double num1 = -0.333333331;
+        double num2 = -0.333333332;
+        
+        //Act
+        double result = CalculatorLogic.CompareTwoNumbers(num1, num2);
 
-    [Test]
-    public void CompareTwoNumbers_WithOnePositiveAndOneNegativeNumber_ReturnsFalse()
-    {
-        Assert.IsFalse(_calculator.CompareTwoNumbers(-5.12345678f, 5.12345678f));
+        //Assert
+        Assert.That(result, Is.EqualTo(1));
     }
-} */
+} 

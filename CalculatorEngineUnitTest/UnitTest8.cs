@@ -4,7 +4,7 @@ namespace CalculatorTestProject1;
 
 public class UnitTest8
 {   
-    //preq-UNIT-TEST-16
+    //preq-UNIT-TEST-13
     [Test]
     public void SinOfDoubles_Zero_ReturnsZero()
     {
@@ -22,7 +22,7 @@ public class UnitTest8
         double expected = 1;
         var actual = Math.Sin(Math.PI/2);
         //Act
-        var result = CalculatorLogic.SinOfDouble((float)Math.PI / 2);
+        var result = CalculatorLogic.SinOfDouble(Math.PI / 2);
         //Assert
         Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Sine of π/2 should be 1.");
     }

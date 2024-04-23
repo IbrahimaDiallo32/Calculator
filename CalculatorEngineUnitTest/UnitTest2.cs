@@ -6,9 +6,9 @@ namespace CalculatorTestProject1;
 public class UnitTest2
 {
     [Test]
-    public void Subtraction_TwoDoubles_ReturnsDifference()
+    public void Subtraction_TwoPositiveDoubles_ReturnsDifference()
     {
-        //preq-UNIT-TEST-3
+        //preq-UNIT-TEST-4
         
         // Arrange
         double number1 = 5.5;

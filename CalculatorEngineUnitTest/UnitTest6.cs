@@ -3,11 +3,12 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 
 public class UnitTest6
- // preq-UNIT-TEST-8
+ // preq-UNIT-TEST-9
 {
     [Test]
         public void PowerFunction_WithPositiveNumbers_ReturnsCorrectResult()
         {
+            // preq-UNIT-TEST-9
             // Arrange
             double baseNumber = 2f;
             double exponent = 3f;
@@ -17,7 +18,7 @@ public class UnitTest6
             double result = CalculatorLogic.PowerFunction(baseNumber, exponent);
 
             // Assert
-            Assert.That(expected, Is.EqualTo(result), "The power function does not calculate correctly with positive numbers.");
+            Assert.That(expected, Is.EqualTo(result), "The power function calculates correctly with positive numbers.");
         }
 
         [Test]

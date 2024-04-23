@@ -4,10 +4,11 @@ namespace CalculatorTestProject1;
 
 public class UnitTest7
 {
-    //preq-UNIT-TEST-14
+    //preq-UNIT-TEST-12
     [Test]
     public void FactorialOfDouble_Zero_ReturnsOne()
     {   
+        //preq-UNIT-TEST-12
         //Arrange
         double input = 0;
         double expected = 1;
@@ -35,6 +36,17 @@ public class UnitTest7
         //Arrange
         double input = 4;
         double expected = 24;
+        //Act
+        var result = CalculatorLogic.FactorialOfDouble(input);
+        //Assert
+        Assert.That(expected, Is.EqualTo(result), "Factorial of 4 should return 24.");
+    }
+    [Test]
+    public void FactorialOfDouble_OddNegativeInteger_ReturnsNegativeFactorial()
+    {   
+        //Arrange
+        double input = -5;
+        double expected = -120;
         //Act
         var result = CalculatorLogic.FactorialOfDouble(input);
         //Assert

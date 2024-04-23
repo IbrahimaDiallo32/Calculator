@@ -10,7 +10,7 @@
     <div class="resultBox">
         @if (result.HasValue)
         {
-            <h3 id = "resultBoxForCorrectInput">@inputA @inputB "=" @result  </h3>
+            <h3 id = "resultBoxForCorrectInput">@inputA @operatorType @inputB = @result  </h3>
         }
         @if (error)
         {
@@ -30,9 +30,7 @@
 </div>
 
 <div class = "upperInputs">
-    <h4>A and B</h4>  
-    <h4 id = "spaceIndentForInputBox">A Only</h4>
-    
+    <h5 id = "spaceIndentForText1">A and B A only</h5>
 </div>
 
 <div>
@@ -77,6 +75,7 @@
     double? result { get; set; }
     bool error { get; set; }
     bool invalidInput { get; set; }
+    string? operatorType { get; set; }
 
     //This method will return true if both user inputs are able to be parsed to double values 
     private bool IsValidInput()
@@ -94,6 +93,7 @@
             result = null;
             return;
         }
+        operatorType = "+";
         error = false;
         invalidInput = false;
         //parsing inputs to temporary variables to perform operation 
@@ -113,6 +113,7 @@
             invalidInput = true;
             return;
         }
+            operatorType = "-";
             error = false;
             invalidInput = false;
             var x = double.Parse(inputA);
@@ -129,6 +130,7 @@
             invalidInput = true;
             return;
         }
+            operatorType = "*";
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
@@ -146,6 +148,7 @@
             invalidInput = true;
             return;
         }
+            operatorType = "/";
             invalidInput = false;
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
@@ -171,6 +174,7 @@
             result = null;
             invalidInput = true;
         }
+            operatorType = "==";
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
@@ -187,6 +191,7 @@
             invalidInput = true;
             return;
         }
+            operatorType = "^";
             error = false;
             invalidInput = false;
             double x = double.Parse(inputA);
@@ -203,7 +208,7 @@
             invalidInput = true;
             return;
         }
-        
+            operatorType = "log";
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
             if (x <= 0 || y == 0)
@@ -226,7 +231,7 @@
             invalidInput = true;
             return;
         }
-        
+        operatorType = "root";
         double x = double.Parse(inputA);
         double y = double.Parse(inputB);
         if (y == 0)
@@ -251,7 +256,8 @@
             invalidInput = true;
             return;
         }
-        
+        isInputAOnly();
+        operatorType = "!";
         error = false;
         invalidInput = false;
         int x = int.Parse(inputA);
@@ -268,6 +274,8 @@
             invalidInput = true;
             return;
         }
+        isInputAOnly();
+        operatorType = "sin";
         error = false;
         invalidInput = false;
         double x = double.Parse(inputA);
@@ -283,6 +291,8 @@
             invalidInput = true;
             return;
         }
+        isInputAOnly();
+        operatorType = "cos";
         error = false;
         invalidInput = false;
         double x = double.Parse(inputA);
@@ -298,6 +308,8 @@
             invalidInput = true;
             return;
         }
+        isInputAOnly();
+        operatorType = "tan";
         error = false;
         invalidInput = false;
         double x = double.Parse(inputA);
@@ -313,6 +325,8 @@
             invalidInput = true;
             return;
         }
+        isInputAOnly();
+        operatorType = "/";
          double x = double.Parse(inputA);
             if (x == 0)
             {
@@ -331,5 +345,12 @@
         result = null;
         error = false;
         invalidInput = false;
+        operatorType = null;
     }
+
+    private void isInputAOnly()
+    {
+        inputB = null;
+    }
+    
 }

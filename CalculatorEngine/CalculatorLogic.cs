@@ -29,7 +29,7 @@ public class CalculatorLogic
     //Rounding to the 8th decimal point before returning a value
     public static int CompareTwoNumbers(double inputA, double inputB)
     { 
-        double validDifference = Math.Pow(10, -8); 
+        double validDifference = Math.Pow(10, -9); 
         double absoluteValueOfDiff = Math.Abs(inputA - inputB); //Absolute value of this difference. This way we consider the magnitude of difference, regardless of positive or negative.
         bool isWithinValidDifference = absoluteValueOfDiff <= validDifference; //if the difference is less than or equal to the accepted difference this bool is true.
             if(isWithinValidDifference)

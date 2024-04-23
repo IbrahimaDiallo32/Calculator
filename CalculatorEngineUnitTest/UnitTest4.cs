@@ -4,13 +4,14 @@ using NUnit.Framework;
 namespace CalculatorTestProject1;
 
 //Unit Tests for Division() Function
+//preq-ENGINE-7
 public class UnitTest4
 {
     
     [Test]
     public void DivideTwoNumbers_TwoPositiveDoubles_ReturnsPositive()
     {
-        ////preq-UNIT-TEST-5
+        ////preq-UNIT-TEST-7
         
         //Arrange
         double num1 = 20;
@@ -61,15 +62,25 @@ public class UnitTest4
 
 
         Assert.That(expected, Is.EqualTo(result));
+    }/*
+    [Test]
+    public void DivideByZero_ReturnsNull()
+    {
+        // Arrange
+        double num1 = 10;
+        double num2 = 0;
+
+        // Act
+        double? result = CalculatorLogic.DivideTwoNumbers(num1, num2);
+
+        // Assert
+        Assert.That(result, Is.Null);
     }
-    }
-    //Unfinished test
-   /* [Test]
+    
+    [Test]
     public void Division_DoubleAndZero_ReturnsError()
     {
         //Arrange
-
-        //Act
         double num1 = 10.0;
         double num2 = 0.0;
         //double? result = calculator.DivideTwoNumbers(num1, num2);
@@ -95,5 +106,5 @@ public class UnitTest4
 
         // Assert
         Assert.That(caughtException, Is.TypeOf<DivideByZeroException>());
-    }
-} */
+    }*/
+} 

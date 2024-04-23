@@ -52,6 +52,9 @@ border-radius: 7px; width: 42%; padding: .2%; background-color: #EBEBEB; color: 
 #spaceIndentForInputBox{
     margin-left: 75px;
 }
+#spaceIndentForInputBox1{
+    margin-left: 20px;
+}
 .inputBoxes{
     border-color: black;
     border-width: 2px;

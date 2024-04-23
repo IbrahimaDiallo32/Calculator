@@ -1,34 +1,54 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=43b55fb9_002D4aca_002D4de7_002D86d9_002D289016a979d7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest3&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideByZero_ThrowsDivideByZeroException&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideByZero_ReturnsNull&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
 	
 	
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=746cc78d_002D9b87_002D456c_002D83c5_002D0f372e72d73f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideTwoNumbers_BothPositive_ReturnsPositive&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=746cc78d_002D9b87_002D456c_002D83c5_002D0f372e72d73f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideTwoNumbers_BothPositive_ReturnsPositive&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a33abd91_002D9d24_002D47de_002D97e2_002D7020fd6e7844/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Division_FloatingPointValueAndZero_ReturnsError" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1.Addition_TwoDoubles_ReturnsSum&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a33abd91_002D9d24_002D47de_002D97e2_002D7020fd6e7844/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Division_FloatingPointValueAndZero_ReturnsError" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1.Addition_TwoDoubles_ReturnsSum&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bc6bad5d_002D790e_002D46d7_002Dbb72_002Db3faf0c0ca43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest8&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest9.CosOfDouble_Zero_ReturnsOne&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest9&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest10&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_NegativeNumber_ThrowsExceptionOrReturnsNaN&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_PositiveNumber_ReturnsSquareRoot&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_Zero_ReturnsZero&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_VerySmallPositiveNumber_ReturnsCorrectSquareRoot&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_VeryLargePositiveNumber_ReturnsCorrectSquareRoot&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.Tests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bc6bad5d_002D790e_002D46d7_002Dbb72_002Db3faf0c0ca43/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UnitTest1 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest8&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest9.CosOfDouble_Zero_ReturnsOne&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest9&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest10&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_NegativeNumber_ThrowsExceptionOrReturnsNaN&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_PositiveNumber_ReturnsSquareRoot&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_Zero_ReturnsZero&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_VerySmallPositiveNumber_ReturnsCorrectSquareRoot&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13.RootOfTwoDoubles_VeryLargePositiveNumber_ReturnsCorrectSquareRoot&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest13&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.Tests&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest3.Multiply_OneDoubleIsZero_ReturnsZero&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=daf9fd8a_002Da9f7_002D4ecd_002D8ddc_002D15aac379935e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;Solution /&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d8b8fe1b_002D19aa_002D458c_002Db7a4_002Dea8df3adb75e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="DivideByZero_ReturnsNull" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest4.DivideByZero_ReturnsNull&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest5.CompareTwoNumbers_WithNumbersDifferingAt7thDecimal_ReturnsFalse&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest5&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest6&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest7&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest8&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest9&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest12&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=daf9fd8a_002Da9f7_002D4ecd_002D8ddc_002D15aac379935e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from Solution" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Solution /&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
