@@ -3,17 +3,20 @@
 # KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
 
 ## Table of Contents
-1. [Environment](#environment)
-2. [Executing the Web Application](#executing-the-web-application)
-3. [Executing Unit Tests](#executing-unit-tests)
-4. [Reviewing Unit Test Coverage](#reviewing-unit-test-coverage)
-5. [Executing End-To-End Tests](#Executing-End-To-End-Tests)
-6. [Static Analysis](#static-analysis)
-7. [Final Video Presentation](#Final-Video-Presentation)
+1. [Architecture](#Architecture)
+2. [Environment](#environment)
+3. [Executing the Web Application](#executing-the-web-application)
+4. [Executing Unit Tests](#executing-unit-tests)
+5. [Reviewing Unit Test Coverage](#reviewing-unit-test-coverage)
+6. [Executing End-To-End Tests](#Executing-End-To-End-Tests)
+7. [Static Analysis](#static-analysis)
+8. [Final Video Presentation](#Final-Video-Presentation)
    
 ## Team Members
 1. Diwakar Rai
 2. Ibrahima Diallo
+
+## Architecture 
 
 ## Environment
 -This application should work on Windows 10+. 
