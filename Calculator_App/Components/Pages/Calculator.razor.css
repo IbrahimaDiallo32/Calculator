@@ -30,11 +30,13 @@
     text-align: center;
 }
 #resultBoxForInvalidInput{
+    width: 500px;
+    height: 75px;
+    padding: 15px;
+    margin: 10px;
     display: flex;
     background-color: #B70F0A;
     color: #FFFFFF;
-    padding: 15px;
-    margin: 10px;
     text-align: center;
 }
 .buttons{
@@ -44,7 +46,11 @@ border-radius: 7px; width: 42%; padding: .2%; background-color: #EBEBEB; color: 
     background-color: yellow;
 }
 #spaceIndentForText{
-    margin-left: 200px
+    margin-left: 200px;
+}
+.spaceIndentForText1{
+    margin-left: 200px; !important;
+    font-size: medium;
 }
 #spaceIndentForInputBox{
     margin-left: 75px;

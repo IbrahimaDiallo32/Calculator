@@ -8,9 +8,13 @@
     <h1>Calculator <button @onclick= "clearInputs" id="clearButton">Clear</button></h1>
 
     <div class="resultBox">
-        @if (result.HasValue)
+        @if (result.HasValue && isOnlyOneInput)
         {
-            <h3 id = "resultBoxForCorrectInput">@inputA @operatorType@inputB= @result  </h3>
+        <h3 id="resultBoxForCorrectInput">@inputA @operatorType = @result </h3>
+        }
+        else if (result.HasValue)
+        {
+            <h3 id="resultBoxForCorrectInput">@inputA @operatorType @inputB= @result </h3>
         }
         @if (error)
         {
@@ -30,10 +34,12 @@
 </div>
 
 <div class = "upperInputs">
-    <h5 id = "spaceIndentForText1">A and B A only</h5>
+    <h5>A and B</h5>
+    <h5 class = "spaceIndentForText1">A only</h5>
+    
 </div>
-
-<div>
+    
+    <div>
     <button class = "styleForCalculatorFunctionButtons" @onclick= "AddNumbers">A + B</button>
     <button class="styleForCalculatorFunctionButtons" @onclick = "FactorialOfInput">A!</button>
 </div>
@@ -76,6 +82,7 @@
     bool error { get; set; }
     bool invalidInput { get; set; }
     string? operatorType { get; set; }
+    bool isOnlyOneInput { get; set; }
 
     //This method will return true if both user inputs are able to be parsed to double values 
     private bool IsValidInput()
@@ -93,6 +100,7 @@
             result = null;
             return;
         }
+        isOnlyOneInput = false;
         operatorType = "+";
         error = false;
         invalidInput = false;
@@ -113,12 +121,13 @@
             invalidInput = true;
             return;
         }
-            operatorType = "-";
-            error = false;
-            invalidInput = false;
-            var x = double.Parse(inputA);
-            var y = double.Parse(inputB);
-            result = CalculatorLogic.SubtractTwoNumbers(x, y);
+        isOnlyOneInput = false;
+        operatorType = "-";
+        error = false;
+        invalidInput = false;
+        var x = double.Parse(inputA);
+        var y = double.Parse(inputB);
+        result = CalculatorLogic.SubtractTwoNumbers(x, y);
     }
 
     private void MultiplyNumbers()
@@ -130,12 +139,13 @@
             invalidInput = true;
             return;
         }
-            operatorType = "*";
-            error = false;
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            double y = double.Parse(inputB);
-            result = CalculatorLogic.MultiplyTwoNumbers(x, y);
+        isOnlyOneInput = false;
+        operatorType = "*";
+        error = false;
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        double y = double.Parse(inputB);
+        result = CalculatorLogic.MultiplyTwoNumbers(x, y);
     }
 
     //Method to divide numbers catching division by 0 here.
@@ -148,10 +158,11 @@
             invalidInput = true;
             return;
         }
-            operatorType = "/";
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            double y = double.Parse(inputB);
+        isOnlyOneInput = false;
+        operatorType = "/";
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        double y = double.Parse(inputB);
 
             //catch division by 0 error and set error boolean to true
             if (y == 0.0)
@@ -174,6 +185,7 @@
             result = null;
             invalidInput = true;
         }
+            isOnlyOneInput = false;
             operatorType = "==";
             error = false;
             invalidInput = false;
@@ -191,12 +203,13 @@
             invalidInput = true;
             return;
         }
-            operatorType = "^";
-            error = false;
-            invalidInput = false;
-            double x = double.Parse(inputA);
-            double y = double.Parse(inputB);
-            result = CalculatorLogic.PowerFunction(x, y);
+        isOnlyOneInput = false;
+        operatorType = "^";
+        error = false;
+        invalidInput = false;
+        double x = double.Parse(inputA);
+        double y = double.Parse(inputB);
+        result = CalculatorLogic.PowerFunction(x, y);
     }
 
     private void LogOfNumber()
@@ -208,6 +221,7 @@
             invalidInput = true;
             return;
         }
+            isOnlyOneInput = false;
             operatorType = "log";
             double x = double.Parse(inputA);
             double y = double.Parse(inputB);
@@ -231,6 +245,7 @@
             invalidInput = true;
             return;
         }
+        isOnlyOneInput = false;
         operatorType = "root";
         double x = double.Parse(inputA);
         double y = double.Parse(inputB);
@@ -326,7 +341,7 @@
             return;
         }
         isInputAOnly();
-        operatorType = "/";
+        operatorType = "reciprocal";
          double x = double.Parse(inputA);
             if (x == 0)
             {
@@ -350,7 +365,7 @@
 
     private void isInputAOnly()
     {
-        inputB = null;
+        isOnlyOneInput = true;
     }
     
 }

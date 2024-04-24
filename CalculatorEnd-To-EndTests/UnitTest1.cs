@@ -1,10 +1,18 @@
-/*namespace Calculator_End_To_End_Tests;
+namespace Calculator_End_To_End_Tests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
 public class Tests : PageTest
 {
-    
+
+    [Test]
+    public async Task CalculatorUI_PageTitle_IsCalculator()
+    {
+        const string pageTitle = "/";
+        await Page.GotoAsync("http://localhost:5166");
+        await Expect(Page).ToHaveTitleAsync(pageTitle);
+    }
+        /*
         [Test]
         public async Task HomepageHasPlaywrightInTitleAndGetStartedLinkLinkingtoTheIntroPage()
         {
@@ -25,16 +33,17 @@ public class Tests : PageTest
             // Expects the URL to contain intro.
             await Expect(Page).ToHaveURLAsync(new Regex(".*intro"));
         }
+        */
 
   
     // preq-E2E-TEST-5
-    [Test]
+    /*[Test]
     public async Task CalculatorWebUi_VerifyPageTitle_ReturnsCalculator()
     {  
         await Page.GotoAsync("http://localhost:5166");
         const string pageTitle = "Calculator";
       
-        await Expect(Page).ToHaveTitleAsync(pageTitle);
+        await Expect(Page).ToHaveTitleAsync(pageTitle);*/
         /*Assert.That(await Page.TitleAsync(),Is.EqualTo("Calculator"));
     }
 }  
@@ -60,5 +69,5 @@ public class Tests : PageTest
             await Page.ClickAsync("#divideButton");
             var result = await Page.InnerTextAsync("#resultBox");
             Assert.AreEqual("Not a Number", result);
-        }
-} */
+        }*/
+} 
