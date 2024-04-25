@@ -21,9 +21,11 @@ This project is a web-based Calculator app programmed in C# using Blazor Server.
 
 ## Environment
 This is a cross-platform application and should work in Windows 10+, Mac OS, and Linux environments. Note this Application has only been tested on Windows 10+ and MacOs.
+
 ### Steps to prepare your environment to execute this application: 
-1. [Install the latest JetBrains Rider](#https://www.jetbrains.com/rider/download/#section=windows)
-2. Install [Git](#https://git-scm.com/downloads)on your computer
+
+1. Install the latest JetBrains **[Rider](#https://www.jetbrains.com/rider/download/#section=windows)**
+2. Install **[Git](#https://git-scm.com/downloads)**on your computer
 3. Open Your Terminal Line Interface
    - Open the terminal on your machine. This will be Terminal on macOS or Command prompt on Windows.
 4. Clone the Repository by using this git clone command as shown below:
