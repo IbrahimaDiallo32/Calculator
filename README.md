@@ -23,11 +23,11 @@ This project is a web-based Calculator app programmed in C# using Blazor Server.
 This is a cross-platform application and should work in Windows 10+, Mac OS, and Linux environments. Note this Application has only been tested on Windows 10+ and MacOs.
 ### Steps to prepare your environment to execute this application: 
 1. [Install the latest JetBrains Rider](#https://www.jetbrains.com/rider/download/#section=windows)
-2. Install Git on your computer: https://git-scm.com/downloads
+2. Install [Git](#https://git-scm.com/downloads)on your computer
 3. Open Your Terminal Line Interface
    - Open the terminal on your machine. This will be Terminal on macOS or Command prompt on Windows.
 4. Clone the Repository by using this git clone command as shown below:
-      ```git
+      ```
    git clone https://github.com/IbrahimaDiallo32/Calculator.git
       ```
 6. Navigate to the Project Directory by using the 'cd' command and folder path as shown below:
@@ -51,15 +51,24 @@ To configure PlayWright for end-to-end testing:
 To execute the Web Application:
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2. Open your command Line interface and Navigate to the project Directory of this project using the 'cd' command:
-      ``` cd calculator```
+      ```
+    cd calculator
+      ```
 5. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
-      ``` dotnet restore```
-7. build the project using this command: dotnet build
-8. Start your Web Application: dotnet run 
+      ```
+   dotnet restore
+      ```
+7. build the project by following these commands:
+   ```
+   dotnet build
+   ```
+9. Launch the Web Application by following these commands:
+    ```
+    dotnet run
+    ``` 
    
 
 ## Executing Unit Tests
-1. Install JetBrains Raider: https://www.jetbrains.com/rider/download/#section=windows 
 2. Make sure to follow the steps in the [Environment](#environment) instructions
 3. Open your command Line interface and ensure the git is installed
 3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
