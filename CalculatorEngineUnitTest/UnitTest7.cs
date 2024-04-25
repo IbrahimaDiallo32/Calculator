@@ -5,11 +5,10 @@ namespace CalculatorTestProject1;
 
 public class UnitTest7
 {
-    //preq-UNIT-TEST-12
     [Test]
     public void FactorialOfDouble_Zero_ReturnsOne()
     {   
-        //preq-UNIT-TEST-12
+        //preq-UNIT-TEST-15
         //Arrange
         double input = 0;
         double expected = 1;
@@ -32,6 +31,7 @@ public class UnitTest7
     }
 
     [Test]
+    //preq-UNIT-TEST-14
     public void FactorialOfDouble_PositiveInteger_ReturnsFactorial()
     {   
         //Arrange

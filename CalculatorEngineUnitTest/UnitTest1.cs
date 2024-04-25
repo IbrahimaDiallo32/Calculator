@@ -9,7 +9,7 @@ public class UnitTest1
     [Test]
     public void Addition_TwoPositiveDoubles_ReturnsPositiveSum()
     {
-        //preq-UNIT-TEST-3
+        //preq-UNIT-TEST-2
         
         //Arrange
         double number1 = 2.5;
@@ -26,7 +26,6 @@ public class UnitTest1
     [Test]
     public void Addition_TwoNegativeDoubles_ReturnsNegativeSum()
     {
-        //preq-UNIT-TEST-2
         
         //Arrange
         double number1 = -3.25;

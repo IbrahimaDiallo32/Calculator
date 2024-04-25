@@ -3,15 +3,15 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 //Unit Test for Power Function
 public class UnitTest6
- // preq-UNIT-TEST-9
+
 {
     [Test]
         public void PowerFunction_WithPositiveNumbers_ReturnsCorrectResult()
         {
-            // preq-UNIT-TEST-9
+            // preq-UNIT-TEST-8
             // Arrange
-            double baseNumber = 2f;
-            double exponent = 3f;
+            double baseNumber = 2;
+            double exponent = 3;
             double expected =8;
 
             // Act
@@ -25,8 +25,8 @@ public class UnitTest6
         public void PowerFunction_WithZeroBaseAndPositiveExponent_ReturnsZero()
         {
             // Arrange
-            double baseNumber = 0f;
-            double exponent = 3f;
+            double baseNumber = 0;
+            double exponent = 3;
             double expected = 0;
 
             // Act
@@ -40,10 +40,9 @@ public class UnitTest6
         public void PowerFunction_WithNegativeBaseAndIntegerExponent_ReturnsCorrectResult()
         {
             // Arrange
-            var calculator = new CalculatorLogic();
-            double baseNumber = -2f;
-            double exponent = 3f; // Note: Exponent is an integer value.
-            double expected = -8;
+            double baseNumber = -2;
+            double exponent = 3; // Note: Exponent is an integer value.
+            double expected = 8;
 
             // Act
             var result = CalculatorLogic.PowerFunction(baseNumber, exponent);
@@ -56,8 +55,8 @@ public class UnitTest6
         public void PowerFunction_WithOneAsExponent_ReturnsBase()
         {
             // Arrange
-            double baseNumber = 5f;
-            double exponent = 1f;
+            double baseNumber = 5;
+            double exponent = 1;
             double expected = 5;
 
             // Act

@@ -1,7 +1,12 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=69741c55_002D5e56_002D4b13_002D853d_002D8c19ebee476b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PlaywrightNUnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
-  &lt;TestAncestor&gt;
-    &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::PlaywrightTests.PlaywrightNUnitTests&lt;/TestId&gt;
-    &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.UnitTests.CalculatorUI_PageTitle_IsCalculator&lt;/TestId&gt;
-  &lt;/TestAncestor&gt;
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\umesh\AppData\Local\JetBrains\Rider2024.1\resharper-host\temp\Rider\vAny\CoverageData\_Calculator_App.751660709\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=69741c55_002D5e56_002D4b13_002D853d_002D8c19ebee476b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="PlaywrightNUnitTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Or&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::PlaywrightTests.PlaywrightNUnitTests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.UnitTests.CalculatorUI_PageTitle_IsCalculator&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;NUnit3x::3517CFE1-5037-4F15-B96E-01573CBCEEB1::net8.0::CalculatorTestProject1.UnitTest1&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;Project Location="C:\Users\umesh\Calculator\CalculatorEngineUnitTest" Presentation="&amp;lt;CalculatorEngineUnitTest&amp;gt;" /&gt;&#xD;
+  &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

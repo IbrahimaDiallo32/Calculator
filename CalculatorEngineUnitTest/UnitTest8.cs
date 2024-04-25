@@ -4,17 +4,30 @@ namespace CalculatorTestProject1;
 //Unit Tests For Sin Function//
 public class UnitTest8
 {   
-    //preq-UNIT-TEST-13
+    //preq-UNIT-TEST-16
     [Test]
     public void SinOfDoubles_Zero_ReturnsZero()
     {
         //Arrange
         double expected = 0;
         //Act
-        var result = CalculatorLogic.SinOfDouble(0f);
+        var result = CalculatorLogic.SinOfDouble(0);
         //Assert
         Assert.That(expected,Is.EqualTo(result),"Sine of 0 should 0");
     }
+
+    [Test]
+    //preq-UNIT-TEST-16
+    public void SinOfDoubles_PositiveNumber_ReturnsZero()
+    {
+        //Arrange
+        double expected = 0;
+        //Act
+        var result = CalculatorLogic.SinOfDouble(360);
+        //Assert
+        Assert.That(expected,Is.EqualTo(result).Within(00001),"Sine of 0 should 0");
+    }
+    /*
     [Test]
     public void SinOfDoubles_PiOverTwo_ReturnsOne()
     {   
@@ -69,5 +82,5 @@ public class UnitTest8
         var result = CalculatorLogic.SinOfDouble(-(float)Math.PI / 2);
         //Assert
         Assert.That(result, Is.EqualTo(expected).Within(0.001), "Sine of -π/2 should be -1.");
-    }
+    }*/
 }

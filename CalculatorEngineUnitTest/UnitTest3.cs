@@ -9,7 +9,7 @@ public class UnitTest3
     [Test]
     public void Multiply_TwoPositiveDoubles_ReturnsPositive()
     {
-        //preq-UNIT-TEST-5
+        //preq-UNIT-TEST-4
         
         // Arrange
         double num1 = 5;
