@@ -81,16 +81,28 @@ public class CalculatorLogic
 
     public static double InverseOfDouble(double inputA)
     {
+        if (inputA == 0)
+        {
+            return Double.NaN;
+        }
         return (1 / inputA);
     }
 
     public static double LogOfTwoDoubles(double inputA, double inputB)
     {
+        if (inputB ==1 || inputA <= 0 || inputB <= 0)
+        {
+            return double.NaN; // Use NaN to indicate an error
+        }
         return Math.Log(inputA, inputB);
     }
     
     public static double RootOfTwoDoubles(double inputA, double inputB)
     {
+        if (inputB == 0)
+        {
+            return Double.NaN;
+        }
         return Math.Pow(inputA, (1 / inputB));
     }
 }

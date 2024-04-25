@@ -1,4 +1,5 @@
 
+using System.Runtime.CompilerServices;
 using CalculatorEngine;
 
 namespace CalculatorTestProject1;
@@ -7,43 +8,53 @@ public class LogUnitTest
 {
     //preq-ENGINE-9
         [Test]
-        public void LogOfTwoDoubles_Base10_ReturnsCorrectLog()
+        public void LogOfTwoDoubles_Base2_ReturnsCorrectLog()
         {
            //Arrange
-            double value = 100; 
-            double baseValue = 10;
-            double expected = 2;
-            //Act
-            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
-            //Assert
-            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base 10 of 100 should be 2.");
-        }
-
-        [Test]
-        public void LogOfTwoDoubles_BaseE_ReturnsCorrectLog()
-        {   
-            //Arrange
-            double value = Math.E;
-            double baseValue = Math.E;
-            double expected = 1;
-            //Act
-            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
-            //Assert
-            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base e of e should be 1.");
-        }
-
-        [Test]
-        public void LogOfTwoDoubles_BaseGreaterThanOne_ReturnsCorrectLog()
-        {   
-            //Arrange
-            
-            double value = 8;
+            double value = 8; 
             double baseValue = 2;
             double expected = 3;
             //Act
             var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
             //Assert
             Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base 2 of 8 should be 3.");
+        }
+
+        [Test]
+        public void LogOfTwoDoubles_Base5_ReturnsCorrectLog()
+        {   
+            //Arrange
+            double value = 25;
+            double baseValue = 5;
+            double expected = 2;
+            //Act
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
+            //Assert
+            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base 5 of 25 should be 2.");
+        }
+        [Test]
+        //preq-UNIT-TEST-10
+        public void LogOfTwoDoubles_NegativeBase_ReturnsNaN()
+        {
+            //Arrange 
+            double value = -2;
+            double baseValue = 2;
+            //Act
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
+            //Assert 
+            Assert.That(result,Is.NaN, "Logarithm with a negative value should return NaN.");
+        }
+        [Test]
+        //preq-UNIT-TEST-11
+        public void LogOfTwoDoubles_Base0_ReturnsNaN()
+        {
+            //Arrange 
+            double value = 8;
+            double baseValue = 0;
+            //Act
+            var result = CalculatorLogic.LogOfTwoDoubles(value, baseValue);
+            //Assert 
+            Assert.That(result,Is.NaN, "Logarithm with a Zero base should return NaN.");
         }
 
         [Test]

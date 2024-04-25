@@ -25,23 +25,25 @@ public class InverseUnitTest
     public void InverseOfDouble_NegativeNumber_ReturnsInverse()
     {   
         //Arrange
-        double expected = -0.5;
-        double testValue = -2;
+        double testValue = -4;
+        double expected = -0.25;
         //Act
         var result = CalculatorLogic.InverseOfDouble(testValue);
         //Assert
-        Assert.That(result, Is.EqualTo(expected).Within(0.0001), $"Inverse of {testValue} should be -0.5.");
+        Assert.That(result, Is.EqualTo(expected).Within(0.0001), $"Inverse of {testValue} should be -0.25.");
+    }
+    [Test]
+    //pre-UNIT-TEST-20
+    public void InverseOfDouble_Zero_ReturnsError()
+    {   
+        //Arrange
+        double testValue = 0;
+       
+        //Act
+        var result = CalculatorLogic.InverseOfDouble(testValue);
+        //Assert
+        Assert.That(result, Is.NaN, $"Inverse of Zero should be Error.");
     }
 
-    [Test]
-    public void InverseOfDouble_VerySmallNumber_ReturnsLargeInverse()
-    {
-        //Arrange
-        double expected = 10000;
-        double testValue = 0.0001; 
-        //Act
-        var result = CalculatorLogic.InverseOfDouble(testValue);
-        //Assert
-        Assert.That(result, Is.EqualTo(expected).Within(1), $"Inverse of {testValue} should be approximately 10000.");
-    }
+
 }

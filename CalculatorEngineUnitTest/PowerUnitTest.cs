@@ -42,13 +42,27 @@ public class PowerUnitTest
             // Arrange
             double baseNumber = -2;
             double exponent = 3; // Note: Exponent is an integer value.
-            double expected = 8;
+            double expected = -8;
 
             // Act
             var result = CalculatorLogic.PowerFunction(baseNumber, exponent);
 
             // Assert
             Assert.That(expected, Is.EqualTo(result),  "The power function does not handle negative bases with an integer exponent correctly.");
+        }
+        [Test]
+        public void PowerFunction_WithBaseAndNegativeExponent_ReturnsCorrectResult()
+        {
+            // Arrange
+            double baseNumber = 5;
+            double exponent = -3; 
+            double expected = 0.008;
+
+            // Act
+            var result = CalculatorLogic.PowerFunction(baseNumber, exponent);
+
+            // Assert
+            Assert.That(expected, Is.EqualTo(result));
         }
 
         [Test]
