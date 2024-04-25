@@ -19,16 +19,21 @@
 ## Architecture 
 
 ## Environment
--This application should work on Windows 10+. 
+-This project is cross-platform and 
 ### Steps to prepare your environment to execute this application: 
 1. [Install the latest JetBrains Rider](#https://www.jetbrains.com/rider/download/#section=windows)
-2. Install Git on your computer: https://git-scm.com/downloads 
-3. Clone this project: https://github.com/IbrahimaDiallo32/Calculator.git
+2. Install Git on your computer: https://git-scm.com/downloads
+3. Open Your Terminal Line Interface
+   - Open the terminal on your machine. This will be Terminal on macOS or Command prompt on Windows.
+4. Clone the Repository by using this git clone command as shown below:
+   ![gitclone](gitclone.png)
+
+   https://github.com/IbrahimaDiallo32/Calculator.git
    -Follow these commands on your terminal:
      git clone https://github.com/IbrahimaDiallo32/Calculator.git
      cd myproject(name of your cloned project)
    
-5. Open Raider and Open the cloned folder
+6. Open Raider and Open the cloned folder
 To configure NUnit for Unit Test:
 1.  Right-click on CalculatorEngineUnitTest project folder
 2.  Click on Manage NuGet Packages
