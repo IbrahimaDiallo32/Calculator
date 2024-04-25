@@ -97,6 +97,8 @@ To execute the Unit Test:
    ```
 
 ## Reviewing Unit Test Coverage
+1. For our Calculator Web Application, we obtained 100% coverage of all methods on our Calculator Engine Module.
+![UnitTestCoverage](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/a42ecd96-b76b-4055-8be4-d087579e4abc)
 
 
 ## Executing End-to-End Tests
