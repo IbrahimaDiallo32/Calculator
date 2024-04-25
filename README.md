@@ -27,9 +27,9 @@ This is a cross-platform application and should work in Windows 10+, Mac OS, and
 3. Open Your Terminal Line Interface
    - Open the terminal on your machine. This will be Terminal on macOS or Command prompt on Windows.
 4. Clone the Repository by using this git clone command as shown below:
-   ```git clone https://github.com/IbrahimaDiallo32/Calculator.git
+   ```git clone https://github.com/IbrahimaDiallo32/Calculator.git```
 5. Navigate to the Project Directory by using the 'cd' command and folder path as shown below:
-   ```cd Calculator(name of your cloned project folder)
+   ```cd Calculator(name of your cloned project folder)```
    
 6. Open Raider and Open the cloned folder
 To configure NUnit for Unit Test:
