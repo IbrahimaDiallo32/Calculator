@@ -35,12 +35,12 @@ public class FactorialUnitTest
     public void FactorialOfDouble_PositiveInteger_ReturnsFactorial()
     {   
         //Arrange
-        double input = 4;
-        double expected = 24;
+        double input = 5;
+        double expected = 120;
         //Act
         var result = CalculatorLogic.FactorialOfDouble(input);
         //Assert
-        Assert.That(expected, Is.EqualTo(result), "Factorial of 4 should return 24.");
+        Assert.That(expected, Is.EqualTo(result), "Factorial of 5 should return 120.");
     }
     [Test]
     public void FactorialOfDouble_OddNegativeInteger_ReturnsNegativeFactorial()
@@ -51,6 +51,6 @@ public class FactorialUnitTest
         //Act
         var result = CalculatorLogic.FactorialOfDouble(input);
         //Assert
-        Assert.That(expected, Is.EqualTo(result), "Factorial of 4 should return 24.");
+        Assert.That(expected, Is.EqualTo(result), "Factorial of -5 should return -120.");
     }
 }

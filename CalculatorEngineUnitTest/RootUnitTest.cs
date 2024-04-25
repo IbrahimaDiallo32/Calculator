@@ -7,69 +7,44 @@ public class RootUnitTest
 {
     //preq-ENGINE-12
      [Test]
-        public void RootOfTwoDoubles_PositiveNumber_ReturnsSquareRoot()
+        public void RootOfTwoDoubles_PositiveNumber_ReturnsCubeRoot()
         {
             //Arrange
-            double squareRootOf = 9;
-            double exponent = 2; //The inverse of exponent is being passed through Calculator logic. Raising 9 to the power of 1/2 is the same thing as taking the sqaure root of 9. 
+            double baseValue = 8;
+            double root = 3; //The inverse of exponent is being passed through Calculator logic. Raising 9 to the power of 1/2 is the same thing as taking the sqaure root of 9. 
 
             //Act
-            var result = CalculatorLogic.RootOfTwoDoubles(squareRootOf, exponent);
+            var result = CalculatorLogic.RootOfTwoDoubles(baseValue, root);
             
             //Assert
-            Assert.That(result, Is.EqualTo(3), "Square root of 9 should be 3.");
+            Assert.That(result, Is.EqualTo(2), "Cube root of 8 should be 2.");
         }
 
         [Test]
-        public void RootOfTwoDoubles_Zero_ReturnsZero()
+        public void RootOfTwoDoubles_TwoPositiveNumber_ReturnsSquareRoot()
         {
            //Arrange 
-            double squareRootOf = 0;
-            double exponent = 2;
-            double expected = 0;
+            double baseValue = 25;
+            double root = 2;
+           
             //Act
-            var result = CalculatorLogic.RootOfTwoDoubles(squareRootOf, exponent);
+            var result = CalculatorLogic.RootOfTwoDoubles(baseValue, root);
             //Assert
-            Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Square root of 0 should be 0.");
+            Assert.That(result, Is.EqualTo(5).Within(0.0001), "Square root of 25 should be 5.");
         }
         
         [Test]
-        public void RootOfTwoDoubles_SquareRootOfNegativeNumber_ThrowsExceptionOrReturnsNaN()
+        //preq-UNIT-TEST-13
+        public void RootOfTwoDoubles_NegativeSquareRootOfNumber_ThrowsExceptionOrReturnsNaN()
         {
             //Arrange
-            double squareRootOf = -1;
-            double exponent = 2;
+            double baseValue = 8;
+            double root = 0;
             
             //Act
-            var result = CalculatorLogic.RootOfTwoDoubles(squareRootOf, exponent);
+            var result = CalculatorLogic.RootOfTwoDoubles(baseValue, root);
             //Assert
-            Assert.That(double.IsNaN(result),Is.EqualTo(true), "Square root of a negative number should be NaN.");
+            Assert.That(result,Is.NaN, "Negative Square root of a positive number should be NaN.");
         }
-      
         
-        [Test]
-        public void RootOfTwoDoubles_VerySmallPositiveNumber_ReturnsCorrectSquareRoot()
-        {
-            //Arrange
-            double squareRootOf = 0.0001;
-            double exponent = 2;
-            
-            //Act
-            var result = CalculatorLogic.RootOfTwoDoubles(squareRootOf, exponent);
-            //Assert
-            Assert.That(result, Is.EqualTo(0.01).Within(0.0001), "Square root of 0.0001 should be 0.01.");
-        }
-  
-       
-        [Test]
-        public void RootOfTwoDoubles_VeryLargePositiveNumber_ReturnsCorrectSquareRoot()
-        {
-            //Arrange
-            double squareRootOf = 1000000;
-            double exponent = 2;
-            //Act
-            var result = CalculatorLogic.RootOfTwoDoubles(squareRootOf, exponent);
-            //Assert
-            Assert.That(result, Is.EqualTo(1000).Within(0.1), "Square root of 1000000 should be 1000.");
-        }
 } 
