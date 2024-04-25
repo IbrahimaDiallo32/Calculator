@@ -1,6 +1,7 @@
 # CalculatorSWE3643
 
 # KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
+This project is a web-based calculator app programmed in C# and Blazor. The application utilizes Nunit for Unit Testing and Playwrights for End-to-End Testing to ensure quality assurance. 
 
 ## Table of Contents
 1. [Architecture](#Architecture)
@@ -19,7 +20,7 @@
 ## Architecture 
 
 ## Environment
--This project is cross-platform and 
+This is a cross-platform application and should work in Windows 10+, Mac OS, and Linux environments. 
 ### Steps to prepare your environment to execute this application: 
 1. [Install the latest JetBrains Rider](#https://www.jetbrains.com/rider/download/#section=windows)
 2. Install Git on your computer: https://git-scm.com/downloads
