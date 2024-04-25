@@ -38,7 +38,7 @@ To configure NUnit for Unit Test:
    3. NUnit3TestAdapter 4.5.0
 
 To configure PlayWright for end-to-end testing: 
-1. gsfgsf
+1. Install Playwright following these instructions on your solution Folder: https://playwright.dev/dotnet/docs/intro
    
 
 ## Executing the Web Application 
