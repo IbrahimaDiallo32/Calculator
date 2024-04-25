@@ -20,6 +20,7 @@ This project is a web-based Calculator app programmed in C# using Blazor Server.
 ## Architecture 
 
 ## Environment
+
 This is a cross-platform application and should work in Windows 10+, Mac OS, and Linux environments. Note this Application has only been tested on Windows 10+ and MacOs.
 
 ### Steps to prepare your environment to execute this application: 
@@ -46,7 +47,7 @@ To configure NUnit for Unit Test:
    3. NUnit3TestAdapter 4.5.0
 
 To configure PlayWright for end-to-end testing: 
-1. Install [Playwright](#https://playwright.dev/dotnet/docs/intro)on your solution Folder
+1. Install **[Playwright](#https://playwright.dev/dotnet/docs/intro)**on your solution Folder
    
 
 ## Executing the Web Application 
@@ -56,28 +57,41 @@ To execute the Web Application:
       ```
     cd calculator
       ```
-5. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
+3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
    dotnet restore
       ```
-7. build the project by following these commands:
+4. build the project by following these commands:
    ```
    dotnet build
    ```
-9. Launch the Web Application by following these commands:
+5. Launch the Web Application by following these commands:
     ```
     dotnet run
     ``` 
    
 
 ## Executing Unit Tests
-2. Make sure to follow the steps in the [Environment](#environment) instructions
-3. Open your command Line interface and ensure the git is installed
-3. Clone the repository following the commands: git clone https://github.com/IbrahimaDiallo32/Calculator.git
-4. Navigate to the project Directory with this command: cd your-project-name
-5. Restore Dependencies with this command: dotnet restore
-6. build the project using this command: dotnet build
-7. Execute the Unit Tests using these commands: dotnet test
+
+To execute the Unit Test:
+
+1. Make sure to follow the steps in the [Environment](#environment) instructions
+2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
+      ```
+    cd calculator
+      ```
+3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
+      ```
+   dotnet restore
+      ```
+4. build the project by following these commands:
+   ```
+   dotnet build
+   ```
+5. Execute the Unit Tests by following these commands:
+   ```
+   dotnet test
+   ```
 
 
 ## Reviewing Unit Test Coverage
