@@ -11,11 +11,12 @@
     <div class="resultBox">
         @if (result.HasValue && isOnlyOneInput)
         {
-        <h3 id="resultBoxForCorrectInput">@inputA @operatorType = @result </h3>
+            <h3 id="resultBoxForCorrectInput">@inputA @operatorType = @result </h3>
         }
         else if (result.HasValue)
         {
-            <h3 id="resultBoxForCorrectInput">@inputA @operatorType @inputB= @result </h3>
+            <h3 id="resultBoxForCorrectInput">@inputA @operatorType @inputB </h3>
+            <p aria-label="result" >@result</p>
         }
         @if (error)
         {
@@ -23,7 +24,6 @@
         }
         @if (invalidInput)
         {
-            
             <h5 id = "resultBoxForInvalidInput">Invalid input Numbers Only</h5>
         }
     </div>
@@ -31,7 +31,7 @@
     <label for = "inputA"><b>Input A</b></label>
     <label for = "inputB" id = "spaceIndentForText"><b>Input B</b></label>
 <div>
-    <input type="text" class = "inputBoxes" @bind= "inputA" placeholder="0"> 
+    <input type="text" class = "inputBoxes" aria-label = "firstInput" id ="firstInput" @bind= "inputA" placeholder="0"> 
     <input type="text" class = "inputBoxes" id = "spaceIndentForInputBox" @bind= "inputB" placeholder="0"> 
 </div>
 
@@ -45,7 +45,7 @@
 </div>
     
     <div>
-    <button class = "styleForCalculatorFunctionButtons" @onclick= "AddNumbers">A + B</button>
+    <button class = "styleForCalculatorFunctionButtons" aria-label = "add" @onclick= "AddNumbers">A + B</button>
     <button class="styleForCalculatorFunctionButtons" @onclick = "FactorialOfInput">A!</button>
 </div>
 
@@ -75,7 +75,7 @@
 <div>
     <button class="styleForCalculatorFunctionButtons" @onclick = "RootOfNumber">A root B</button>
 </div>
-
+    @*<button type = "text" id="realResult" aria-label = "result">@result</button>*@
 </div>
 
 

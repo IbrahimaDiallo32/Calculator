@@ -1,3 +1,6 @@
+using Microsoft.Playwright;
+using NUnit.Framework;
+
 namespace Calculator_End_To_End_Tests;
 
 [Parallelizable(ParallelScope.Self)]
@@ -6,11 +9,122 @@ public class UnitTests : PageTest
 {
 
     [Test]
-    public async Task CalculatorUI_PageTitle_IsCalculator()
+    public async Task CalculatorWebUI_VerifyPageTitle_ReturnsCalculator()
     {
         const string pageTitle = "Calculator";
         await Page.GotoAsync("http://localhost:5166");
         await Expect(Page).ToHaveTitleAsync(pageTitle);
+    }
+
+    [Test]
+    public async Task whatter()
+    {
+        //refresh page
+        await Page.ReloadAsync();
+        
+        //load webpage
+        await Page.GotoAsync("http://localhost:5166");
+        
+        //values into A and B
+        await Page.FillAsync("#firstInput", "5");
+        await Page.FillAsync("#spaceIndentForInputBox", "3");
+        //await Page.GetByLabel("firstInput", new() { Exact = true }).FillAsync("5");
+        //await Page.GetByLabel("spaceIndentForInputBox", new() { Exact = true }).FillAsync("7");
+
+        //add button
+        //await Page.GetByLabel("add", new() { Exact = true }).ClickAsync();
+      
+        await Page.ClickAsync("text ='A + B'");
+        
+        //get result
+        var isCorrectResult = await Page.Locator("text='8'").IsVisibleAsync();
+        Assert.That(isCorrectResult, Is.EqualTo(true));
+        await Expect(Page.GetByText("8")).ToBeVisibleAsync();
+        string result = await Page.GetByLabel("result", new() { Exact = true }).TextContentAsync();
+
+        
+        //write to console for verification
+        Console.Write("Test 6: ");
+        Console.Write(result);
+        
+        //string to int
+        var actualSum = int.Parse(result);
+
+        //calculate expected
+        var expectedSum = 5 + 7;
+
+        //verify
+        Assert.That(actualSum, Is.EqualTo(expectedSum));
+    }
+    [Test]
+    public async Task CalculatorWebUI_AddTwoFloatingPointValues_ReturnsSumOfValues()
+    {
+        await Page.GotoAsync("http://localhost:5166");
+        await Page.FillAsync("#firstInput", "5");
+        await Page.FillAsync("#spaceIndentForInputBox", "3");
+        await Page.ClickAsync("text =A + B");
+
+        
+// Wait for the result element to appear
+        //var result = await Page.InnerTextAsync("#resultBoxForCorrectInput");
+        var resultElement = await Page.QuerySelectorAsync("#realResult");
+        
+        
+        if (resultElement != null)
+        {
+            string resultTexts = await resultElement.InnerTextAsync();
+            Console.WriteLine(resultTexts);
+        }
+        else
+        {
+            Console.WriteLine("Element with ID '#realResult' not found!");
+        }
+        await Page.WaitForSelectorAsync("#realResult");
+        string resultText = await resultElement.InnerTextAsync();
+        Console.WriteLine(resultText);
+        /*var resultElement = await Page.QuerySelectorAsync("#realResult"); 
+        Console.WriteLine("hiiii");
+        Console.WriteLine(resultElement);*/
+        
+        if (resultElement != null)
+        {
+            Console.WriteLine("not null");
+        }
+        else
+        {
+            Console.WriteLine("resultElement is null! The element might not exist or might not be visible after the button click.");
+        }
+        // actualResult = await resultElement.EvaluateAsync<double>("element => element.textContent");
+        //string resultText = await resultElement.TextContentAsync();
+        //double result = double.Parse(resultElement);
+        //double result = 8;
+        
+        
+       //await Page.WaitForSelectorAsync("#resultBox");
+
+// Get the text content containing the result
+        //var resultElement = await Page.QuerySelectorAsync("#resultBoxForCorrectInput");
+        //string resultText = await resultElement.TextContentAsync();
+
+        //int result = int.Parse(resultText);
+        //Assert.Equals(8, result);
+        /*await Page.GotoAsync("http://localhost:5166");
+        await Page.FillAsync("#firstInput", "5");
+        await Page.FillAsync("#spaceIndentForInputBox", "3");
+        await Page.ClickAsync("text =A + B");
+        // ... your existing code ...
+
+// 1. Get the text content containing the result
+        var resultElement = await Page.QuerySelectorAsync("#resultBoxForCorrectInput"); // Adjust selector if needed
+        string resultText = await resultElement.TextContentAsync();
+
+// 2. Convert the text to an integer for comparison
+        int result = int.Parse(resultText);
+
+// 3. Check if the result equals 8
+        Assert.Equals(8, result);
+        //var result = await Page.InnerTextAsync("#resultBoxForCorrectInput");
+        //Assert.Equals(result, 8);*/
     }
         /*
         [Test]
