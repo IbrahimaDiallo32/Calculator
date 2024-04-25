@@ -57,18 +57,20 @@ To execute the Web Application:
       ```
     cd calculator_App
       ```
-3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
+3. Once in this Directory, restore the Dependencies necessary for this application by following these commands:
       ```
    dotnet restore
       ```
-4. build the project by following these commands:
+4. Build the project by following these commands:
    ```
    dotnet build
    ```
 5. Launch the Web Application by following these commands:
     ```
     dotnet run
-    ``` 
+    ```
+6. After the application starts, launch a browser and connect to HTTP://localhost:5166(port number)
+   
    
 
 ## Executing Unit Tests
@@ -85,7 +87,7 @@ To execute the Unit Test:
       ```
    dotnet restore
       ```
-4. build the project by following these commands:
+4. Build the project by following these commands:
    ```
    dotnet build
    ```
