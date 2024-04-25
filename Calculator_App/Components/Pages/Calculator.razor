@@ -2,6 +2,7 @@
 @using CalculatorEngine
 
 @rendermode InteractiveServer
+<PageTitle>Calculator</PageTitle>
 
 <div class="outerContainer">
     
@@ -22,6 +23,7 @@
         }
         @if (invalidInput)
         {
+            
             <h5 id = "resultBoxForInvalidInput">Invalid input Numbers Only</h5>
         }
     </div>
@@ -34,9 +36,12 @@
 </div>
 
 <div class = "upperInputs">
-    <h5>A and B</h5>
-    <h5 class = "spaceIndentForText1">A only</h5>
-    
+    <div class="column">
+        <h5>A and B</h5>
+    </div>
+    <div class="column">
+        <h5 class = "spaceIndentForText1">A only</h5>
+    </div>
 </div>
     
     <div>
@@ -83,6 +88,7 @@
     bool invalidInput { get; set; }
     string? operatorType { get; set; }
     bool isOnlyOneInput { get; set; }
+    string backgroundColor { get; set; }
 
     //This method will return true if both user inputs are able to be parsed to double values 
     private bool IsValidInput()
@@ -98,6 +104,7 @@
         {
             invalidInput = true;
             result = null;
+            backgroundColor = "#B70F0A";
             return;
         }
         isOnlyOneInput = false;

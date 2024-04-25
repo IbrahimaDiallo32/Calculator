@@ -2,13 +2,13 @@ namespace Calculator_End_To_End_Tests;
 
 [Parallelizable(ParallelScope.Self)]
 [TestFixture]
-public class Tests : PageTest
+public class UnitTests : PageTest
 {
 
     [Test]
     public async Task CalculatorUI_PageTitle_IsCalculator()
     {
-        const string pageTitle = "/";
+        const string pageTitle = "Calculator";
         await Page.GotoAsync("http://localhost:5166");
         await Expect(Page).ToHaveTitleAsync(pageTitle);
     }

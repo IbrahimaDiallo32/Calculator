@@ -17,7 +17,7 @@ public class UnitTest13
             var result = CalculatorLogic.RootOfTwoDoubles(squareRootOf, exponent);
             
             //Assert
-            Assert.That(result, Is.EqualTo(3).Within(0.0001), "Square root of 9 should be 3.");
+            Assert.That(result, Is.EqualTo(3), "Square root of 9 should be 3.");
         }
 
         [Test]
