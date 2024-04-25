@@ -3,7 +3,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 
 //Unit Tests for Addition() Function
-public class UnitTest1
+public class AdditionUnitTest
 {
    
     [Test]

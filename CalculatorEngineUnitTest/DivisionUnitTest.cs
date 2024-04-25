@@ -5,7 +5,7 @@ namespace CalculatorTestProject1;
 
 //Unit Tests for Division() Function
 //preq-ENGINE-7
-public class UnitTest4
+public class DivisionUnitTest
 {
     
     [Test]

@@ -4,7 +4,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 // Unit Tests for Inverse Functions 
 //We may need to include one for division by 0
-public class UnitTest11
+public class InverseUnitTest
 {
     [Test]
     public void InverseOfDouble_PositiveNumber_ReturnsInverse()

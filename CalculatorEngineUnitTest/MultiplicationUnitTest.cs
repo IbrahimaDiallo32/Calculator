@@ -3,7 +3,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 
 //Unit Tests for Multiplication() Function
-public class UnitTest3
+public class MultiplicationUnitTest
 {
 
     [Test]

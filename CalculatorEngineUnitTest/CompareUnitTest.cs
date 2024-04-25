@@ -3,7 +3,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 
 
-public class UnitTest5
+public class CompareUnitTest
 {
     
     [Test]

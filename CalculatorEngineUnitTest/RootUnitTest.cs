@@ -3,7 +3,7 @@ using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 // Unit Tests For Root Function
-public class UnitTest13
+public class RootUnitTest
 {
     //preq-ENGINE-12
      [Test]

@@ -4,7 +4,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 //Unit Tests For Tan Function
 //Do we need to include one for pi/2 where tan is undefined and 3pi/2
-public class UnitTest10
+public class TanUnitTest
 {
     //preq-UNIT-TEST-18
     [Test]

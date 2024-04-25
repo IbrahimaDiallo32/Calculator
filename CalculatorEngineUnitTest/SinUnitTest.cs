@@ -2,7 +2,7 @@ using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 //Unit Tests For Sin Function//
-public class UnitTest8
+public class SinUnitTest
 {   
     //preq-UNIT-TEST-16
     [Test]

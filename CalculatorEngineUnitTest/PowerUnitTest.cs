@@ -2,7 +2,7 @@ using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 //Unit Test for Power Function
-public class UnitTest6
+public class PowerUnitTest
 
 {
     [Test]

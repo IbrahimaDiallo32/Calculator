@@ -3,7 +3,7 @@ using CalculatorEngine;
 
 namespace CalculatorTestProject1;
 //Unit Tests For Log Functions
-public class UnitTest12
+public class LogUnitTest
 {
     //preq-ENGINE-9
         [Test]

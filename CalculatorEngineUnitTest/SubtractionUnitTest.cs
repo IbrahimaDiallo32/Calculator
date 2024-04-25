@@ -3,7 +3,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 
 //Unit Tests for Subtraction() Functions
-public class UnitTest2
+public class SubtractionUnitTest
 {
     [Test]
     public void Subtraction_TwoPositiveDoubles_ReturnsDifference()

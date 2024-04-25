@@ -3,7 +3,7 @@ using CalculatorEngine;
 namespace CalculatorTestProject1;
 //Unit Tests For Factorial //
 
-public class UnitTest7
+public class FactorialUnitTest
 {
     [Test]
     public void FactorialOfDouble_Zero_ReturnsOne()
