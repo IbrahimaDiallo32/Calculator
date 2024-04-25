@@ -46,7 +46,7 @@ To configure NUnit for Unit Test:
    3. NUnit3TestAdapter 4.5.0
 
 To configure PlayWright for end-to-end testing: 
-1. Install [Playwright](https://playwright.dev/dotnet/docs/intro)on your solution Folder
+1. Install [Playwright](https://playwright.dev/dotnet/docs/intro) on your solution Folder
    
 
 ## Executing the Web Application 
@@ -69,7 +69,7 @@ To execute the Web Application:
     ```
     dotnet run
     ```
-6. After the application starts, launch a browser and connect to HTTP://localhost:5166(port number)
+6. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number)
    
    
 
