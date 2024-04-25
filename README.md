@@ -31,7 +31,9 @@ This is a cross-platform application and should work in Windows 10+, Mac OS, and
    git clone https://github.com/IbrahimaDiallo32/Calculator.git
       ```
 6. Navigate to the Project Directory by using the 'cd' command and folder path as shown below:
-      ```cd Calculator(name of your cloned project folder)```
+      ```
+   cd Calculator(name of your cloned project folder)
+      ```
    
 To configure NUnit for Unit Test:
 1.  Right-click on CalculatorEngineUnitTest project folder
