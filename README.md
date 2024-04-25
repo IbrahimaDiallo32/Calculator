@@ -25,15 +25,14 @@ This is a cross-platform application and should work in Windows 10+, Mac OS, and
 
 ### Steps to prepare your environment to execute this application: 
 
-1. Install the latest JetBrains [Rider](https://www.jetbrains.com/rider/download/#section=windows)
-2. Install **[Git](#https://git-scm.com/downloads)**on your computer
-3. Open Your Terminal Line Interface
-   - Open the terminal on your machine. This will be Terminal on macOS or Command prompt on Windows.
+1. Install the latest [JetBrains Rider](https://www.jetbrains.com/rider/download/#section=windows)
+2. Install [Git](https://git-scm.com/downloads) on your computer
+3. Open Your Terminal Line Interface. This will be Terminal on macOS or Command prompt on Windows.
 4. Clone the Repository by using this git clone command as shown below:
       ```
    git clone https://github.com/IbrahimaDiallo32/Calculator.git
       ```
-6. Navigate to the Project Directory by using the 'cd' command and folder path as shown below:
+5. Navigate to the Project Directory by using the 'cd' command and folder path as shown below:
       ```
    cd Calculator(name of your cloned project folder)
       ```
@@ -47,15 +46,16 @@ To configure NUnit for Unit Test:
    3. NUnit3TestAdapter 4.5.0
 
 To configure PlayWright for end-to-end testing: 
-1. Install **[Playwright](#https://playwright.dev/dotnet/docs/intro)**on your solution Folder
+1. Install [Playwright](https://playwright.dev/dotnet/docs/intro)on your solution Folder
    
 
 ## Executing the Web Application 
+
 To execute the Web Application:
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2. Open your command Line interface and Navigate to the project Directory of this project using the 'cd' command:
       ```
-    cd calculator
+    cd calculator_App
       ```
 3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
@@ -74,11 +74,12 @@ To execute the Web Application:
 ## Executing Unit Tests
 
 To execute the Unit Test:
+**Note: If the application is running, open a new terminal window and skip steps 3 and 4.** 
 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
       ```
-    cd calculator
+    cd calculatorEngineUnitTest
       ```
 3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
@@ -93,12 +94,21 @@ To execute the Unit Test:
    dotnet test
    ```
 
-
 ## Reviewing Unit Test Coverage
-1.  Make sure to follow the steps in the [Environment](#environment) instructions
+
 
 ## Executing End-to-End Tests
+
+To execute the End-to-End Testing:
+**Note: The Web Application should be running on the machine.**
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
-2.  Install Playwright following these instructions: https://playwright.dev/dotnet/docs/intro
+2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
+      ```
+    cd calculatorEnd-To-EndTests
+      ```
+3. Run the End-To-End Tests by following these commands:
+   ```
+   dotnet test
+   ```
 ## Final Video Presentation
 -asdfahjkldfag
