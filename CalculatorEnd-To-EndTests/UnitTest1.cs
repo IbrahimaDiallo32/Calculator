@@ -11,6 +11,7 @@ public class UnitTests : PageTest
     [Test]
     public async Task CalculatorWebUI_VerifyPageTitle_ReturnsCalculator()
     {
+        //preq-E2E-TEST-5
         const string pageTitle = "Calculator";
         await Page.GotoAsync("http://localhost:5166");
         await Expect(Page).ToHaveTitleAsync(pageTitle);
@@ -19,6 +20,7 @@ public class UnitTests : PageTest
     [Test]
     public async Task whatter()
     {
+        //preq-E2E-TEST-6
         //refresh page
         await Page.ReloadAsync();
 
@@ -49,6 +51,29 @@ public class UnitTests : PageTest
     //Assert.That(isCorrectResult, Is.EqualTo(true));
     //await Expect(Page.GetByText("8")).ToBeVisibleAsync();
 }
+
+    [Test]
+    public async Task CalculatorWebUI_OnlyOneValidInput_ReturnsInvalidInputWhenRequestingFunctionRequiringTwoInputs()
+    {
+        //preq-E2E-TEST-8
+        await Page.ReloadAsync();
+        
+        await Page.GotoAsync("http://localhost:5166");
+        await Page.GetByLabel("firstInput").FillAsync("3");
+        var isCorrectResult = Expect(Page.GetByText("Invalid Input, Numbers Only")).ToBeVisibleAsync();
+    }
+
+    [Test]
+    public async Task CalculatorWebUi_DivideFloatingPointValueAndZero_ReturnsNotANumberError()
+    {
+        await Page.ReloadAsync();
+        
+        await Page.GotoAsync("http://localhost:5166");
+        await Page.GetByLabel("firstInput").FillAsync("3");
+        await Page.GetByLabel("secondInput").FillAsync("5");
+        await Page.ClickAsync("text ='A / B'");
+        var isCorrectResult = Expect(Page.GetByText("Not a Number")).ToBeVisibleAsync();
+    }
     
     [Test]
     public async Task CalculatorWebUI_AddTwoFloatingPointValues_ReturnsSumOfValues()

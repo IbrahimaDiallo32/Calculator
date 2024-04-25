@@ -13,6 +13,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8e0fa67b_002D141b_002D4528_002Db5c1_002D99fcb032b004/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="whatter" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.UnitTests.whatter&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.UnitTests.CalculatorWebUI_OnlyOneValidInput_ReturnsInvalidInputWhenRequestingFunctionRequiringTwoInputs&lt;/TestId&gt;
+    &lt;TestId&gt;NUnit3x::E1A2A96B-1762-4703-A18B-936EE48C2C24::net8.0::Calculator_End_To_End_Tests.UnitTests.CalculatorWebUi_DivideFloatingPointValueAndZero_ReturnsNotANumberError&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=eeb0af01_002D9876_002D463f_002Db186_002D1368664c6c19/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="CalculatorWebUI_AddTwoFloatingPointValues_ReturnsSumOfValues #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
