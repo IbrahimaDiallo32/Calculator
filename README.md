@@ -1,5 +1,3 @@
-# CalculatorSWE3643
-
 # KSU SWE 3643 Software Testing and Quality Assurance Semester Project: Web-Based Calculator
 This project is a web-based Calculator app programmed in C# using Blazor Server. The application utilizes Nunit for Unit Testing and Playwrights for End-to-End Testing to ensure quality assurance. 
 
