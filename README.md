@@ -111,6 +111,14 @@ To execute the Unit Test:
 5. Execute the Unit Tests by following these commands:
    ```
    dotnet test
+   Test run for C:\Users\umesh\Calculator\calculatorEngineUnitTest\bin\Debug\net8.0\CalculatorEngineUnitTest.dll (.NETCoreApp,Version=v8.0)
+Microsoft (R) Test Execution Command Line Tool Version 17.9.0 (x64)
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Starting test execution, please wait...
+A total of 1 test files matched the specified pattern.
+
+Passed!  - Failed:     0, Passed:    45, Skipped:     0, Total:    45, Duration: 30 ms - CalculatorEngineUnitTest.dll (net8.0)
    ```
 
 ## Reviewing Unit Test Coverage
