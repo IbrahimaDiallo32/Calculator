@@ -117,7 +117,7 @@ To execute the Unit Test:
 ## Executing End-to-End Tests
 
 To execute the End-to-End Testing:
-**Note: The Web Application should be running on the machine.**
+**Note: The Web Application must be running on the machine to successfully execute the End-To-End Testing.**
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
       ```
