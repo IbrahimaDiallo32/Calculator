@@ -111,11 +111,8 @@ To execute the Unit Test:
 5. Execute the Unit Tests by following these commands:
    ```
    dotnet test
-   Starting test execution, please wait...
-   A total of 1 test files matched the specified pattern.
-
-   Passed!  - Failed:     0, Passed:    45, Skipped:     0, Total:    45, Duration: 30 ms - CalculatorEngineUnitTest.dll (net8.0)
    ```
+![dotnetTest](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/51f5f41e-6ec5-4dba-9f94-1f30f44b703e)
 
 ## Reviewing Unit Test Coverage
 1. For our Calculator Web Application, we obtained 100% coverage of all methods on our Calculator Engine Module.
@@ -126,7 +123,7 @@ To execute the Unit Test:
 ## Executing End-to-End Tests
 
 To execute the End-to-End Testing:
-**Note: The Web Application must be running on the machine to successfully execute the End-To-End Testing.**
+**Note: The Web Application must be running on the machine to execute the End-To-End Testing successfully.**
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
       ```
