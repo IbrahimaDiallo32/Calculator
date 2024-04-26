@@ -18,6 +18,18 @@ This project is a web-based Calculator app programmed in C# using Blazor Server.
 2. Ibrahima Diallo
 
 ## Architecture 
+This project is split into four different projects within one solution using ASP.NET Blazor Server. The four projects are Calculator_App, CalculatorEngine, CalculatorEngineUnitTest, and CalculatorEndToEndTests.
+
+-   Calculator_App: This project serves as the web server holding the HTML and CSS code.
+-   CalculatorEngine: Here resides the mathematical operations, such as addition, factorial, and trigonometry.
+-   CalculatorEngineUnitTest: This project contains all the unit tests for the mathematical operations.
+-   CalculatorEndToEndTests: This project houses the Playwright end-to-end tests.
+
+CalculatorEngine and CalculatorEnd-To-EndTests are not dependent on any projects, but CalculatorEngineTest and Calculator_App are both dependent on the CalcultorEngine.
+
+![ArchitectureTemplateDiagram](https://github.com/IbrahimaDiallo32/Calculator/assets/111662876/072aefa6-c7d1-4671-b506-1d884da1be67)
+![ProjectDependencyDiagram](https://github.com/IbrahimaDiallo32/Calculator/assets/111662876/83b2792b-9ca4-42ed-94f8-63728076b53c)
+
 
 ## Environment
 
@@ -69,7 +81,12 @@ To execute the Web Application:
     ```
     dotnet run
     ```
-6. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number)
+![dotnetrun](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/e4847ab5-d416-4807-ae6e-85c15ddc7390)
+   If you encounter this issue shown below, free up your port and try running it again with the "dotnet run" command.
+![dotnetrunerror](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/d07e0f9a-129a-45a2-83bc-c4b610e5bc55)
+
+7. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number) by copying and pasting the link on the browser from the terminal.
+   
    
    
 
@@ -80,37 +97,41 @@ To execute the Unit Test:
 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
+   **Note: You must be in the directory of Calculator to run "Cd calculatorEngineUnitTest". Otherwise, it will say it cannot find a path and doesn't exist.** 
       ```
     cd calculatorEngineUnitTest
       ```
-3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
+4. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
    dotnet restore
       ```
-4. Build the project by following these commands:
+5. Build the project by following these commands:
    ```
    dotnet build
    ```
-5. Execute the Unit Tests by following these commands:
+6. Execute the Unit Tests by following these commands:
    ```
    dotnet test
    ```
+![dotnetTest](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/51f5f41e-6ec5-4dba-9f94-1f30f44b703e)
 
 ## Reviewing Unit Test Coverage
 1. For our Calculator Web Application, we obtained 100% coverage of all methods on our Calculator Engine Module.
-![UnitTestCoverage](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/a42ecd96-b76b-4055-8be4-d087579e4abc)
+![UnitTestCoverage](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/6fc8f2cd-fd9d-4ed4-9774-8a9d9e96f157)
+
 
 
 ## Executing End-to-End Tests
 
 To execute the End-to-End Testing:
-**Note: The Web Application should be running on the machine.**
+**Note: The Web Application must be running on the machine to execute the End-To-End Testing successfully.**
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
+   **Note: You must be in the directory of Calculator to run "cd calculatorEnd-To-EndTests". Otherwise, it will say it cannot find a path and doesn't exist.**
       ```
     cd calculatorEnd-To-EndTests
       ```
-3. Run the End-To-End Tests by following these commands:
+4. Run the End-To-End Tests by following these commands:
    ```
    dotnet test
    ```
