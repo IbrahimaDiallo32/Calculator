@@ -81,9 +81,12 @@ To execute the Web Application:
     ```
     dotnet run
     ```
-    ![dotnetrun](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/e4847ab5-d416-4807-ae6e-85c15ddc7390)
+![dotnetrun](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/e4847ab5-d416-4807-ae6e-85c15ddc7390)
+   If you encounter this issue shown below, free up your port and try running it again with the "dotnet run" command.
+![dotnetrunerror](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/d07e0f9a-129a-45a2-83bc-c4b610e5bc55)
 
-6. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number)
+7. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number) by copying and pasting the link on the browser from the terminal.
+   
    
    
 
