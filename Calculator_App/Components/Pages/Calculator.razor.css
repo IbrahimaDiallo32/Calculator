@@ -41,13 +41,12 @@ border-radius: 7px; width: 42%; padding: .2%; background-color: #EBEBEB; color: 
 }
 .upperInputs{
     display: flex;
-    background-color: yellow;
 }
 #spaceIndentForText{
     margin-left: 200px;
 }
 .spaceIndentForText1{
-    margin-left: 200px; !important;
+    margin-left: 200px;
 }
 #spaceIndentForInputBox{
     margin-left: 75px;

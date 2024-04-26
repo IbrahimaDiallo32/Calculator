@@ -16,11 +16,11 @@
         else if (result.HasValue)
         {
             <h3 id="resultBoxForCorrectInput">@inputA @operatorType @inputB = </h3>
-            <h3 aria-label="result"> @result</h3>
+            <h3 aria-label="answer"> @result</h3>
         }
         else if (error)
         {
-            <h3>error</h3>
+            <h3 aria-label="error">@inputA @operatorType @inputB = Not a Number</h3>
         }
         else if (invalidInput)
         {
@@ -62,7 +62,7 @@
     <button class="styleForCalculatorFunctionButtons" @onclick = "CosOfNumber">cos A</button>
 </div>
 <div>
-    <button class="styleForCalculatorFunctionButtons" @onclick= "DivideNumbers">A / B</button>
+    <button class="styleForCalculatorFunctionButtons" aria-label = "divide" @onclick= "DivideNumbers">A / B</button>
     <button class="styleForCalculatorFunctionButtons" @onclick = "TanOfNUmber">tan A</button>
 </div>
 <div>
