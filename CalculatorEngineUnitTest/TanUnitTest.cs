@@ -22,7 +22,7 @@ public class TanUnitTest
     public void TanOfDouble_TwoPi_ReturnsZero()
     {   
         //Arrange
-        double value = 2 * (double)Math.PI;
+        double value = 2 * Math.PI;
         double expected = 0;
         //Act
         var result = CalculatorLogic.TanOfDouble(value);
@@ -33,7 +33,7 @@ public class TanUnitTest
     public void TanOfDouble_NegativeTwoPi_ReturnsZero()
     {   
         //Arrange
-        double value = -2 * (double)Math.PI;
+        double value = -2 * Math.PI;
         double expected = 0;
         //Act
         var result = CalculatorLogic.TanOfDouble(value);

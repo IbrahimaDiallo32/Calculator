@@ -15,16 +15,20 @@
         }
         else if (result.HasValue)
         {
-            <h3 id="resultBoxForCorrectInput">@inputA @operatorType @inputB </h3>
-            <p aria-label="result" >@result</p>
+            <h3 id="resultBoxForCorrectInput">@inputA @operatorType @inputB = </h3>
+            <h3 aria-label="result"> @result</h3>
         }
-        @if (error)
+        else if (error)
         {
             <h3>error</h3>
         }
-        @if (invalidInput)
+        else if (invalidInput)
         {
-            <h3 id = "resultBoxForInvalidInput">Invalid input Numbers Only</h3>
+            <h3 id="resultBoxForInvalidInput">Invalid input Numbers Only</h3>
+        }
+        else
+        {
+            <h4>Enter value(s) below and select an operation.</h4>
         }
     </div>
 
