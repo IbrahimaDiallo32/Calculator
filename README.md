@@ -81,6 +81,8 @@ To execute the Web Application:
     ```
     dotnet run
     ```
+    ![dotnetrun](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/e4847ab5-d416-4807-ae6e-85c15ddc7390)
+
 6. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number)
    
    
