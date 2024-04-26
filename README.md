@@ -18,7 +18,14 @@ This project is a web-based Calculator app programmed in C# using Blazor Server.
 2. Ibrahima Diallo
 
 ## Architecture 
-This project is split into 4 different projects in one solution using ASP.NET Blazor Server. The four projects are Calculator_App, CalculatorEngine, CalculatorEngineUnitTest, and CalculatorEnd-To-EndTests.
+This project is split into four different projects within one solution using ASP.NET Blazor Server. The four projects are Calculator_App, CalculatorEngine, CalculatorEngineUnitTest, and CalculatorEndToEndTests.
+
+-   Calculator_App: This project serves as the web server holding the HTML and CSS code.
+-   CalculatorEngine: Here resides the mathematical operations, such as addition, factorial, and trigonometry.
+-   CalculatorEngineUnitTest: This project contains all the unit tests for the mathematical operations.
+-   CalculatorEndToEndTests: This project houses the Playwright end-to-end tests.
+
+CalculatorEngine and CalculatorEnd-To-EndTests are not dependent on any projects, but CalculatorEngineTest and Calculator_App are both dependent on the CalcultorEngine.
 
 ![ArchitectureTemplateDiagram](https://github.com/IbrahimaDiallo32/Calculator/assets/111662876/072aefa6-c7d1-4671-b506-1d884da1be67)
 ![ProjectDependencyDiagram](https://github.com/IbrahimaDiallo32/Calculator/assets/111662876/83b2792b-9ca4-42ed-94f8-63728076b53c)
