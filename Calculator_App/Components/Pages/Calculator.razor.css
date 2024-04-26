@@ -30,12 +30,11 @@
     text-align: center;
 }
 #resultBoxForInvalidInput{
-    padding: 15px;
-    margin: 10px;
     display: flex;
-    background-color: red;
+    justify-self: center;
+    align-items: center;
+    background-color: #FFECD7;
     color: #FFFFFF;
-    text-align: center;
 }
 .buttons{
 border-radius: 7px; width: 42%; padding: .2%; background-color: #EBEBEB; color: #000000;
