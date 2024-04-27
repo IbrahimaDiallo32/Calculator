@@ -64,6 +64,8 @@ To configure PlayWright for end-to-end testing:
 To execute the Web Application:
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2. Open your command Line interface and Navigate to the project Directory of this project using the 'cd' command:
+
+   **Note: You must be in the directory of Calculator to run "Cd calculatorEngineUnitTest". Otherwise, it will say it cannot find a path and doesn't exist.** 
       ```
     cd calculator_App
       ```
@@ -79,9 +81,11 @@ To execute the Web Application:
     ```
     dotnet run
     ```
+    
 ![dotnetrun](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/e4847ab5-d416-4807-ae6e-85c15ddc7390)
 
-If you encounter this issue shown below, free up your port and try running it again with the "dotnet run" command.
+**Issues fix**: If you encounter this issue shown below, free up your port and try running it again with the "dotnet run" command.
+
 ![dotnetrunerror](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/d07e0f9a-129a-45a2-83bc-c4b610e5bc55)
 
 7. After the application starts, launch a browser and connect to HTTP://localhost:5166 (port number) by copying and pasting the link on the browser from the terminal.
@@ -96,22 +100,24 @@ To execute the Unit Test:
 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
+
    **Note: You must be in the directory of Calculator to run "Cd calculatorEngineUnitTest". Otherwise, it will say it cannot find a path and doesn't exist.** 
       ```
     cd calculatorEngineUnitTest
       ```
-4. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
+3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
    dotnet restore
       ```
-5. Build the project by following these commands:
+4. Build the project by following these commands:
    ```
    dotnet build
    ```
-6. Execute the Unit Tests by following these commands:
+5. Execute the Unit Tests by following these commands:
    ```
    dotnet test
    ```
+   
 ![dotnetTest](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/51f5f41e-6ec5-4dba-9f94-1f30f44b703e)
 
 ## Reviewing Unit Test Coverage
@@ -123,6 +129,7 @@ To execute the Unit Test:
 ## Executing End-to-End Tests
 
 To execute the End-to-End Testing:
+
 **Note: The Web Application must be running on the machine to execute the End-To-End Testing successfully.**
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
@@ -134,6 +141,9 @@ To execute the End-to-End Testing:
    ```
    dotnet test
    ```
+   
+   ![EndtoEndTest](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/c424c49b-a45a-4f28-9c51-01f1019e9b1c)
+
 ## Final Video Presentation
 
 Watch our Project's Presentation
