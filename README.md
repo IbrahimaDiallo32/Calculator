@@ -103,11 +103,10 @@ To execute the Unit Test:
 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
-
    **Note: You must be in the directory of Calculator to run "Cd calculatorEngineUnitTest". Otherwise, it will say it cannot find a path and doesn't exist.** 
-      ```
+   ```
    cd calculatorEngineUnitTest
-      ```
+   ```
 3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
    dotnet restore
@@ -138,7 +137,7 @@ To execute the End-to-End Testing:
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
    **Note: You must be in the directory of Calculator to run "cd calculatorEnd-To-EndTests". Otherwise, it will say it cannot find a path and doesn't exist.**
       ```
-    cd calculatorEnd-To-EndTests
+   cd calculatorEnd-To-EndTests
       ```
 4. Run the End-To-End Tests by following these commands:
    ```
