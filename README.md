@@ -114,7 +114,7 @@ To execute the Unit Test:
 ![dotnetTest](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/51f5f41e-6ec5-4dba-9f94-1f30f44b703e)
 
 ## Reviewing Unit Test Coverage
-1. For our Calculator Web Application, we obtained 100% coverage of all methods on our Calculator Engine Module.
+1. For our Calculator Web Application, we obtained 100% coverage of all methods on our Calculator Engine.
 ![UnitTestCoverage](https://github.com/IbrahimaDiallo32/Calculator/assets/111923854/6fc8f2cd-fd9d-4ed4-9774-8a9d9e96f157)
 
 
@@ -136,3 +136,4 @@ To execute the End-to-End Testing:
 ## Final Video Presentation
 
 Watch our Project's Presentation
+https://www.youtube.com/watch?v=KMquM8Kfc-U
