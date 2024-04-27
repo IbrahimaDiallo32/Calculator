@@ -45,7 +45,7 @@ This is a cross-platform application and should work in Windows 10+, Mac OS, and
       ```
 5. Navigate to the Project Directory by using the 'cd' command and folder path as shown below:
       ```
-   cd Calculator(name of your cloned project folder)
+   cd Calculator
       ```
    
 To configure NUnit for Unit Test:
