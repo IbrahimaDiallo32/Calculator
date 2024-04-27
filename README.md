@@ -66,7 +66,7 @@ To execute the Web Application:
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2. Open your command Line interface and Navigate to the project Directory of this project using the 'cd' command:
 
-   **Note: You must be in the directory of Calculator to run "cd calculator_App". Otherwise, it will say it cannot find a path and doesn't exist.**
+      **Note: You must be in the directory of Calculator to run "cd calculator_App". Otherwise, it will say it cannot find a path and doesn't exist.**
     
   ```
   cd calculator_App
