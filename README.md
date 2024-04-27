@@ -137,6 +137,7 @@ To execute the End-to-End Testing:
 **Note: The Web Application must be running on the machine to execute the End-To-End Testing successfully.**
 1.  Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
+   
    **Note: You must be in the directory of Calculator to run "cd calculatorEnd-To-EndTests". Otherwise, it will say it cannot find a path and doesn't exist.**
     
    ```
