@@ -104,6 +104,7 @@ To execute the Unit Test:
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
 
    **Note: You must be in the directory of Calculator to run "Cd calculatorEngineUnitTest". Otherwise, it will say it cannot find a path and doesn't exist.** 
+   
       ```
     cd calculatorEngineUnitTest
       ```
