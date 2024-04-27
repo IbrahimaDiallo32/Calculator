@@ -98,8 +98,8 @@ To execute the Web Application:
 ## Executing Unit Tests
 
 To execute the Unit Test:
-
-**Note: If the application is running, open a new terminal window and skip steps 3 and 4.** 
+   
+   **Note: If the application is running, open a new terminal window and skip steps 3 and 4.** 
 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2.  Open your command line interface and Navigate to the project Directory of this project using the 'cd' command:
@@ -109,6 +109,7 @@ To execute the Unit Test:
       ```
     cd calculatorEngineUnitTest
       ```
+      
 3. Once in this Directory, Restore Dependencies necessary for this application by following these commands:
       ```
    dotnet restore
