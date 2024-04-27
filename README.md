@@ -68,9 +68,9 @@ To execute the Web Application:
 
       **Note: You must be in the directory of Calculator to run "cd calculator_App". Otherwise, it will say it cannot find a path and doesn't exist.**
     
-  ```
-  cd calculator_App
-   ```
+     ```
+     cd calculator_App
+      ```
 
 4. Once in this Directory, restore the Dependencies necessary for this application by following these commands:
    ```
