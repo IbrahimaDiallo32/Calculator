@@ -8,15 +8,14 @@ This project is a web-based Calculator app programmed in C# using Blazor Server.
 4. [Executing Unit Tests](#executing-unit-tests)
 5. [Reviewing Unit Test Coverage](#reviewing-unit-test-coverage)
 6. [Executing End-To-End Tests](#Executing-End-To-End-Tests)
-7. [Static Analysis](#static-analysis)
-8. [Final Video Presentation](#Final-Video-Presentation)
+7. [Final Video Presentation](#Final-Video-Presentation)
    
 ## Team Members
 1. Diwakar Rai
 2. Ibrahima Diallo
 
 ## Architecture 
-This project is split into four different projects within one solution using ASP.NET Blazor Server. The four projects are Calculator_App, CalculatorEngine, CalculatorEngineUnitTest, and CalculatorEndToEndTests.
+This project is split into four different projects within a solution folder using ASP.NET Blazor Server. The four projects are Calculator_App, CalculatorEngine, CalculatorEngineUnitTest, and CalculatorEndToEndTests.
 
 -   Calculator_App: This project serves as the web server holding the HTML and CSS code.
 -   CalculatorEngine: Here resides the mathematical operations, such as addition, factorial, and trigonometry.
@@ -31,7 +30,9 @@ CalculatorEngine and CalculatorEnd-To-EndTests are not dependent on any projects
 
 ## Environment
 
-This is a cross-platform application and should work in Windows 10+, Mac OS, and Linux environments. Note this Application has only been tested on Windows 10+ and MacOs.
+This is a cross-platform application and should work in Windows 10+, Mac OS, and Linux environments.
+
+**Note this Application has only been tested on Windows 10+ and MacOs.**
 
 ### Steps to prepare your environment to execute this application: 
 
@@ -65,7 +66,7 @@ To execute the Web Application:
 1. Make sure to follow the steps in the [Environment](#environment) instructions
 2. Open your command Line interface and Navigate to the project Directory of this project using the 'cd' command:
 
-   **Note: You must be in the directory of Calculator to run "Cd calculatorEngineUnitTest". Otherwise, it will say it cannot find a path and doesn't exist.** 
+   **Note: You must be in the directory of Calculator to run "cd calculator_App". Otherwise, it will say it cannot find a path and doesn't exist.** 
       ```
     cd calculator_App
       ```
@@ -96,6 +97,7 @@ To execute the Web Application:
 ## Executing Unit Tests
 
 To execute the Unit Test:
+
 **Note: If the application is running, open a new terminal window and skip steps 3 and 4.** 
 
 1. Make sure to follow the steps in the [Environment](#environment) instructions
