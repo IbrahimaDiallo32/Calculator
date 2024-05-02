@@ -3,7 +3,6 @@ namespace CalculatorTestProject1;
 //Unit Tests For Cos Function
 public class CosUnitTest
 {
-    //preq-UNIT-TEST-17
     [Test]
     public void CosOfDouble_Zero_ReturnsOne()
     {   

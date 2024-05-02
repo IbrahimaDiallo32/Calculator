@@ -8,7 +8,7 @@ public class FactorialUnitTest
     [Test]
     public void FactorialOfDouble_Zero_ReturnsOne()
     {   
-        //preq-UNIT-TEST-15
+
         //Arrange
         double input = 0;
         double expected = 1;
@@ -31,7 +31,7 @@ public class FactorialUnitTest
     }
 
     [Test]
-    //preq-UNIT-TEST-14
+
     public void FactorialOfDouble_PositiveInteger_ReturnsFactorial()
     {   
         //Arrange

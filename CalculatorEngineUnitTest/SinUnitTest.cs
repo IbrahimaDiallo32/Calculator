@@ -4,7 +4,6 @@ namespace CalculatorTestProject1;
 //Unit Tests For Sin Function//
 public class SinUnitTest
 {   
-    //preq-UNIT-TEST-16
     [Test]
     public void SinOfDoubles_Zero_ReturnsZero()
     {
@@ -18,7 +17,6 @@ public class SinUnitTest
     }
 
     [Test]
-    //preq-UNIT-TEST-16
     public void SinOfDoubles_PositiveNumber_ReturnsZero()
     {
         //Arrange
@@ -30,7 +28,6 @@ public class SinUnitTest
         Assert.That(expected,Is.EqualTo(result).Within(00001),"Sine of 360 should 0");
     }
     [Test]
-    //preq-UNIT-TEST-16
     public void SinOfDoubles_Number1_ReturnsZero()
     {
         //Arrange

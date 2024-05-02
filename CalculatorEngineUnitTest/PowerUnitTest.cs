@@ -8,7 +8,6 @@ public class PowerUnitTest
     [Test]
         public void PowerFunction_WithPositiveNumbers_ReturnsCorrectResult()
         {
-            // preq-UNIT-TEST-8
             // Arrange
             double baseNumber = 2;
             double exponent = 3;

@@ -5,7 +5,6 @@ namespace CalculatorTestProject1;
 // Unit Tests For Root Function
 public class RootUnitTest
 {
-    //preq-ENGINE-12
      [Test]
         public void RootOfTwoDoubles_PositiveNumber_ReturnsCubeRoot()
         {
@@ -34,7 +33,6 @@ public class RootUnitTest
         }
         
         [Test]
-        //preq-UNIT-TEST-13
         public void RootOfTwoDoubles_NegativeSquareRootOfNumber_ThrowsExceptionOrReturnsNaN()
         {
             //Arrange

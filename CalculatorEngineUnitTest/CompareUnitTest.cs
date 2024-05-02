@@ -9,7 +9,6 @@ public class CompareUnitTest
     [Test]
     public void CompareTwoNumbers_WithExactlySameNumbers_ReturnsTrue()
     {
-        //preq-ENGINE-7
         //Arrange
         double num1 = 0.3333333;
         double num2 = 0.3333333;

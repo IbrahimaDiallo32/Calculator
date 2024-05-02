@@ -6,7 +6,7 @@ namespace CalculatorTestProject1;
 //Unit Tests For Log Functions
 public class LogUnitTest
 {
-    //preq-ENGINE-9
+
         [Test]
         public void LogOfTwoDoubles_Base2_ReturnsCorrectLog()
         {
@@ -33,7 +33,7 @@ public class LogUnitTest
             Assert.That(result, Is.EqualTo(expected).Within(0.0001), "Log base 5 of 25 should be 2.");
         }
         [Test]
-        //preq-UNIT-TEST-10
+
         public void LogOfTwoDoubles_NegativeBase_ReturnsNaN()
         {
             //Arrange 
@@ -45,7 +45,7 @@ public class LogUnitTest
             Assert.That(result,Is.NaN, "Logarithm with a negative value should return NaN.");
         }
         [Test]
-        //preq-UNIT-TEST-11
+
         public void LogOfTwoDoubles_Base0_ReturnsNaN()
         {
             //Arrange 

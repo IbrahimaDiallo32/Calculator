@@ -8,8 +8,6 @@ public class SubtractionUnitTest
     [Test]
     public void Subtraction_TwoPositiveDoubles_ReturnsDifference()
     {
-        //preq-UNIT-TEST-3
-        
         // Arrange
         double number1 = 5.5;
         double number2 = 3.0;

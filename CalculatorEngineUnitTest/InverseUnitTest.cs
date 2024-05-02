@@ -9,7 +9,7 @@ public class InverseUnitTest
     [Test]
     public void InverseOfDouble_PositiveNumber_ReturnsInverse()
     {   
-        //preq-ENGINE-19
+
         //Arrange 
         double testValue = 2;
         double expected = 0.5;
@@ -33,7 +33,7 @@ public class InverseUnitTest
         Assert.That(result, Is.EqualTo(expected).Within(0.0001), $"Inverse of {testValue} should be -0.25.");
     }
     [Test]
-    //pre-UNIT-TEST-20
+
     public void InverseOfDouble_Zero_ReturnsError()
     {   
         //Arrange

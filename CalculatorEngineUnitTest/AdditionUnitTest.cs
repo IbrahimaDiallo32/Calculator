@@ -9,8 +9,6 @@ public class AdditionUnitTest
     [Test]
     public void Addition_TwoPositiveDoubles_ReturnsPositiveSum()
     {
-        //preq-UNIT-TEST-2
-        
         //Arrange
         double number1 = 2.5;
         double number2 = 3.5;
